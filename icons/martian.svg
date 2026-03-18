@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
   <defs>
     <radialGradient id="mt-bg" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#1a1008"/>
-      <stop offset="100%" stop-color="#0a0804"/>
+      <stop offset="0%" stop-color="#0a1a14"/>
+      <stop offset="100%" stop-color="#040a08"/>
     </radialGradient>
     <filter id="mt-glow">
       <feGaussianBlur stdDeviation="3" result="blur"/>
