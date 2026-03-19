@@ -1,0 +1,88 @@
+{
+  "_meta": {
+    "description": "Synagraphic VS Code theme palettes — extracted for cross-project reference",
+    "source": "https://github.com/jenninexus/synagraphic-themes",
+    "version": "1.0.0",
+    "updated": "2026-03-18"
+  },
+  "themes": {
+    "void-circuit": {
+      "label": "Void Circuit",
+      "primary": "#8b6aff",
+      "secondary": "#3dd8d8",
+      "background": "#06060b",
+      "foreground": "#d0d0e8",
+      "accent_badge": "#8b6aff",
+      "error": "#f06080",
+      "terminal": {
+        "black": "#1a1a2e", "red": "#f06080", "green": "#3dd8a8", "yellow": "#e4c85a",
+        "blue": "#5a8af0", "magenta": "#8b6aff", "cyan": "#3dd8d8", "white": "#d0d0e8"
+      }
+    },
+    "neon-decay": {
+      "label": "Neon Decay",
+      "primary": "#42f4c8",
+      "secondary": "#ff2d6f",
+      "background": "#05070c",
+      "foreground": "#b8c4d8",
+      "accent_badge": "#ff2d6f",
+      "error": "#ff3860",
+      "terminal": {
+        "black": "#0e1420", "red": "#ff3860", "green": "#42f4c8", "yellow": "#f0e050",
+        "blue": "#5c8aff", "magenta": "#b48eff", "cyan": "#42f4c8", "white": "#b8c4d8"
+      }
+    },
+    "ghost-protocol": {
+      "label": "Ghost Protocol",
+      "primary": "#5a9ce8",
+      "secondary": "#88c8ff",
+      "background": "#040610",
+      "foreground": "#b8c8d8",
+      "accent_badge": "#5a9ce8",
+      "error": "#d85858",
+      "terminal": {
+        "black": "#101828", "red": "#d85858", "green": "#50a878", "yellow": "#c8b850",
+        "blue": "#5a9ce8", "magenta": "#8878b8", "cyan": "#50a8b8", "white": "#b8c8d8"
+      }
+    },
+    "plasma-drift": {
+      "label": "Plasma Drift",
+      "primary": "#e050a0",
+      "secondary": "#f070a8",
+      "background": "#060410",
+      "foreground": "#dcc8e0",
+      "accent_badge": "#e050a0",
+      "error": "#e84848",
+      "terminal": {
+        "black": "#1a1024", "red": "#e84848", "green": "#60b890", "yellow": "#d8c050",
+        "blue": "#7088d0", "magenta": "#e050a0", "cyan": "#68b8d8", "white": "#dcc8e0"
+      }
+    },
+    "acid-rain": {
+      "label": "Acid Rain",
+      "primary": "#68c030",
+      "secondary": "#90e848",
+      "background": "#050908",
+      "foreground": "#c0d0b8",
+      "accent_badge": "#68c030",
+      "error": "#d85040",
+      "terminal": {
+        "black": "#101c10", "red": "#d85040", "green": "#68c030", "yellow": "#c8a830",
+        "blue": "#5888b0", "magenta": "#9868a8", "cyan": "#48a8a0", "white": "#c0d0b8"
+      }
+    },
+    "martian": {
+      "label": "Martian",
+      "primary": "#FF6B00",
+      "secondary": "#8B5CF6",
+      "background": "#040a08",
+      "foreground": "#d0e0d8",
+      "accent_badge": "#8B5CF6",
+      "error": "#E53E3E",
+      "terminal": {
+        "black": "#0c1a14", "red": "#E53E3E", "green": "#42f4c8", "yellow": "#F6AD55",
+        "blue": "#63B3ED", "magenta": "#8B5CF6", "cyan": "#42f4c8", "white": "#d0e0d8"
+      }
+    }
+  }
+}
