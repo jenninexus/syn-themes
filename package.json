@@ -1,8 +1,8 @@
 {
   "name": "synagraphic-themes",
   "displayName": "Synagraphic — Cyberpunk Theme Pack",
-  "description": "6 cyberpunk dark themes with semantic highlighting — near-black voids with neon accents. For devs who live in the dark.",
-  "version": "1.0.0",
+  "description": "6 cyberpunk VS Code themes + 15 core web palettes + 5 skin families — 29 total presets for the Syna ecosystem.",
+  "version": "1.1.0",
   "publisher": "jenninexus",
   "author": { "name": "JenniNexus", "url": "https://jenninexus.com" },
   "license": "SEE LICENSE IN LICENSE",
