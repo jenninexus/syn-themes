@@ -23,12 +23,32 @@
       to { opacity: 1; transform: translateY(0); }
     }
     @keyframes shimmer {
-      0%, 100% { opacity: 0.4; }
-      50% { opacity: 0.8; }
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
     @keyframes pulse-glow {
       0%, 100% { box-shadow: 0 0 20px var(--glow-color, #8b6aff33); }
       50% { box-shadow: 0 0 40px var(--glow-color, #8b6aff55); }
+    }
+    @keyframes rainbow-border-slow {
+      0% { border-color: rgba(255,107,214,0.25); }
+      16% { border-color: rgba(196,107,255,0.25); }
+      33% { border-color: rgba(107,165,255,0.25); }
+      50% { border-color: rgba(107,255,214,0.25); }
+      66% { border-color: rgba(255,240,107,0.25); }
+      83% { border-color: rgba(255,150,107,0.25); }
+      100% { border-color: rgba(255,107,214,0.25); }
+    }
+    @keyframes prismatic-glow-slow {
+      0% { box-shadow: 0 0 25px rgba(255,107,214,0.1), inset 0 0 40px rgba(196,107,255,0.04); }
+      33% { box-shadow: 0 0 25px rgba(107,165,255,0.1), inset 0 0 40px rgba(107,255,214,0.04); }
+      66% { box-shadow: 0 0 25px rgba(255,240,107,0.1), inset 0 0 40px rgba(255,150,107,0.04); }
+      100% { box-shadow: 0 0 25px rgba(255,107,214,0.1), inset 0 0 40px rgba(196,107,255,0.04); }
+    }
+    @keyframes glass-breathe {
+      0%, 100% { backdrop-filter: blur(16px) saturate(1.1); }
+      50% { backdrop-filter: blur(18px) saturate(1.2); }
     }
 
     /* Header */
@@ -41,8 +61,8 @@
       content: '';
       position: absolute;
       top: 0; left: 50%; transform: translateX(-50%);
-      width: 600px; height: 300px;
-      background: radial-gradient(ellipse, rgba(139,106,255,0.08) 0%, transparent 70%);
+      width: 700px; height: 350px;
+      background: radial-gradient(ellipse, rgba(139,106,255,0.06) 0%, rgba(61,216,216,0.03) 40%, transparent 70%);
       pointer-events: none;
     }
     .header h1 {
@@ -50,19 +70,28 @@
       font-weight: 700;
       font-size: clamp(1.8rem, 4vw, 3rem);
       letter-spacing: 0.12em;
-      background: linear-gradient(135deg, #8b6aff, #3dd8d8, #e050a0, #42f4c8);
+      background: linear-gradient(135deg, #8b6aff, #3dd8d8, #e050a0, #42f4c8, #ff6bd6);
       background-size: 300% 300%;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      animation: shimmer 4s ease-in-out infinite;
-      margin-bottom: 10px;
+      animation: shimmer 8s ease-in-out infinite;
+      margin-bottom: 6px;
     }
     .header .subtitle {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300;
+      font-size: clamp(0.75rem, 1.6vw, 1rem);
+      color: #6e6e98;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .header .tagline {
       font-family: 'Orbitron', sans-serif;
       font-weight: 400;
-      font-size: clamp(0.65rem, 1.4vw, 0.85rem);
-      color: #4e4e72;
+      font-size: clamp(0.55rem, 1.2vw, 0.72rem);
+      color: #3e3e5e;
       letter-spacing: 0.15em;
       text-transform: uppercase;
     }
@@ -73,9 +102,7 @@
       margin-top: 24px;
       flex-wrap: wrap;
     }
-    .stat {
-      text-align: center;
-    }
+    .stat { text-align: center; }
     .stat-num {
       font-family: 'Orbitron', sans-serif;
       font-weight: 700;
@@ -110,6 +137,8 @@
       font-size: 0.8rem;
       color: #5a5a7e;
       letter-spacing: 0.05em;
+      max-width: 640px;
+      margin: 0 auto;
     }
 
     /* Grid */
@@ -125,7 +154,7 @@
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     }
 
-    /* Cards */
+    /* Palette Cards */
     .card {
       position: relative;
       border-radius: 16px;
@@ -143,22 +172,17 @@
       top: 0; left: 0; right: 0;
       height: 3px;
       background: var(--card-gradient, linear-gradient(90deg, #8b6aff, #3dd8d8));
-      opacity: 0.7;
+      opacity: 0.6;
       transition: opacity 0.3s;
     }
-    .card:hover {
-      transform: translateY(-4px);
-    }
-    .card:hover::before {
-      opacity: 1;
-    }
+    .card:hover { transform: translateY(-4px); }
+    .card:hover::before { opacity: 1; }
 
     .card-title {
       font-family: 'Orbitron', sans-serif;
       font-weight: 600;
       font-size: 0.95rem;
       letter-spacing: 0.06em;
-      margin-bottom: 4px;
     }
     .card-aesthetic {
       font-size: 0.72rem;
@@ -172,7 +196,6 @@
       display: flex;
       gap: 4px;
       margin-bottom: 10px;
-      flex-wrap: nowrap;
     }
     .swatch {
       width: 28px;
@@ -184,10 +207,7 @@
       flex-shrink: 0;
       transition: transform 0.2s;
     }
-    .swatch:hover {
-      transform: scale(1.3);
-      z-index: 5;
-    }
+    .swatch:hover { transform: scale(1.3); z-index: 5; }
     .swatch .tip {
       display: none;
       position: absolute;
@@ -207,136 +227,108 @@
     }
     .swatch:hover .tip { display: block; }
 
-    /* Gradient bar */
-    .gradient-bar {
-      height: 6px;
-      border-radius: 3px;
-      margin-bottom: 10px;
-    }
-
-    /* Glow swatch */
-    .glow-row {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 10px;
-    }
+    .gradient-bar { height: 6px; border-radius: 3px; margin-bottom: 10px; }
+    .glow-row { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
     .glow-dot {
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
+      width: 16px; height: 16px; border-radius: 50%;
       animation: pulse-glow 3s ease-in-out infinite;
     }
-    .glow-label {
-      font-size: 0.65rem;
-      font-family: 'JetBrains Mono', monospace;
-      color: #6e6e98;
-    }
-
-    /* Tags */
-    .family-tags {
-      display: flex;
-      gap: 6px;
-      flex-wrap: wrap;
-    }
+    .glow-label { font-size: 0.65rem; font-family: 'JetBrains Mono', monospace; color: #6e6e98; }
+    .family-tags { display: flex; gap: 6px; flex-wrap: wrap; }
     .family-tag {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.55rem;
-      letter-spacing: 0.05em;
-      padding: 2px 8px;
-      border-radius: 4px;
-      background: rgba(139,106,255,0.1);
-      color: #8b8bbb;
+      font-size: 0.55rem; letter-spacing: 0.05em;
+      padding: 2px 8px; border-radius: 4px;
+      background: rgba(139,106,255,0.1); color: #8b8bbb;
       border: 1px solid rgba(139,106,255,0.15);
     }
+    .vscode-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.52rem; padding: 2px 6px; border-radius: 3px;
+      background: rgba(66,180,200,0.12); color: #42b4c8;
+      border: 1px solid rgba(66,180,200,0.2);
+      margin-left: 8px; vertical-align: middle;
+    }
 
-    /* Skin family cards */
+    /* Skin family cards — glass morphism showcase */
     .skin-card {
       position: relative;
       border-radius: 16px;
       padding: 24px;
-      backdrop-filter: blur(16px);
-      background: rgba(255,255,255,0.02);
+      backdrop-filter: blur(18px) saturate(1.15);
+      background: rgba(255,255,255,0.015);
       border: 1px solid rgba(255,255,255,0.06);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      animation: fadeInUp 0.6s ease-out both;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      animation: fadeInUp 0.6s ease-out both, glass-breathe 8s ease-in-out infinite;
       overflow: hidden;
     }
-    .skin-card:hover {
-      transform: translateY(-4px);
-    }
+    .skin-card:hover { transform: translateY(-4px); }
     .skin-card-title {
       font-family: 'Orbitron', sans-serif;
-      font-weight: 600;
-      font-size: 0.9rem;
-      letter-spacing: 0.06em;
-      margin-bottom: 4px;
+      font-weight: 600; font-size: 0.9rem; letter-spacing: 0.06em;
     }
     .skin-card-desc {
-      font-size: 0.7rem;
-      color: #6e6e98;
-      margin-bottom: 14px;
+      font-size: 0.7rem; color: #6e6e98; margin-bottom: 14px;
     }
     .skin-layers {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-      margin-bottom: 14px;
+      display: flex; flex-direction: column; gap: 4px; margin-bottom: 14px;
     }
     .skin-layer {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 8px 12px;
-      border-radius: 8px;
-      font-size: 0.68rem;
-      font-family: 'JetBrains Mono', monospace;
+      display: flex; align-items: center; gap: 10px;
+      padding: 8px 12px; border-radius: 8px;
+      font-size: 0.68rem; font-family: 'JetBrains Mono', monospace;
+      backdrop-filter: blur(8px);
     }
-    .skin-layer-label {
-      color: rgba(255,255,255,0.5);
-      min-width: 68px;
-    }
-    .skin-layer-value {
-      opacity: 0.7;
-    }
-    .mode-badges {
-      display: flex;
-      gap: 6px;
-    }
+    .skin-layer-label { color: rgba(255,255,255,0.5); min-width: 68px; }
+    .skin-layer-value { opacity: 0.7; }
+    .mode-badges { display: flex; gap: 6px; }
     .mode-badge {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.55rem;
-      padding: 2px 8px;
-      border-radius: 4px;
+      font-size: 0.55rem; padding: 2px 8px; border-radius: 4px;
     }
-    .mode-badge.dark {
-      background: rgba(0,0,0,0.4);
-      color: #9090b0;
-      border: 1px solid rgba(255,255,255,0.08);
+    .mode-badge.dark { background: rgba(0,0,0,0.4); color: #9090b0; border: 1px solid rgba(255,255,255,0.08); }
+    .mode-badge.light { background: rgba(255,255,255,0.12); color: #c0c0d0; border: 1px solid rgba(255,255,255,0.15); }
+
+    /* Glass info row */
+    .glass-info {
+      display: flex; align-items: center; gap: 12px;
+      font-size: 0.58rem; color: #5a5a7e; margin-top: 10px;
+      font-family: 'JetBrains Mono', monospace;
     }
-    .mode-badge.light {
-      background: rgba(255,255,255,0.12);
-      color: #c0c0d0;
-      border: 1px solid rgba(255,255,255,0.15);
+    .glass-chip {
+      display: inline-flex; align-items: center; gap: 4px;
+      padding: 2px 6px; border-radius: 4px;
+      background: rgba(139,106,255,0.08); border: 1px solid rgba(139,106,255,0.12);
     }
 
-    /* VS Code badge */
-    .vscode-badge {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.52rem;
-      padding: 2px 6px;
-      border-radius: 3px;
-      background: rgba(66,180,200,0.12);
-      color: #42b4c8;
-      border: 1px solid rgba(66,180,200,0.2);
-      margin-left: 8px;
-      vertical-align: middle;
+    /* Holographic skin special — slower, subtler */
+    .skin-card.holographic {
+      animation: fadeInUp 0.6s ease-out both, rainbow-border-slow 10s linear infinite, prismatic-glow-slow 12s ease-in-out infinite;
+      background: linear-gradient(135deg,
+        rgba(255,107,214,0.02),
+        rgba(196,107,255,0.02),
+        rgba(107,165,255,0.02),
+        rgba(107,255,214,0.02),
+        rgba(255,240,107,0.02)
+      );
+      background-size: 400% 400%;
+      animation-delay: 0s, 0s, 0s;
+    }
+    .skin-card.holographic::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, #ff6bd6, #c46bff, #6ba5ff, #6bffd6, #fff06b, #ff6bd6);
+      background-size: 200% 100%;
+      animation: shimmer 8s linear infinite;
+      opacity: 0.6;
     }
 
     /* Footer */
     .footer {
       text-align: center;
-      padding: 40px 20px 60px;
+      padding: 50px 20px 60px;
     }
     .footer a {
       color: #8b6aff;
@@ -348,15 +340,17 @@
     }
     .footer a:hover { color: #a88aff; }
     .footer .pub {
-      font-size: 0.6rem;
-      color: #3a3a5e;
-      margin-top: 8px;
-      letter-spacing: 0.05em;
+      font-size: 0.65rem;
+      color: #5a5a7e;
+      margin-top: 10px;
+      letter-spacing: 0.06em;
     }
+    .footer .pub a { font-family: 'Outfit', sans-serif; font-size: 0.65rem; }
     .footer .contract {
-      font-size: 0.6rem;
-      color: #4e4e72;
-      margin-top: 4px;
+      font-size: 0.55rem;
+      color: #3a3a5e;
+      margin-top: 6px;
+      letter-spacing: 0.04em;
     }
 
     @media (min-width: 1200px) {
@@ -372,307 +366,243 @@
 
 <div class="header">
   <h1>SYNAGRAPHIC</h1>
-  <p class="subtitle">Complete Syna Theme Collection</p>
+  <p class="subtitle">Synagraphic Design Aesthetics</p>
+  <p class="tagline">Complete Syna Theme Collection</p>
   <div class="stats">
-    <div class="stat"><div class="stat-num">5</div><div class="stat-label">Skin Families</div></div>
-    <div class="stat"><div class="stat-num">8</div><div class="stat-label">Skin Themes</div></div>
-    <div class="stat"><div class="stat-num">15</div><div class="stat-label">Core Palettes</div></div>
-    <div class="stat"><div class="stat-num">6</div><div class="stat-label">Synagraphic</div></div>
-    <div class="stat"><div class="stat-num">29</div><div class="stat-label">Total Presets</div></div>
+    <div class="stat"><div class="stat-num">6</div><div class="stat-label">Skin Families</div></div>
+    <div class="stat"><div class="stat-num">10</div><div class="stat-label">Skin Themes</div></div>
+    <div class="stat"><div class="stat-num">21</div><div class="stat-label">Palettes</div></div>
+    <div class="stat"><div class="stat-num">6</div><div class="stat-label">VS Code Themes</div></div>
+    <div class="stat"><div class="stat-num">31</div><div class="stat-label">Total Presets</div></div>
   </div>
 </div>
 
 <!-- SKIN FAMILIES -->
 <div class="section-header">
   <h2>Skin Families</h2>
-  <p>Base surfaces, glass effects, and text contrast — the foundation layer that accent palettes overlay on</p>
+  <p>Semi-transparent glass surfaces with blur, accent-tinted borders, and depth layering — the foundation that accent palettes overlay on</p>
 </div>
 <div class="grid skin-grid" id="skin-grid"></div>
 
-<!-- SYNAGRAPHIC PALETTES (VS Code + Web) -->
+<!-- ALL PALETTES -->
 <div class="section-header">
-  <h2>Synagraphic Palettes</h2>
-  <p>6 cyberpunk themes with full VS Code token definitions + web accent bridge</p>
+  <h2>Accent Palettes</h2>
+  <p>21 accent palettes — 6-color sets that overlay on any skin family. Palettes with the VS Code badge include full editor token definitions.</p>
 </div>
-<div class="grid" id="sg-grid"></div>
-
-<!-- CORE PALETTES -->
-<div class="section-header">
-  <h2>Core Palettes</h2>
-  <p>15 accent palettes from the Syna web apps — 6-color sets that overlay on any skin family</p>
-</div>
-<div class="grid" id="core-grid"></div>
+<div class="grid" id="palette-grid"></div>
 
 <div class="footer">
   <a href="https://github.com/jenninexus/synagraphic-themes">github.com/jenninexus/synagraphic-themes</a>
-  <p class="pub">Published by JenniNexus</p>
-  <p class="contract">Syna Skin Contract v1.1 — data-syna-skin, data-syna-mode, data-syna-palette, data-syna-family</p>
+  <p class="pub">Published by <a href="https://github.com/monofinitystudio">Monofinity Studio</a></p>
+  <p class="contract">Syna Skins v2.0 &mdash; data-syna-skin, data-syna-mode, data-syna-palette, data-syna-family</p>
 </div>
 
 <script>
-/* ═══════════════════════════════════════════════════
+/* ===============================================
    DATA: Skin Families
-   ═══════════════════════════════════════════════════ */
+   =============================================== */
 const skinFamilies = [
   {
     name: "Synabrain Glass",
     id: "synabrain-glass",
     modes: ["dark", "light"],
-    dark: { bg: "#0e0c16", bgSec: "#151920", bgTer: "#1a1f2e", text: "#d7faff", glass: "rgba(30,35,45,0.65)", border: "rgba(77,232,255,0.2)" },
-    light: { bg: "#f8fafc", bgSec: "#e2e8f0", bgTer: "#cbd5e1", text: "#1e293b", glass: "rgba(255,255,255,0.7)", border: "rgba(0,0,0,0.1)" },
-    desc: "The signature Synabrain look — deep void with cyan-tinted glass"
+    dark: { bg: "#0e0c16", bgSec: "rgba(21,25,32,0.85)", bgTer: "rgba(26,31,46,0.75)", text: "#d7faff", glass: "rgba(30,35,45,0.5)", blur: "16px", border: "rgba(77,232,255,0.18)" },
+    desc: "The signature Synabrain look — deep void with cyan-tinted translucent glass"
   },
   {
     name: "Martian Games",
     id: "martian-games",
     modes: ["dark", "light"],
-    dark: { bg: "#0a0806", bgSec: "#1a1410", bgTer: "#241c14", text: "#ffe8d0", glass: "rgba(40,25,15,0.7)", border: "rgba(255,107,0,0.15)" },
-    light: { bg: "#fff8f0", bgSec: "#ffecd4", bgTer: "#ffd8a8", text: "#2d1600", glass: "rgba(255,248,240,0.7)", border: "rgba(255,107,0,0.12)" },
-    desc: "Volcanic heat — warm amber glass with orange-tinted borders"
+    dark: { bg: "#0A0A0A", bgSec: "rgba(24,24,24,0.85)", bgTer: "rgba(35,35,35,0.75)", text: "#FFFFFF", glass: "rgba(10,10,10,0.5)", blur: "14px", border: "rgba(255,107,0,0.22)" },
+    desc: "MartianGames brand — neutral darks with molten orange glass borders"
   },
   {
     name: "Tinted Glass",
     id: "tinted-glass",
     modes: ["dark", "light"],
-    dark: { bg: "#0c0c14", bgSec: "#14141e", bgTer: "#1c1c28", text: "#e0e0f0", glass: "rgba(20,20,30,0.7)", border: "rgba(255,255,255,0.06)" },
-    light: { bg: "#f4f4fa", bgSec: "#e8e8f0", bgTer: "#d8d8e4", text: "#1a1a2e", glass: "rgba(244,244,250,0.7)", border: "rgba(0,0,0,0.06)" },
-    desc: "Neutral dark glass — lets accent palettes dominate the mood"
+    dark: { bg: "#0c0c14", bgSec: "rgba(20,20,30,0.85)", bgTer: "rgba(28,28,40,0.75)", text: "#e0e0f0", glass: "rgba(16,16,24,0.48)", blur: "18px", border: "rgba(255,255,255,0.06)" },
+    desc: "Neutral translucent glass — lets accent palettes dominate the mood"
+  },
+  {
+    name: "Holographic Glass",
+    id: "holographic-glass",
+    modes: ["dark", "light"],
+    holographic: true,
+    dark: { bg: "#08060e", bgSec: "rgba(18,14,26,0.8)", bgTer: "rgba(26,20,36,0.7)", text: "#f0e8ff", glass: "rgba(14,10,22,0.42)", blur: "20px", border: "rgba(200,160,255,0.18)" },
+    desc: "Prismatic iridescent glass — slow rainbow shimmer, translucent depth"
   },
   {
     name: "Synagen Dark",
     id: "synagen-dark",
     modes: ["dark"],
-    dark: { bg: "#0a0e14", bgSec: "#0e1420", bgTer: "#141c28", text: "#e6edf3", glass: "rgba(10,14,20,0.95)", border: "rgba(140,255,240,0.08)" },
-    desc: "Opaque dark editor — dense, focused, code-first"
+    dark: { bg: "#0a0e14", bgSec: "rgba(14,20,32,0.88)", bgTer: "rgba(20,28,40,0.78)", text: "#e6edf3", glass: "rgba(10,14,20,0.55)", blur: "14px", border: "rgba(140,255,240,0.08)" },
+    desc: "Deep-space editor — translucent panels with teal edge glow"
   },
   {
-    name: "Studio Pro",
-    id: "studio-pro",
+    name: "Midnight Chrome",
+    id: "midnight-chrome",
     modes: ["dark"],
-    dark: { bg: "#1e1e1e", bgSec: "#252526", bgTer: "#2d2d2d", text: "#cccccc", glass: "rgba(37,37,38,0.95)", border: "rgba(255,255,255,0.05)" },
-    desc: "Classic IDE gray — distraction-free, professional"
+    dark: { bg: "#0c0f18", bgSec: "rgba(16,22,34,0.85)", bgTer: "rgba(22,30,46,0.75)", text: "#c8d4e8", glass: "rgba(12,15,24,0.48)", blur: "16px", border: "rgba(100,140,220,0.1)" },
+    desc: "Blue-charcoal glass — professional depth with cool steel edges"
   }
 ];
 
-/* ═══════════════════════════════════════════════════
-   DATA: Synagraphic Palettes (VS Code themes)
-   ═══════════════════════════════════════════════════ */
-const synagraphicPalettes = [
+/* ===============================================
+   DATA: All Palettes (unified)
+   =============================================== */
+const allPalettes = [
   {
-    name: "Void Circuit",
-    id: "void-circuit",
-    colors: { cyan: "#3dd8d8", purple: "#8b6aff", pink: "#f06080", indigo: "#5a8af0", blue: "#5a8af0", teal: "#3dd8a8" },
-    glow: "#8b6aff",
-    aesthetic: "Muted hacker void — violet circuits on black",
-    families: ["synabrain-glass", "studio-pro"],
-    vscode: true,
-    vscodeAccent: "#8b6aff",
-    vscodeBg: "#06060b"
-  },
-  {
-    name: "Neon Decay",
-    id: "neon-decay",
-    colors: { cyan: "#42f4c8", purple: "#b48eff", pink: "#ff2d6f", indigo: "#5c8aff", blue: "#5c8aff", teal: "#42f4c8" },
-    glow: "#42f4c8",
-    aesthetic: "Industrial cyberpunk — rust and neon",
-    families: ["synabrain-glass", "tinted-glass"],
-    vscode: true,
-    vscodeAccent: "#42f4c8",
-    vscodeBg: "#05070c"
-  },
-  {
-    name: "Ghost Protocol",
-    id: "ghost-protocol",
-    colors: { cyan: "#5a9ce8", purple: "#8878b8", pink: "#d85858", indigo: "#5a9ce8", blue: "#88c8ff", teal: "#50a8b8" },
-    glow: "#88c8ff",
-    aesthetic: "Operative stealth — cold blue surveillance",
-    families: ["synagen-dark", "studio-pro"],
-    vscode: true,
-    vscodeAccent: "#5a9ce8",
-    vscodeBg: "#040610"
-  },
-  {
-    name: "Plasma Drift",
-    id: "plasma-drift",
-    colors: { cyan: "#68b8d8", purple: "#e050a0", pink: "#f070a8", indigo: "#7088d0", blue: "#7088d0", teal: "#60b890" },
-    glow: "#e050a0",
-    aesthetic: "Synthwave heat — hot pink plasma trails",
-    families: ["synabrain-glass", "tinted-glass"],
-    vscode: true,
-    vscodeAccent: "#e050a0",
-    vscodeBg: "#060410"
-  },
-  {
-    name: "Acid Rain",
-    id: "acid-rain",
-    colors: { cyan: "#68c030", purple: "#9868a8", pink: "#d85040", indigo: "#5888b0", blue: "#5888b0", teal: "#48a8a0" },
-    glow: "#90e848",
-    aesthetic: "Matrix terminal — toxic green drip",
-    families: ["synabrain-glass", "tinted-glass"],
-    vscode: true,
-    vscodeAccent: "#68c030",
-    vscodeBg: "#040806"
-  },
-  {
-    name: "SG Martian",
-    id: "sg-martian",
-    colors: { cyan: "#42f4c8", purple: "#8B5CF6", pink: "#E53E3E", indigo: "#63B3ED", blue: "#63B3ED", teal: "#42f4c8" },
-    glow: "#FF6B00",
-    aesthetic: "MartianGames cyberpunk — orange glow, teal circuits",
-    families: ["martian-games"],
-    vscode: true,
-    vscodeAccent: "#FF6B00",
-    vscodeBg: "#040a08"
-  }
-];
-
-/* ═══════════════════════════════════════════════════
-   DATA: Core Palettes (Web app accents)
-   ═══════════════════════════════════════════════════ */
-const corePalettes = [
-  {
-    name: "Synabrain Default",
-    id: "synabrain",
+    name: "Synabrain Default", id: "synabrain",
     colors: { cyan: "#2dd4bf", purple: "#a855f7", pink: "#ec4899", indigo: "#8b5cf6", blue: "#6366f1", teal: "#0d9488" },
-    glow: "#2dd4bf",
-    aesthetic: "Teal + violet glass — the signature Synabrain look",
+    glow: "#2dd4bf", aesthetic: "Teal + violet glass — the signature Synabrain look",
     families: ["synabrain-glass"]
   },
   {
-    name: "Martian Games",
-    id: "martian",
-    colors: { cyan: "#ff6b4a", purple: "#d4442c", pink: "#ff8c69", indigo: "#c73e2c", blue: "#e85d3d", teal: "#ffa07a" },
-    glow: "#ff6b4a",
-    aesthetic: "Volcanic orange-red heat — MartianGames brand",
+    name: "Martian Games", id: "martian",
+    colors: { cyan: "#42f4c8", purple: "#8B5CF6", pink: "#FF6B00", indigo: "#63B3ED", blue: "#FF7F32", teal: "#38C172" },
+    glow: "#FF6B00", aesthetic: "MartianGames brand — orange fire, purple energy, teal circuits",
     families: ["martian-games"]
   },
   {
-    name: "Ocean Breeze",
-    id: "ocean",
+    name: "Ocean Breeze", id: "ocean",
     colors: { cyan: "#06b6d4", purple: "#6366f1", pink: "#8b5cf6", indigo: "#4f46e5", blue: "#0ea5e9", teal: "#14b8a6" },
-    glow: "#06b6d4",
-    aesthetic: "Deep ocean blues and teals — calm and focused",
+    glow: "#06b6d4", aesthetic: "Deep ocean blues and teals — calm and focused",
     families: ["synabrain-glass", "tinted-glass"]
   },
   {
-    name: "Sunset Glow",
-    id: "sunset",
+    name: "Sunset Glow", id: "sunset",
     colors: { cyan: "#f97316", purple: "#ec4899", pink: "#f43f5e", indigo: "#e11d48", blue: "#fb7185", teal: "#fbbf24" },
-    glow: "#f97316",
-    aesthetic: "Warm orange-to-pink gradient — golden hour",
+    glow: "#f97316", aesthetic: "Warm orange-to-pink gradient — golden hour",
     families: ["martian-games", "tinted-glass"]
   },
   {
-    name: "Forest Depths",
-    id: "forest",
+    name: "Forest Depths", id: "forest",
     colors: { cyan: "#10b981", purple: "#059669", pink: "#84cc16", indigo: "#22c55e", blue: "#14b8a6", teal: "#047857" },
-    glow: "#10b981",
-    aesthetic: "Deep emerald greens — natural and grounded",
+    glow: "#10b981", aesthetic: "Deep emerald greens — natural and grounded",
     families: ["synabrain-glass"]
   },
   {
-    name: "Neon Nights",
-    id: "neon",
+    name: "Neon Nights", id: "neon",
     colors: { cyan: "#00ffff", purple: "#ff00ff", pink: "#ff1493", indigo: "#9400d3", blue: "#00bfff", teal: "#00fa9a" },
-    glow: "#00ffff",
-    aesthetic: "Pure neon — maximum saturation, electric glow",
-    families: ["tinted-glass"]
+    glow: "#00ffff", aesthetic: "Pure neon — maximum saturation, electric glow",
+    families: ["tinted-glass", "holographic-glass"]
   },
   {
-    name: "Minimal Mono",
-    id: "minimal",
+    name: "Minimal Mono", id: "minimal",
     colors: { cyan: "#64748b", purple: "#475569", pink: "#94a3b8", indigo: "#334155", blue: "#cbd5e1", teal: "#1e293b" },
-    glow: "#64748b",
-    aesthetic: "Slate grays — distraction-free, IDE-like",
-    families: ["studio-pro"]
+    glow: "#64748b", aesthetic: "Slate grays — distraction-free, professional",
+    families: ["midnight-chrome"]
   },
   {
-    name: "Studio Pro Light",
-    id: "studio-pro-light",
+    name: "Studio Pro Light", id: "studio-pro-light",
     colors: { cyan: "#3b82f6", purple: "#6b7280", pink: "#93c5fd", indigo: "#4b5563", blue: "#60a5fa", teal: "#3b82f6" },
-    glow: "#60a5fa",
-    aesthetic: "Professional blue — clean, corporate-friendly",
-    families: ["studio-pro"]
+    glow: "#60a5fa", aesthetic: "Professional blue — clean, corporate-friendly",
+    families: ["midnight-chrome"]
   },
   {
-    name: "Cyberpunk",
-    id: "cyberpunk",
+    name: "Cyberpunk", id: "cyberpunk",
     colors: { cyan: "#f0abfc", purple: "#06b6d4", pink: "#e879f9", indigo: "#0891b2", blue: "#67e8f9", teal: "#f0abfc" },
-    glow: "#e879f9",
-    aesthetic: "Pink-purple + cyan — neon city skyline",
+    glow: "#e879f9", aesthetic: "Pink-purple + cyan — neon city skyline",
     families: ["tinted-glass", "martian-games"]
   },
   {
-    name: "Aurora Borealis",
-    id: "aurora-borealis",
-    colors: { cyan: "#00e5a0", purple: "#7c3aed", pink: "#00ffd5", indigo: "#6d28d9", blue: "#34d399", teal: "#00e5a0" },
-    glow: "#00ffd5",
-    aesthetic: "Northern lights — green-to-purple shimmer",
-    families: ["synabrain-glass", "tinted-glass"]
+    name: "Aurora Borealis", id: "aurora-borealis",
+    colors: { cyan: "#00d4aa", purple: "#a855f7", pink: "#f472b6", indigo: "#7c3aed", blue: "#38bdf8", teal: "#2dd4bf" },
+    glow: "#a855f7", aesthetic: "Iridescent aurora — turquoise, purple, pink shimmer",
+    families: ["synabrain-glass", "tinted-glass", "holographic-glass"]
   },
   {
-    name: "Synthwave",
-    id: "synthwave",
-    colors: { cyan: "#ff2d95", purple: "#00b4d8", pink: "#ff6ec7", indigo: "#0077b6", blue: "#ff2d95", teal: "#00b4d8" },
-    glow: "#ff6ec7",
-    aesthetic: "Retro-futurism — hot pink meets cool cyan",
-    families: ["tinted-glass"]
+    name: "Synthwave", id: "synthwave",
+    colors: { cyan: "#00e5ff", purple: "#b24bf3", pink: "#ff2d95", indigo: "#7b2ff7", blue: "#00b4d8", teal: "#01cdfe" },
+    glow: "#ff2d95", aesthetic: "Retro-futurism — hot pink, electric cyan, deep purple",
+    families: ["tinted-glass", "holographic-glass"]
   },
   {
-    name: "Midnight Depths",
-    id: "midnight-depths",
+    name: "Midnight Depths", id: "midnight-depths",
     colors: { cyan: "#6366f1", purple: "#1e40af", pink: "#818cf8", indigo: "#1e3a8a", blue: "#6366f1", teal: "#3b82f6" },
-    glow: "#818cf8",
-    aesthetic: "Deep indigo — midnight sky, subtle and moody",
-    families: ["synabrain-glass"]
+    glow: "#818cf8", aesthetic: "Deep indigo — midnight sky, subtle and moody",
+    families: ["synabrain-glass", "midnight-chrome"]
   },
   {
-    name: "Cherry Blossom",
-    id: "cherry-blossom",
+    name: "Cherry Blossom", id: "cherry-blossom",
     colors: { cyan: "#f472b6", purple: "#e11d48", pink: "#fb7185", indigo: "#be123c", blue: "#fda4af", teal: "#f472b6" },
-    glow: "#fb7185",
-    aesthetic: "Soft pink bloom — delicate and warm",
+    glow: "#fb7185", aesthetic: "Soft pink bloom — delicate and warm",
+    families: ["synabrain-glass", "tinted-glass", "holographic-glass"]
+  },
+  {
+    name: "Arctic Frost", id: "arctic-frost",
+    colors: { cyan: "#67e8f9", purple: "#0ea5e9", pink: "#a5f3fc", indigo: "#0284c7", blue: "#7dd3fc", teal: "#67e8f9" },
+    glow: "#a5f3fc", aesthetic: "Ice-cold blues — crisp and clean",
+    families: ["synabrain-glass", "midnight-chrome"]
+  },
+  {
+    name: "Velvet Noir", id: "velvet-noir",
+    colors: { cyan: "#c084fc", purple: "#7c2d8e", pink: "#e879a0", indigo: "#581c87", blue: "#a855f7", teal: "#9333ea" },
+    glow: "#c084fc", aesthetic: "Deep plum velvet — dark luxury, wine and amethyst",
+    families: ["tinted-glass", "holographic-glass"]
+  },
+  // --- Synagraphic (VS Code themes) ---
+  {
+    name: "Void Circuit", id: "void-circuit", vscode: true,
+    colors: { cyan: "#3dd8d8", purple: "#8b6aff", pink: "#f06080", indigo: "#5a8af0", blue: "#5a8af0", teal: "#3dd8a8" },
+    glow: "#8b6aff", aesthetic: "Muted hacker void — violet circuits on black",
+    families: ["synabrain-glass", "midnight-chrome"]
+  },
+  {
+    name: "Neon Decay", id: "neon-decay", vscode: true,
+    colors: { cyan: "#42f4c8", purple: "#b48eff", pink: "#ff2d6f", indigo: "#5c8aff", blue: "#5c8aff", teal: "#42f4c8" },
+    glow: "#42f4c8", aesthetic: "Industrial cyberpunk — rust and neon",
     families: ["synabrain-glass", "tinted-glass"]
   },
   {
-    name: "Arctic Frost",
-    id: "arctic-frost",
-    colors: { cyan: "#67e8f9", purple: "#0ea5e9", pink: "#a5f3fc", indigo: "#0284c7", blue: "#7dd3fc", teal: "#67e8f9" },
-    glow: "#a5f3fc",
-    aesthetic: "Ice-cold blues — crisp and clean",
-    families: ["synabrain-glass"]
+    name: "Ghost Protocol", id: "ghost-protocol", vscode: true,
+    colors: { cyan: "#5a9ce8", purple: "#8878b8", pink: "#d85858", indigo: "#5a9ce8", blue: "#88c8ff", teal: "#50a8b8" },
+    glow: "#88c8ff", aesthetic: "Operative stealth — cold blue surveillance",
+    families: ["synagen-dark", "midnight-chrome"]
   },
   {
-    name: "Amber Forge",
-    id: "amber-forge",
-    colors: { cyan: "#f59e0b", purple: "#b45309", pink: "#fbbf24", indigo: "#92400e", blue: "#fcd34d", teal: "#f59e0b" },
-    glow: "#fbbf24",
-    aesthetic: "Molten amber — forge heat and warm metals",
-    families: ["martian-games", "tinted-glass"]
+    name: "Plasma Drift", id: "plasma-drift", vscode: true,
+    colors: { cyan: "#68b8d8", purple: "#e050a0", pink: "#f070a8", indigo: "#7088d0", blue: "#7088d0", teal: "#60b890" },
+    glow: "#e050a0", aesthetic: "Synthwave heat — hot pink plasma trails",
+    families: ["synabrain-glass", "tinted-glass"]
+  },
+  {
+    name: "Acid Rain", id: "acid-rain", vscode: true,
+    colors: { cyan: "#68c030", purple: "#c0c0c0", pink: "#1a1a1a", indigo: "#e0e0e0", blue: "#90e848", teal: "#48a8a0" },
+    glow: "#90e848", aesthetic: "Matrix terminal — toxic green on monochrome void",
+    families: ["synabrain-glass", "tinted-glass"]
+  },
+  {
+    name: "SG Martian", id: "sg-martian", vscode: true,
+    colors: { cyan: "#50ffdb", purple: "#9b6dff", pink: "#FF6B00", indigo: "#70c4f0", blue: "#FF8533", teal: "#42e09a" },
+    glow: "#FF6B00", aesthetic: "MartianGames cyberpunk — neon teal circuits, purple energy, molten orange glow",
+    families: ["martian-games"]
   }
 ];
 
-/* ═══════════════════════════════════════════════════
+/* ===============================================
    RENDER: Skin Families
-   ═══════════════════════════════════════════════════ */
+   =============================================== */
 const skinGrid = document.getElementById('skin-grid');
 
 skinFamilies.forEach((skin, i) => {
   const card = document.createElement('div');
-  card.className = 'skin-card';
+  card.className = 'skin-card' + (skin.holographic ? ' holographic' : '');
   card.style.animationDelay = `${i * 0.1}s`;
   const d = skin.dark;
-  card.style.borderColor = d.border;
-  card.style.boxShadow = `0 0 30px ${d.bg}40`;
 
-  card.addEventListener('mouseenter', () => {
-    card.style.borderColor = d.border.replace(/[\d.]+\)$/, '0.4)');
-    card.style.boxShadow = `0 8px 40px ${d.bg}60`;
-  });
-  card.addEventListener('mouseleave', () => {
+  if (!skin.holographic) {
     card.style.borderColor = d.border;
     card.style.boxShadow = `0 0 30px ${d.bg}40`;
-  });
+    card.addEventListener('mouseenter', () => {
+      card.style.borderColor = d.border.replace(/[\d.]+\)$/, '0.35)');
+      card.style.boxShadow = `0 8px 40px ${d.bg}60`;
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.borderColor = d.border;
+      card.style.boxShadow = `0 0 30px ${d.bg}40`;
+    });
+  }
 
   const modeHTML = skin.modes.map(m =>
     `<span class="mode-badge ${m}">${m}</span>`
@@ -698,23 +628,27 @@ skinFamilies.forEach((skin, i) => {
     </div>
     <div class="skin-card-desc">${skin.desc}</div>
     <div class="skin-layers">${layersHTML}</div>
-    <div style="display:flex;align-items:center;gap:8px;font-size:0.6rem;color:#5a5a7e">
+    <div class="glass-info">
       <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${d.text}"></span>
       text: ${d.text}
-      <span style="margin-left:8px;display:inline-block;width:10px;height:10px;border-radius:50%;border:1px solid ${d.border};background:transparent"></span>
-      border: ${d.border.slice(0, 20)}...
+      <span class="glass-chip">blur: ${d.blur || '16px'}</span>
+      <span style="display:inline-block;width:10px;height:10px;border-radius:50%;border:1px solid ${d.border};background:transparent"></span>
+      border
     </div>
   `;
 
   skinGrid.appendChild(card);
 });
 
-/* ═══════════════════════════════════════════════════
-   RENDER: Palette Card (shared for SG + Core)
-   ═══════════════════════════════════════════════════ */
-function renderPaletteCard(p, container) {
+/* ===============================================
+   RENDER: All Palettes (unified)
+   =============================================== */
+const paletteGrid = document.getElementById('palette-grid');
+
+allPalettes.forEach((p, i) => {
   const card = document.createElement('div');
   card.className = 'card';
+  card.style.animationDelay = `${(i % 9) * 0.08}s`;
 
   const primary = p.colors.cyan;
   const secondary = p.colors.purple;
@@ -736,16 +670,11 @@ function renderPaletteCard(p, container) {
   const swatchesHTML = colorKeys.map(k =>
     `<div class="swatch" style="background:${p.colors[k]}"><span class="tip">${k} ${p.colors[k]}</span></div>`
   ).join('');
-
   const gradientColors = colorKeys.map(k => p.colors[k]).join(', ');
-
   const tagsHTML = (p.families || []).map(f =>
     `<span class="family-tag">${f}</span>`
   ).join('');
-
-  const vscodeBadge = p.vscode
-    ? `<span class="vscode-badge">VS Code</span>`
-    : '';
+  const vscodeBadge = p.vscode ? `<span class="vscode-badge">VS Code</span>` : '';
 
   card.innerHTML = `
     <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
@@ -761,21 +690,8 @@ function renderPaletteCard(p, container) {
     </div>
     <div class="family-tags">${tagsHTML}</div>
   `;
-
-  container.appendChild(card);
-}
-
-/* ═══════════════════════════════════════════════════
-   RENDER: Synagraphic Palettes
-   ═══════════════════════════════════════════════════ */
-const sgGrid = document.getElementById('sg-grid');
-synagraphicPalettes.forEach(p => renderPaletteCard(p, sgGrid));
-
-/* ═══════════════════════════════════════════════════
-   RENDER: Core Palettes
-   ═══════════════════════════════════════════════════ */
-const coreGrid = document.getElementById('core-grid');
-corePalettes.forEach(p => renderPaletteCard(p, coreGrid));
+  paletteGrid.appendChild(card);
+});
 </script>
 
 </body>

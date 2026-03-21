@@ -101,7 +101,7 @@
     },
     "acid-rain": {
       "label": "Acid Rain",
-      "aesthetic": "Matrix terminal",
+      "aesthetic": "Matrix terminal — toxic green on monochrome void",
       "vscode": {
         "primary": "#68c030",
         "secondary": "#90e848",
@@ -124,7 +124,7 @@
     },
     "martian": {
       "label": "Martian",
-      "aesthetic": "MartianGames palette",
+      "aesthetic": "SG Martian — orange fire, purple energy, bright teal circuits",
       "vscode": {
         "primary": "#FF6B00",
         "secondary": "#8B5CF6",
@@ -132,12 +132,12 @@
         "foreground": "#d0e0d8"
       },
       "web": {
-        "cyan": "#42f4c8",
-        "purple": "#8B5CF6",
-        "pink": "#E53E3E",
-        "indigo": "#63B3ED",
-        "blue": "#63B3ED",
-        "teal": "#42f4c8",
+        "cyan": "#50ffdb",
+        "purple": "#9b6dff",
+        "pink": "#FF6B00",
+        "indigo": "#70c4f0",
+        "blue": "#FF8533",
+        "teal": "#42e09a",
         "glow": "#FF6B00"
       },
       "terminal": {
@@ -150,9 +150,9 @@
     "reference": "https://github.com/jenninexus/optional-features/blob/main/docs/SKIN-CONTRACT.md",
     "requiredAttributes": ["data-theme", "data-bs-theme", "data-skin-family", "data-accent-palette"],
     "recommendedFamilies": {
-      "void-circuit": ["synabrain-glass", "studio-pro"],
+      "void-circuit": ["synabrain-glass", "midnight-chrome"],
       "neon-decay": ["synabrain-glass", "tinted-glass"],
-      "ghost-protocol": ["synagen-dark", "studio-pro"],
+      "ghost-protocol": ["synagen-dark", "midnight-chrome"],
       "plasma-drift": ["synabrain-glass", "tinted-glass"],
       "acid-rain": ["synabrain-glass", "tinted-glass"],
       "martian": ["martian-games"]

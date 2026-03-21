@@ -3,7 +3,7 @@
     "description": "15 core accent palettes — web app 6-color sets from accentPalettes.ts",
     "source": "Synabrain/clients/react/src/stores/accentPalettes.ts",
     "format": "6-color accent set (cyan, purple, pink, indigo, blue, teal) + glow + recommended skin families",
-    "version": "1.0.0"
+    "version": "2.1.0"
   },
   "synabrain": {
     "name": "Synabrain Default",
@@ -14,10 +14,10 @@
   },
   "martian": {
     "name": "Martian Games",
-    "colors": { "cyan": "#ff6b4a", "purple": "#d4442c", "pink": "#ff8c69", "indigo": "#c73e2c", "blue": "#e85d3d", "teal": "#ffa07a" },
-    "glow": "#ff6b4a",
+    "colors": { "cyan": "#42f4c8", "purple": "#8B5CF6", "pink": "#FF6B00", "indigo": "#63B3ED", "blue": "#FF7F32", "teal": "#38C172" },
+    "glow": "#FF6B00",
     "recommendedFamilies": ["martian-games"],
-    "aesthetic": "Volcanic orange-red heat — MartianGames brand"
+    "aesthetic": "MartianGames brand — orange fire, purple energy, teal circuits"
   },
   "ocean": {
     "name": "Ocean Breeze",
@@ -44,21 +44,21 @@
     "name": "Neon Nights",
     "colors": { "cyan": "#00ffff", "purple": "#ff00ff", "pink": "#ff1493", "indigo": "#9400d3", "blue": "#00bfff", "teal": "#00fa9a" },
     "glow": "#00ffff",
-    "recommendedFamilies": ["tinted-glass"],
+    "recommendedFamilies": ["tinted-glass", "holographic-glass"],
     "aesthetic": "Pure neon — maximum saturation, electric glow"
   },
   "minimal": {
     "name": "Minimal Mono",
     "colors": { "cyan": "#64748b", "purple": "#475569", "pink": "#94a3b8", "indigo": "#334155", "blue": "#cbd5e1", "teal": "#1e293b" },
     "glow": "#64748b",
-    "recommendedFamilies": ["studio-pro"],
+    "recommendedFamilies": ["midnight-chrome"],
     "aesthetic": "Slate grays — distraction-free, IDE-like"
   },
   "studio-pro-light": {
     "name": "Studio Pro Light",
     "colors": { "cyan": "#3b82f6", "purple": "#6b7280", "pink": "#93c5fd", "indigo": "#4b5563", "blue": "#60a5fa", "teal": "#3b82f6" },
     "glow": "#60a5fa",
-    "recommendedFamilies": ["studio-pro"],
+    "recommendedFamilies": ["midnight-chrome"],
     "aesthetic": "Professional blue — clean, corporate-friendly"
   },
   "cyberpunk": {
@@ -70,44 +70,44 @@
   },
   "aurora-borealis": {
     "name": "Aurora Borealis",
-    "colors": { "cyan": "#00e5a0", "purple": "#7c3aed", "pink": "#00ffd5", "indigo": "#6d28d9", "blue": "#34d399", "teal": "#00e5a0" },
-    "glow": "#00ffd5",
+    "colors": { "cyan": "#00d4aa", "purple": "#a855f7", "pink": "#f472b6", "indigo": "#7c3aed", "blue": "#38bdf8", "teal": "#2dd4bf" },
+    "glow": "#a855f7",
     "recommendedFamilies": ["synabrain-glass", "tinted-glass"],
-    "aesthetic": "Northern lights — green-to-purple shimmer"
+    "aesthetic": "Iridescent aurora — turquoise, purple, pink shimmer"
   },
   "synthwave": {
     "name": "Synthwave",
-    "colors": { "cyan": "#ff2d95", "purple": "#00b4d8", "pink": "#ff6ec7", "indigo": "#0077b6", "blue": "#ff2d95", "teal": "#00b4d8" },
-    "glow": "#ff6ec7",
+    "colors": { "cyan": "#00e5ff", "purple": "#b24bf3", "pink": "#ff2d95", "indigo": "#7b2ff7", "blue": "#00b4d8", "teal": "#01cdfe" },
+    "glow": "#ff2d95",
     "recommendedFamilies": ["tinted-glass"],
-    "aesthetic": "Retro-futurism — hot pink meets cool cyan"
+    "aesthetic": "Retro-futurism — hot pink, electric cyan, deep purple"
   },
   "midnight-depths": {
     "name": "Midnight Depths",
     "colors": { "cyan": "#6366f1", "purple": "#1e40af", "pink": "#818cf8", "indigo": "#1e3a8a", "blue": "#6366f1", "teal": "#3b82f6" },
     "glow": "#818cf8",
-    "recommendedFamilies": ["synabrain-glass"],
+    "recommendedFamilies": ["synabrain-glass", "midnight-chrome"],
     "aesthetic": "Deep indigo — midnight sky, subtle and moody"
   },
   "cherry-blossom": {
     "name": "Cherry Blossom",
     "colors": { "cyan": "#f472b6", "purple": "#e11d48", "pink": "#fb7185", "indigo": "#be123c", "blue": "#fda4af", "teal": "#f472b6" },
     "glow": "#fb7185",
-    "recommendedFamilies": ["synabrain-glass", "tinted-glass"],
+    "recommendedFamilies": ["synabrain-glass", "tinted-glass", "holographic-glass"],
     "aesthetic": "Soft pink bloom — delicate and warm"
   },
   "arctic-frost": {
     "name": "Arctic Frost",
     "colors": { "cyan": "#67e8f9", "purple": "#0ea5e9", "pink": "#a5f3fc", "indigo": "#0284c7", "blue": "#7dd3fc", "teal": "#67e8f9" },
     "glow": "#a5f3fc",
-    "recommendedFamilies": ["synabrain-glass"],
+    "recommendedFamilies": ["synabrain-glass", "midnight-chrome"],
     "aesthetic": "Ice-cold blues — crisp and clean"
   },
-  "amber-forge": {
-    "name": "Amber Forge",
-    "colors": { "cyan": "#f59e0b", "purple": "#b45309", "pink": "#fbbf24", "indigo": "#92400e", "blue": "#fcd34d", "teal": "#f59e0b" },
-    "glow": "#fbbf24",
-    "recommendedFamilies": ["martian-games", "tinted-glass"],
-    "aesthetic": "Molten amber — forge heat and warm metals"
+  "velvet-noir": {
+    "name": "Velvet Noir",
+    "colors": { "cyan": "#c084fc", "purple": "#7c2d8e", "pink": "#e879a0", "indigo": "#581c87", "blue": "#a855f7", "teal": "#9333ea" },
+    "glow": "#c084fc",
+    "recommendedFamilies": ["tinted-glass", "holographic-glass"],
+    "aesthetic": "Deep plum velvet — dark luxury, wine and amethyst"
   }
 }
