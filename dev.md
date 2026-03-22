@@ -2,6 +2,53 @@
 
 > Private dev reminders. Not shipped in the .vsix package.
 
+## Two Products, One Source
+
+This repo produces **two distinct deliverables** from the same palette source:
+
+### 1. VS Code Extension (`syn-themes`)
+- **Ships:** `.vsix` with 6 theme JSONs (100+ tokens each) + glow.css
+- **Consumers:** VS Code users via marketplace
+- **Palette scope:** 6 Synagraphic themes only (the ones with `"synagraphic": true`)
+- **Publishes to:** VS Code Marketplace as `monofinitystudio.syn-themes`
+
+### 2. Web App Theme Pack (via optional-features submodule)
+- **Ships:** `registry/palettes.json` (21 palettes + 6 skin families)
+- **Consumers:** Synabrain, Synagen, Syqo ThemeCustomizer panels
+- **Palette scope:** All 21 palettes (15 core + 6 Synagraphic)
+- **Delivered via:** `optional-features` git submodule in each host app
+- **Import path:** `accentPalettes.ts` → `import.meta.glob('**/palettes.json')` with inline fallback
+
+### Data Flow
+
+```
+syn-themes repo (this repo — AUTHORING SSOT)
+  palettes/all-palettes.json          ← Edit here (21 palettes + 6 skin families)
+  themes/*.json                       ← VS Code theme definitions (6 themes)
+       |                                    |
+       |  (copy + normalize families)       |  (vsce package)
+       v                                    v
+optional-features/registry/           VS Code Marketplace
+  palettes.json (DISTRIBUTION SSOT)   monofinitystudio.syn-themes
+       |
+       v  (git submodule in each host)
+  Synabrain: accentPalettes.ts (import.meta.glob + inline fallback)
+  Synagen:   themeCustomizerStore.ts (import.meta.glob + inline fallback)
+  Syqo:      hardcoded inline (TODO: wire up palettes.json)
+```
+
+### CSS Variable Mapping (per host)
+
+Each host maps palette colors to its own CSS vars. **Decision: Option A — keep the alias bridge.**
+
+| CSS Var Style | Used By | Example |
+|--------------|---------|---------|
+| `--bg-primary`, `--accent-cyan` | Synabrain (native) | Skin Contract canonical names |
+| `--editor-bg`, `--accent-color` | Synagen (native) | Game engine editor domain |
+| Compatibility aliases | Synagen themeProvider | Maps Synagen vars → Synabrain names for shared CSS |
+
+Both apps keep their native naming. The alias block in Synagen's `themeProvider.ts` makes shared CSS work. This is intentional — game engine editor and dashboard are legitimately different UI domains.
+
 ## Naming
 
 - **Extension ID:** `syn-themes` (available on marketplace as of 2026-03-22)
@@ -16,16 +63,24 @@
 - [ ] Azure DevOps PAT for `monofinitystudio` publisher (one-time setup)
 - [ ] Install `vsce`: `npm install -g @vscode/vsce`
 - [ ] README rewrite with marketplace images (hero, swatches, theme previews)
-- [ ] `.vscodeignore` to keep package small
+- [x] `.vscodeignore` to keep package small
 - [ ] CHANGELOG.md is up to date (already exists)
 - [ ] Verify `package.json` has correct `repository.url` after rename
 
 ## Nice-to-Have (Makes It Stand Out)
 
 - [ ] Hero screenshot/video via vid-scroll (`synagrapic-themes.html` desktop capture)
-- [ ] SVG palette swatch strips (auto-generated from `all-palettes.json`)
+- [x] SVG palette swatch strips (auto-generated from `all-palettes.json`) — 21 + overview
 - [ ] 6 VS Code screenshots showing real TypeScript code per theme
 - [ ] Short `.webm` or `.gif` showing theme switching
+
+## Done
+
+- [x] Palette refinement v2.2 — WCAG contrast (0 FAILs), dedup (0 duplicates)
+- [x] Swatch generator tool (`tools/generate-swatches.mjs`)
+- [x] Workspace file with tasks + launch config
+- [x] `/syn-themes` Claude skill
+- [x] Propagated v2.2 palettes to op-ft + Synabrain + Synagen submodules
 
 ## Publishing Commands
 

@@ -1,8 +1,10 @@
-# Synagraphic Themes
+# Syn Themes — Cyberpunk Glass Theme Pack
 
 Cyberpunk dark theme pack for VS Code with 6 named themes. Near-black voids with neon accents, semantic highlighting, and optional glow effects.
 
-Part of the Syna design system — 6 glass skin families, 21 unified accent palettes, 31 total presets.
+Part of the Syna design system — 6 glass skin families, 21 unified accent palettes (v2.2), 31 total presets.
+
+> **Two products, one source:** This repo produces (1) a **VS Code extension** (`monofinitystudio.syn-themes`) shipping 6 Synagraphic themes, and (2) a **web app theme pack** (21 palettes + 6 skin families) distributed via the `optional-features` submodule to Synabrain, Synagen, and Syqo.
 
 ## Themes
 
@@ -37,7 +39,7 @@ All palettes are unified in one collection. The 6 VS Code themes have full edito
 ## Install
 
 ### VS Code
-Search "Synagraphic" in the Extensions marketplace, or install from VSIX.
+Search "Syn Themes" in the Extensions marketplace (`monofinitystudio.syn-themes`), or install from VSIX.
 
 ### Web Apps (Syna Ecosystem)
 These themes are available as accent palettes in Synabrain, Synagen, and Syqo via the Theme Customizer panel. Web palette colors map to the 6-color accent system (`cyan`, `purple`, `pink`, `indigo`, `blue`, `teal`).
