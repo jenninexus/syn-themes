@@ -38,30 +38,30 @@
   <rect x="160" y="184" width="40" height="28" rx="6" fill="#00ffff" />
   <rect x="204" y="184" width="40" height="28" rx="6" fill="#ff00ff" />
   <rect x="248" y="184" width="40" height="28" rx="6" fill="#ff1493" />
-  <rect x="292" y="184" width="40" height="28" rx="6" fill="#9400d3" />
+  <rect x="292" y="184" width="40" height="28" rx="6" fill="#b44dff" />
   <rect x="336" y="184" width="40" height="28" rx="6" fill="#00bfff" />
   <rect x="380" y="184" width="40" height="28" rx="6" fill="#00fa9a" />
   <text x="0" y="239" font-family="system-ui, sans-serif" font-size="12" fill="#c8ccd4">Minimal Mono</text>
   <rect x="160" y="220" width="40" height="28" rx="6" fill="#64748b" />
-  <rect x="204" y="220" width="40" height="28" rx="6" fill="#475569" />
+  <rect x="204" y="220" width="40" height="28" rx="6" fill="#78849a" />
   <rect x="248" y="220" width="40" height="28" rx="6" fill="#94a3b8" />
-  <rect x="292" y="220" width="40" height="28" rx="6" fill="#334155" />
+  <rect x="292" y="220" width="40" height="28" rx="6" fill="#6b7a8e" />
   <rect x="336" y="220" width="40" height="28" rx="6" fill="#cbd5e1" />
-  <rect x="380" y="220" width="40" height="28" rx="6" fill="#1e293b" />
+  <rect x="380" y="220" width="40" height="28" rx="6" fill="#5a6b80" />
   <text x="0" y="275" font-family="system-ui, sans-serif" font-size="12" fill="#c8ccd4">Studio Pro Light</text>
   <rect x="160" y="256" width="40" height="28" rx="6" fill="#3b82f6" />
   <rect x="204" y="256" width="40" height="28" rx="6" fill="#6b7280" />
   <rect x="248" y="256" width="40" height="28" rx="6" fill="#93c5fd" />
-  <rect x="292" y="256" width="40" height="28" rx="6" fill="#4b5563" />
+  <rect x="292" y="256" width="40" height="28" rx="6" fill="#7088a0" />
   <rect x="336" y="256" width="40" height="28" rx="6" fill="#60a5fa" />
-  <rect x="380" y="256" width="40" height="28" rx="6" fill="#3b82f6" />
+  <rect x="380" y="256" width="40" height="28" rx="6" fill="#2596be" />
   <text x="0" y="311" font-family="system-ui, sans-serif" font-size="12" fill="#c8ccd4">Cyberpunk</text>
   <rect x="160" y="292" width="40" height="28" rx="6" fill="#f0abfc" />
   <rect x="204" y="292" width="40" height="28" rx="6" fill="#06b6d4" />
   <rect x="248" y="292" width="40" height="28" rx="6" fill="#e879f9" />
   <rect x="292" y="292" width="40" height="28" rx="6" fill="#0891b2" />
   <rect x="336" y="292" width="40" height="28" rx="6" fill="#67e8f9" />
-  <rect x="380" y="292" width="40" height="28" rx="6" fill="#f0abfc" />
+  <rect x="380" y="292" width="40" height="28" rx="6" fill="#80ffd4" />
   <text x="0" y="347" font-family="system-ui, sans-serif" font-size="12" fill="#c8ccd4">Aurora Borealis</text>
   <rect x="160" y="328" width="40" height="28" rx="6" fill="#00d4aa" />
   <rect x="204" y="328" width="40" height="28" rx="6" fill="#a855f7" />
@@ -78,10 +78,10 @@
   <rect x="380" y="364" width="40" height="28" rx="6" fill="#01cdfe" />
   <text x="0" y="419" font-family="system-ui, sans-serif" font-size="12" fill="#c8ccd4">Midnight Depths</text>
   <rect x="160" y="400" width="40" height="28" rx="6" fill="#6366f1" />
-  <rect x="204" y="400" width="40" height="28" rx="6" fill="#1e40af" />
+  <rect x="204" y="400" width="40" height="28" rx="6" fill="#4466cc" />
   <rect x="248" y="400" width="40" height="28" rx="6" fill="#818cf8" />
-  <rect x="292" y="400" width="40" height="28" rx="6" fill="#1e3a8a" />
-  <rect x="336" y="400" width="40" height="28" rx="6" fill="#6366f1" />
+  <rect x="292" y="400" width="40" height="28" rx="6" fill="#3d5cb8" />
+  <rect x="336" y="400" width="40" height="28" rx="6" fill="#5b8def" />
   <rect x="380" y="400" width="40" height="28" rx="6" fill="#3b82f6" />
   <text x="0" y="455" font-family="system-ui, sans-serif" font-size="12" fill="#c8ccd4">Cherry Blossom</text>
   <rect x="160" y="436" width="40" height="28" rx="6" fill="#f472b6" />
@@ -89,19 +89,19 @@
   <rect x="248" y="436" width="40" height="28" rx="6" fill="#fb7185" />
   <rect x="292" y="436" width="40" height="28" rx="6" fill="#be123c" />
   <rect x="336" y="436" width="40" height="28" rx="6" fill="#fda4af" />
-  <rect x="380" y="436" width="40" height="28" rx="6" fill="#f472b6" />
+  <rect x="380" y="436" width="40" height="28" rx="6" fill="#e08090" />
   <text x="0" y="491" font-family="system-ui, sans-serif" font-size="12" fill="#c8ccd4">Arctic Frost</text>
   <rect x="160" y="472" width="40" height="28" rx="6" fill="#67e8f9" />
   <rect x="204" y="472" width="40" height="28" rx="6" fill="#0ea5e9" />
   <rect x="248" y="472" width="40" height="28" rx="6" fill="#a5f3fc" />
   <rect x="292" y="472" width="40" height="28" rx="6" fill="#0284c7" />
   <rect x="336" y="472" width="40" height="28" rx="6" fill="#7dd3fc" />
-  <rect x="380" y="472" width="40" height="28" rx="6" fill="#67e8f9" />
+  <rect x="380" y="472" width="40" height="28" rx="6" fill="#48c4b0" />
   <text x="0" y="527" font-family="system-ui, sans-serif" font-size="12" fill="#c8ccd4">Velvet Noir</text>
   <rect x="160" y="508" width="40" height="28" rx="6" fill="#c084fc" />
-  <rect x="204" y="508" width="40" height="28" rx="6" fill="#7c2d8e" />
+  <rect x="204" y="508" width="40" height="28" rx="6" fill="#a24cb8" />
   <rect x="248" y="508" width="40" height="28" rx="6" fill="#e879a0" />
-  <rect x="292" y="508" width="40" height="28" rx="6" fill="#581c87" />
+  <rect x="292" y="508" width="40" height="28" rx="6" fill="#8850b8" />
   <rect x="336" y="508" width="40" height="28" rx="6" fill="#a855f7" />
   <rect x="380" y="508" width="40" height="28" rx="6" fill="#9333ea" />
   <text x="0" y="563" font-family="system-ui, sans-serif" font-size="12" fill="#c8ccd4">Void Circuit</text>
@@ -109,20 +109,20 @@
   <rect x="204" y="544" width="40" height="28" rx="6" fill="#8b6aff" />
   <rect x="248" y="544" width="40" height="28" rx="6" fill="#f06080" />
   <rect x="292" y="544" width="40" height="28" rx="6" fill="#5a8af0" />
-  <rect x="336" y="544" width="40" height="28" rx="6" fill="#5a8af0" />
+  <rect x="336" y="544" width="40" height="28" rx="6" fill="#48b8e0" />
   <rect x="380" y="544" width="40" height="28" rx="6" fill="#3dd8a8" />
   <text x="0" y="599" font-family="system-ui, sans-serif" font-size="12" fill="#c8ccd4">Neon Decay</text>
   <rect x="160" y="580" width="40" height="28" rx="6" fill="#42f4c8" />
   <rect x="204" y="580" width="40" height="28" rx="6" fill="#b48eff" />
   <rect x="248" y="580" width="40" height="28" rx="6" fill="#ff2d6f" />
   <rect x="292" y="580" width="40" height="28" rx="6" fill="#5c8aff" />
-  <rect x="336" y="580" width="40" height="28" rx="6" fill="#5c8aff" />
-  <rect x="380" y="580" width="40" height="28" rx="6" fill="#42f4c8" />
+  <rect x="336" y="580" width="40" height="28" rx="6" fill="#40b0ff" />
+  <rect x="380" y="580" width="40" height="28" rx="6" fill="#38d8a0" />
   <text x="0" y="635" font-family="system-ui, sans-serif" font-size="12" fill="#c8ccd4">Ghost Protocol</text>
   <rect x="160" y="616" width="40" height="28" rx="6" fill="#5a9ce8" />
   <rect x="204" y="616" width="40" height="28" rx="6" fill="#8878b8" />
   <rect x="248" y="616" width="40" height="28" rx="6" fill="#d85858" />
-  <rect x="292" y="616" width="40" height="28" rx="6" fill="#5a9ce8" />
+  <rect x="292" y="616" width="40" height="28" rx="6" fill="#6878c0" />
   <rect x="336" y="616" width="40" height="28" rx="6" fill="#88c8ff" />
   <rect x="380" y="616" width="40" height="28" rx="6" fill="#50a8b8" />
   <text x="0" y="671" font-family="system-ui, sans-serif" font-size="12" fill="#c8ccd4">Plasma Drift</text>
@@ -130,12 +130,12 @@
   <rect x="204" y="652" width="40" height="28" rx="6" fill="#e050a0" />
   <rect x="248" y="652" width="40" height="28" rx="6" fill="#f070a8" />
   <rect x="292" y="652" width="40" height="28" rx="6" fill="#7088d0" />
-  <rect x="336" y="652" width="40" height="28" rx="6" fill="#7088d0" />
+  <rect x="336" y="652" width="40" height="28" rx="6" fill="#58c8f0" />
   <rect x="380" y="652" width="40" height="28" rx="6" fill="#60b890" />
   <text x="0" y="707" font-family="system-ui, sans-serif" font-size="12" fill="#c8ccd4">Acid Rain</text>
   <rect x="160" y="688" width="40" height="28" rx="6" fill="#68c030" />
   <rect x="204" y="688" width="40" height="28" rx="6" fill="#c0c0c0" />
-  <rect x="248" y="688" width="40" height="28" rx="6" fill="#1a1a1a" />
+  <rect x="248" y="688" width="40" height="28" rx="6" fill="#a8b820" />
   <rect x="292" y="688" width="40" height="28" rx="6" fill="#e0e0e0" />
   <rect x="336" y="688" width="40" height="28" rx="6" fill="#90e848" />
   <rect x="380" y="688" width="40" height="28" rx="6" fill="#48a8a0" />

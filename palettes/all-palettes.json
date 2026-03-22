@@ -3,12 +3,12 @@
     "description": "Syna ecosystem accent palettes + skin families — unified collection",
     "source": "Synabrain accentPalettes.ts + Synagen themeCustomizerStore.ts + synagraphic-themes VS Code extension",
     "skinContract": "https://github.com/jenninexus/optional-features/blob/main/docs/SKIN-CONTRACT.md",
-    "version": "2.1.0",
-    "updated": "2026-03-20",
+    "version": "2.2.0",
+    "updated": "2026-03-22",
     "totalPalettes": 21,
     "totalSkinFamilies": 6,
     "format": "6-color accent set (cyan, purple, pink, indigo, blue, teal) + glow + recommended skin families",
-    "notes": "Palettes with 'synagraphic: true' have matching VS Code themes in themes/*.json with full token definitions. All palettes work as web accent presets regardless."
+    "notes": "Palettes with 'synagraphic: true' have matching VS Code themes in themes/*.json with full token definitions. All palettes work as web accent presets regardless. v2.2: WCAG contrast fixes, duplicate color dedup."
   },
   "palettes": {
     "synabrain": {
@@ -48,28 +48,28 @@
     },
     "neon": {
       "name": "Neon Nights",
-      "colors": { "cyan": "#00ffff", "purple": "#ff00ff", "pink": "#ff1493", "indigo": "#9400d3", "blue": "#00bfff", "teal": "#00fa9a" },
+      "colors": { "cyan": "#00ffff", "purple": "#ff00ff", "pink": "#ff1493", "indigo": "#b44dff", "blue": "#00bfff", "teal": "#00fa9a" },
       "glow": "#00ffff",
       "recommendedFamilies": ["tinted-glass", "holographic-glass"],
       "aesthetic": "Pure neon — maximum saturation, electric glow"
     },
     "minimal": {
       "name": "Minimal Mono",
-      "colors": { "cyan": "#64748b", "purple": "#475569", "pink": "#94a3b8", "indigo": "#334155", "blue": "#cbd5e1", "teal": "#1e293b" },
-      "glow": "#64748b",
+      "colors": { "cyan": "#64748b", "purple": "#78849a", "pink": "#94a3b8", "indigo": "#6b7a8e", "blue": "#cbd5e1", "teal": "#5a6b80" },
+      "glow": "#94a3b8",
       "recommendedFamilies": ["midnight-chrome"],
       "aesthetic": "Slate grays — distraction-free, IDE-like"
     },
     "studio-pro-light": {
       "name": "Studio Pro Light",
-      "colors": { "cyan": "#3b82f6", "purple": "#6b7280", "pink": "#93c5fd", "indigo": "#4b5563", "blue": "#60a5fa", "teal": "#3b82f6" },
+      "colors": { "cyan": "#3b82f6", "purple": "#6b7280", "pink": "#93c5fd", "indigo": "#7088a0", "blue": "#60a5fa", "teal": "#2596be" },
       "glow": "#60a5fa",
       "recommendedFamilies": ["midnight-chrome"],
       "aesthetic": "Professional blue — clean, corporate-friendly"
     },
     "cyberpunk": {
       "name": "Cyberpunk",
-      "colors": { "cyan": "#f0abfc", "purple": "#06b6d4", "pink": "#e879f9", "indigo": "#0891b2", "blue": "#67e8f9", "teal": "#f0abfc" },
+      "colors": { "cyan": "#f0abfc", "purple": "#06b6d4", "pink": "#e879f9", "indigo": "#0891b2", "blue": "#67e8f9", "teal": "#80ffd4" },
       "glow": "#e879f9",
       "recommendedFamilies": ["tinted-glass", "martian-games"],
       "aesthetic": "Pink-purple + cyan — neon city skyline"
@@ -90,35 +90,35 @@
     },
     "midnight-depths": {
       "name": "Midnight Depths",
-      "colors": { "cyan": "#6366f1", "purple": "#1e40af", "pink": "#818cf8", "indigo": "#1e3a8a", "blue": "#6366f1", "teal": "#3b82f6" },
+      "colors": { "cyan": "#6366f1", "purple": "#4466cc", "pink": "#818cf8", "indigo": "#3d5cb8", "blue": "#5b8def", "teal": "#3b82f6" },
       "glow": "#818cf8",
       "recommendedFamilies": ["synabrain-glass", "midnight-chrome"],
       "aesthetic": "Deep indigo — midnight sky, subtle and moody"
     },
     "cherry-blossom": {
       "name": "Cherry Blossom",
-      "colors": { "cyan": "#f472b6", "purple": "#e11d48", "pink": "#fb7185", "indigo": "#be123c", "blue": "#fda4af", "teal": "#f472b6" },
+      "colors": { "cyan": "#f472b6", "purple": "#e11d48", "pink": "#fb7185", "indigo": "#be123c", "blue": "#fda4af", "teal": "#e08090" },
       "glow": "#fb7185",
       "recommendedFamilies": ["synabrain-glass", "tinted-glass", "holographic-glass"],
       "aesthetic": "Soft pink bloom — delicate and warm"
     },
     "arctic-frost": {
       "name": "Arctic Frost",
-      "colors": { "cyan": "#67e8f9", "purple": "#0ea5e9", "pink": "#a5f3fc", "indigo": "#0284c7", "blue": "#7dd3fc", "teal": "#67e8f9" },
+      "colors": { "cyan": "#67e8f9", "purple": "#0ea5e9", "pink": "#a5f3fc", "indigo": "#0284c7", "blue": "#7dd3fc", "teal": "#48c4b0" },
       "glow": "#a5f3fc",
       "recommendedFamilies": ["synabrain-glass", "midnight-chrome"],
       "aesthetic": "Ice-cold blues — crisp and clean"
     },
     "velvet-noir": {
       "name": "Velvet Noir",
-      "colors": { "cyan": "#c084fc", "purple": "#7c2d8e", "pink": "#e879a0", "indigo": "#581c87", "blue": "#a855f7", "teal": "#9333ea" },
+      "colors": { "cyan": "#c084fc", "purple": "#a24cb8", "pink": "#e879a0", "indigo": "#8850b8", "blue": "#a855f7", "teal": "#9333ea" },
       "glow": "#c084fc",
       "recommendedFamilies": ["tinted-glass", "holographic-glass"],
       "aesthetic": "Deep plum velvet — dark luxury, wine and amethyst"
     },
     "void-circuit": {
       "name": "Void Circuit",
-      "colors": { "cyan": "#3dd8d8", "purple": "#8b6aff", "pink": "#f06080", "indigo": "#5a8af0", "blue": "#5a8af0", "teal": "#3dd8a8" },
+      "colors": { "cyan": "#3dd8d8", "purple": "#8b6aff", "pink": "#f06080", "indigo": "#5a8af0", "blue": "#48b8e0", "teal": "#3dd8a8" },
       "glow": "#8b6aff",
       "recommendedFamilies": ["synabrain-glass", "midnight-chrome"],
       "aesthetic": "Muted hacker void — violet circuits on black",
@@ -127,7 +127,7 @@
     },
     "neon-decay": {
       "name": "Neon Decay",
-      "colors": { "cyan": "#42f4c8", "purple": "#b48eff", "pink": "#ff2d6f", "indigo": "#5c8aff", "blue": "#5c8aff", "teal": "#42f4c8" },
+      "colors": { "cyan": "#42f4c8", "purple": "#b48eff", "pink": "#ff2d6f", "indigo": "#5c8aff", "blue": "#40b0ff", "teal": "#38d8a0" },
       "glow": "#42f4c8",
       "recommendedFamilies": ["synabrain-glass", "tinted-glass"],
       "aesthetic": "Industrial cyberpunk — rust and neon",
@@ -136,7 +136,7 @@
     },
     "ghost-protocol": {
       "name": "Ghost Protocol",
-      "colors": { "cyan": "#5a9ce8", "purple": "#8878b8", "pink": "#d85858", "indigo": "#5a9ce8", "blue": "#88c8ff", "teal": "#50a8b8" },
+      "colors": { "cyan": "#5a9ce8", "purple": "#8878b8", "pink": "#d85858", "indigo": "#6878c0", "blue": "#88c8ff", "teal": "#50a8b8" },
       "glow": "#88c8ff",
       "recommendedFamilies": ["synagen-dark", "midnight-chrome"],
       "aesthetic": "Operative stealth — cold blue surveillance",
@@ -145,7 +145,7 @@
     },
     "plasma-drift": {
       "name": "Plasma Drift",
-      "colors": { "cyan": "#68b8d8", "purple": "#e050a0", "pink": "#f070a8", "indigo": "#7088d0", "blue": "#7088d0", "teal": "#60b890" },
+      "colors": { "cyan": "#68b8d8", "purple": "#e050a0", "pink": "#f070a8", "indigo": "#7088d0", "blue": "#58c8f0", "teal": "#60b890" },
       "glow": "#e050a0",
       "recommendedFamilies": ["synabrain-glass", "tinted-glass"],
       "aesthetic": "Synthwave heat — hot pink plasma trails",
@@ -154,7 +154,7 @@
     },
     "acid-rain": {
       "name": "Acid Rain",
-      "colors": { "cyan": "#68c030", "purple": "#c0c0c0", "pink": "#1a1a1a", "indigo": "#e0e0e0", "blue": "#90e848", "teal": "#48a8a0" },
+      "colors": { "cyan": "#68c030", "purple": "#c0c0c0", "pink": "#a8b820", "indigo": "#e0e0e0", "blue": "#90e848", "teal": "#48a8a0" },
       "glow": "#90e848",
       "recommendedFamilies": ["synabrain-glass", "tinted-glass"],
       "aesthetic": "Matrix terminal — toxic green on monochrome void",
