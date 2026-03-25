@@ -4,7 +4,7 @@
 
 Part of the Syna design system — shared across VS Code, Synabrain, Synagen, and Syqo.
 
-![All Theme Swatches](assets/swatches/all-swatches.png)
+![All Theme Swatches](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/swatches/all-swatches.png)
 
 ## Themes
 
@@ -22,7 +22,7 @@ Part of the Syna design system — shared across VS Code, Synabrain, Synagen, an
 Search **"Syn Themes"** in the VS Code Extensions marketplace, or:
 
 ```
-ext install monofinitystudio.syn-themes
+ext install jenninexus.synagraphic-themes
 ```
 
 ## Features

@@ -4,13 +4,47 @@
   "description": "6 cyberpunk VS Code themes + 21 unified accent palettes + 6 glass skin families — 31 total presets for the Syna ecosystem.",
   "version": "2.2.0",
   "publisher": "jenninexus",
-  "author": { "name": "Monofinity Studio", "url": "https://github.com/monofinitystudio" },
+  "author": {
+    "name": "Monofinity Studio",
+    "url": "https://github.com/monofinitystudio"
+  },
   "license": "SEE LICENSE IN LICENSE",
-  "engines": { "vscode": "^1.60.0" },
-  "categories": ["Themes"],
-  "keywords": ["cyberpunk", "dark", "neon", "muted", "theme pack", "semantic highlighting", "synagraphic", "glass", "holographic"],
-  "galleryBanner": { "color": "#050508", "theme": "dark" },
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "cyberpunk",
+    "dark",
+    "neon",
+    "muted",
+    "theme pack",
+    "semantic highlighting",
+    "synagraphic",
+    "glass",
+    "holographic"
+  ],
+  "galleryBanner": {
+    "color": "#050508",
+    "theme": "dark"
+  },
   "icon": "icon.png",
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/screenshots/01-hero.png",
+      "description": "Synagraphic — 6 cyberpunk themes, 21 palettes, 6 glass skin families"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/screenshots/02-skin-families.png",
+      "description": "6 glass-morphism skin families with semi-transparent blur surfaces"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/screenshots/03-palettes-top.png",
+      "description": "21 accent palettes — cyberpunk, ocean, sunset, forest, neon, and more"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/jenninexus/syn-themes"
@@ -48,5 +82,8 @@
         "path": "./themes/martian.json"
       }
     ]
+  },
+  "devDependencies": {
+    "playwright": "^1.58.2"
   }
 }
