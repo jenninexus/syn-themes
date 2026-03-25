@@ -6,3 +6,6 @@ dev.md
 .env
 CLAUDE.md
 syn-themes.code-workspace
+tools/
+assets/screenshot-sample.tsx
+synagraphic-themes.html
