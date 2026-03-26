@@ -59,4 +59,4 @@ Published by [Jenni Nexus](https://github.com/jenninexus) at [Monofinity Studio]
 
 ---
 
-<sub>If you enjoy these themes: [Star the repo](https://github.com/jenninexus/syn-themes) · [Rate on Marketplace](https://marketplace.visualstudio.com/items?itemName=jenninexus.synagraphic-themes&ssr=false#review-details) · [Patreon](https://www.patreon.com/c/JenniNexus) · [PayPal](https://paypal.me/jenninexus) · [Follow on X](https://x.com/jenninexus) · [Product Hunt](https://www.producthunt.com/)</sub>
+<sub>If you enjoy these themes: [Star the repo](https://github.com/jenninexus/syn-themes) · [Rate on Marketplace](https://marketplace.visualstudio.com/items?itemName=jenninexus.synagraphic-themes&ssr=false#review-details) · [Share on Product Hunt](https://www.producthunt.com/) · [Follow on X](https://x.com/jenninexus) · [Patreon](https://www.patreon.com/c/JenniNexus) · [PayPal](https://paypal.me/jenninexus)</sub>
