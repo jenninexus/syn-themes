@@ -2,7 +2,7 @@
   "name": "synagraphic-themes",
   "displayName": "Syn Themes — Syn-Agentic Cyberpunk Glass Design Presets",
   "description": "6 cyberpunk dark themes with glass-morphism design, neon accents, 21 accent palettes, and full semantic highlighting. Drawn from the Syna creative ecosystem.",
-  "version": "2.2.6",
+  "version": "2.2.7",
   "publisher": "jenninexus",
   "author": {
     "name": "Jenni Nexus at Monofinity Studio",
@@ -33,16 +33,28 @@
   "icon": "icon.png",
   "screenshots": [
     {
-      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/screenshots/01-hero.png",
-      "description": "Synagraphic — 6 cyberpunk themes, 21 palettes, 6 glass skin families"
+      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/screenshots/syn_void-circuit.png",
+      "description": "Void Circuit — muted violet hacker void with cyan accents"
     },
     {
-      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/screenshots/02-skin-families.png",
-      "description": "6 glass-morphism skin families with semi-transparent blur surfaces"
+      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/screenshots/syn_neon-decay.png",
+      "description": "Neon Decay — industrial cyan and magenta cyberpunk"
     },
     {
-      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/screenshots/03-palettes-top.png",
-      "description": "21 accent palettes — cyberpunk, ocean, sunset, forest, neon, and more"
+      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/screenshots/syn_ghost-protocol.png",
+      "description": "Ghost Protocol — cold blue operative stealth"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/screenshots/syn_plasma-drift.png",
+      "description": "Plasma Drift — hot pink synthwave heat"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/screenshots/syn_acid-rain.png",
+      "description": "Acid Rain — toxic green matrix terminal"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/screenshots/syn_martian.png",
+      "description": "Martian — orange and purple MartianGames cyberpunk"
     }
   ],
   "repository": {

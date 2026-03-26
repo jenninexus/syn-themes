@@ -1,21 +1,8 @@
 # Syn Themes — Syn-Agentic Cyberpunk Glass Design Presets
 
-6 cyberpunk dark themes for VS Code — near-black voids with neon accents, glass-morphism surfaces, and full semantic highlighting. Design styles drawn from the Syna creative ecosystem and adapted for the editor.
-
-![All Theme Swatches](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/swatches/all-swatches.png)
+6 cyberpunk dark themes for VS Code — near-black voids with neon accents, glass-morphism surfaces, and full semantic highlighting.
 
 ![Showcase Scroll](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/video/showcase-scroll.gif)
-
-## Themes
-
-| Theme | Primary | Accent | Aesthetic |
-|-------|---------|--------|-----------|
-| **Void Circuit** | #8b6aff (violet) | #3dd8d8 (cyan) | Muted hacker void |
-| **Neon Decay** | #42f4c8 (cyan) | #ff2d6f (magenta) | Industrial cyberpunk |
-| **Ghost Protocol** | #5a9ce8 (cold blue) | #88c8ff (ice) | Operative stealth |
-| **Plasma Drift** | #e050a0 (hot pink) | #f070a8 (magenta) | Synthwave heat |
-| **Acid Rain** | #68c030 (toxic green) | #90e848 (lime) | Matrix terminal |
-| **Martian** | #FF6B00 (orange) | #8B5CF6 (purple) | MartianGames cyberpunk |
 
 ## Install
 
@@ -25,17 +12,35 @@ Search **"Syn Themes"** in the VS Code Extensions marketplace, or:
 ext install jenninexus.synagraphic-themes
 ```
 
+## Themes
+
+| | |
+|:---:|:---:|
+| ![Void Circuit](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/screenshots/syn_void-circuit.png) | ![Neon Decay](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/screenshots/syn_neon-decay.png) |
+| **Void Circuit** — muted violet hacker void | **Neon Decay** — industrial cyan + magenta |
+| ![Ghost Protocol](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/screenshots/syn_ghost-protocol.png) | ![Plasma Drift](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/screenshots/syn_plasma-drift.png) |
+| **Ghost Protocol** — cold blue operative stealth | **Plasma Drift** — hot pink synthwave heat |
+| ![Acid Rain](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/screenshots/syn_acid-rain.png) | ![Martian](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/screenshots/syn_martian.png) |
+| **Acid Rain** — toxic green matrix terminal | **Martian** — orange + purple cyberpunk |
+
+## 21 Accent Palettes
+
+![All Palettes](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/swatches/all-swatches.png)
+
+**15 core:** synabrain, martian, ocean, sunset, forest, neon, minimal, studio-pro-light, cyberpunk, aurora-borealis, synthwave, midnight-depths, cherry-blossom, arctic-frost, velvet-noir
+
+**6 Synagraphic:** void-circuit, neon-decay, ghost-protocol, plasma-drift, acid-rain, sg-martian
+
 ## Features
 
 - **6 cyberpunk dark themes** with 100+ color tokens each
 - **Full semantic highlighting** — TypeScript, React, Python, Go, Rust, and more
 - **Terminal ANSI colors** — themed terminal palette per theme
-- **Optional glow effects** via `glow.css` (requires [Custom CSS and JS Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css))
+- **6 glass-morphism skin families** — translucent blur surfaces, accent-tinted borders, depth stacking
 - **WCAG-refined palettes** (v2.2) — 0 contrast failures
+- **Optional glow effects** via `glow.css` (requires [Custom CSS and JS Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css))
 
-## Skin Families (6)
-
-Glass-morphism surface layers with semi-transparent blur, accent-tinted borders, and depth stacking.
+## Skin Families
 
 | Family | Modes | Character |
 |--------|-------|-----------|
@@ -46,46 +51,12 @@ Glass-morphism surface layers with semi-transparent blur, accent-tinted borders,
 | **Deep Space** | dark | Deep-space translucent panels |
 | **Midnight Chrome** | dark | Blue-charcoal glass, cool steel edges |
 
-## Accent Palettes (21)
-
-21 accent palettes in one unified collection. The 6 VS Code themes have full editor token definitions; all 21 are available as design presets.
-
-**15 core:** synabrain, martian, ocean, sunset, forest, neon, minimal, studio-pro-light, cyberpunk, aurora-borealis, synthwave, midnight-depths, cherry-blossom, arctic-frost, velvet-noir
-
-**6 Synagraphic:** void-circuit, neon-decay, ghost-protocol, plasma-drift, acid-rain, sg-martian
-
-**Machine-readable:** [`palettes/all-palettes.json`](palettes/all-palettes.json)
-
-## Glow Effects
-
-`glow.css` adds text-shadow neon glow to VS Code syntax tokens. Requires [Custom CSS and JS Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css). Respects `prefers-reduced-motion`.
-
-## Files
-
-```
-themes/          VS Code theme JSON files (100+ tokens each)
-palettes/        Machine-readable palette + skin family JSON
-icons/           Extension icon SVGs per theme
-glow.css         Optional neon glow effects
-```
-
-## Show Your Support
-
-If you enjoy the themes, here are some ways to show support:
-
-- [Star the repository](https://github.com/jenninexus/syn-themes)
-- [Rate the extension](https://marketplace.visualstudio.com/items?itemName=jenninexus.synagraphic-themes&ssr=false#review-details) on the VS Code Marketplace
-- [Follow on X](https://x.com/jenninexus)
-- [Share on Product Hunt](https://www.producthunt.com/)
-- [Donate via PayPal](https://paypal.me/jenninexus)
-
-## Links
-
-- [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=jenninexus.synagraphic-themes)
-- [GitHub Repository](https://github.com/jenninexus/syn-themes)
-
 ## License
 
 Proprietary. See [LICENSE](LICENSE).
 
 Published by [Jenni Nexus](https://github.com/jenninexus) at [Monofinity Studio](https://github.com/monofinitystudio).
+
+---
+
+<sub>If you enjoy these themes: [Star the repo](https://github.com/jenninexus/syn-themes) · [Rate on Marketplace](https://marketplace.visualstudio.com/items?itemName=jenninexus.synagraphic-themes&ssr=false#review-details) · [Patreon](https://www.patreon.com/c/JenniNexus) · [PayPal](https://paypal.me/jenninexus) · [Follow on X](https://x.com/jenninexus) · [Product Hunt](https://www.producthunt.com/)</sub>
