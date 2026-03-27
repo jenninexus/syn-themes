@@ -5,14 +5,14 @@
       <stop offset="100%" stop-color="#04060a"/>
     </radialGradient>
     <filter id="nd-glow">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
     <filter id="nd-glow-strong">
-      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -20,7 +20,7 @@
     </filter>
   </defs>
   <circle cx="64" cy="64" r="62" fill="url(#nd-bg)" stroke="#42f4c822" stroke-width="1.5"/>
-  <g stroke="#42f4c8" stroke-width="1.2" stroke-linecap="round" opacity="0.5" filter="url(#nd-glow)">
+  <g stroke="#42f4c8" stroke-width="1.8" stroke-linecap="round" opacity="0.7" filter="url(#nd-glow)">
     <line x1="32" y1="36" x2="64" y2="28"/>
     <line x1="64" y1="28" x2="96" y2="40"/>
     <line x1="32" y1="36" x2="40" y2="64"/>
@@ -40,11 +40,11 @@
     <circle cx="32" cy="36" r="4" fill="#ff2d6f"/>
     <circle cx="64" cy="28" r="5" fill="#42f4c8"/>
     <circle cx="96" cy="40" r="4" fill="#ff2d6f"/>
-    <circle cx="40" cy="64" r="3.5" fill="#b48eff"/>
+    <circle cx="40" cy="64" r="4" fill="#b48eff"/>
     <circle cx="64" cy="56" r="5.5" fill="#42f4c8"/>
-    <circle cx="88" cy="64" r="3.5" fill="#b48eff"/>
+    <circle cx="88" cy="64" r="4" fill="#b48eff"/>
     <circle cx="48" cy="88" r="4" fill="#ff2d6f"/>
-    <circle cx="64" cy="84" r="3.5" fill="#b48eff"/>
+    <circle cx="64" cy="84" r="4" fill="#b48eff"/>
     <circle cx="80" cy="88" r="4" fill="#ff2d6f"/>
     <circle cx="64" cy="100" r="4.5" fill="#42f4c8"/>
   </g>

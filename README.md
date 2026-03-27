@@ -44,12 +44,12 @@ ext install jenninexus.synagraphic-themes
 
 | Family | Modes | Character |
 |--------|-------|-----------|
-| **Cyan Glass** | dark, light | Cyan-tinted translucent glass |
+| **Synagentic Glass** | dark, light | Cyan-tinted translucent glass (default) |
+| **Synabrain Glass** | dark, light | Warm purple-pink translucent glass |
 | **Martian Games** | dark, light | Neutral darks, molten orange borders |
 | **Tinted Glass** | dark, light | Neutral glass — accent palettes dominate |
 | **Holographic Glass** | dark, light | Prismatic rainbow shimmer, animated borders |
-| **Deep Space** | dark | Deep-space translucent panels |
-| **Midnight Chrome** | dark | Blue-charcoal glass, cool steel edges |
+| **Midnight Chrome** | dark, light | Blue-charcoal glass, cool steel edges |
 
 ## License
 

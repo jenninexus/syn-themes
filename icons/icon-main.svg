@@ -5,21 +5,21 @@
       <stop offset="100%" stop-color="#050508"/>
     </radialGradient>
     <filter id="main-glow">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
     <filter id="main-glow-strong">
-      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
     <filter id="main-glow-soft">
-      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -53,7 +53,7 @@
   </g>
 
   <!-- Branch traces off the S -->
-  <g stroke="#3dd8d8" stroke-width="1.5" stroke-linecap="round" opacity="0.5" filter="url(#main-glow)">
+  <g stroke="#3dd8d8" stroke-width="1.5" stroke-linecap="round" opacity="0.7" filter="url(#main-glow)">
     <line x1="175" y1="65" x2="195" y2="58"/>
     <line x1="165" y1="94" x2="185" y2="100"/>
     <line x1="95" y1="132" x2="72" y2="126"/>
@@ -67,8 +67,8 @@
   <g filter="url(#main-glow-strong)">
     <!-- Top entry nodes -->
     <circle cx="100" cy="50" r="4" fill="#3dd8d8"/>
-    <circle cx="120" cy="54" r="3" fill="#3dd8d8"/>
-    <circle cx="140" cy="52" r="3" fill="#3dd8d8"/>
+    <circle cx="120" cy="54" r="3.5" fill="#3dd8d8"/>
+    <circle cx="140" cy="52" r="3.5" fill="#3dd8d8"/>
     <circle cx="155" cy="58" r="5" fill="#8b6aff"/>
     <!-- S curve nodes -->
     <circle cx="175" cy="65" r="4" fill="#8b6aff"/>
@@ -81,16 +81,16 @@
     <circle cx="140" cy="208" r="4" fill="#8b6aff"/>
     <circle cx="105" cy="200" r="5" fill="#8b6aff"/>
     <!-- Bottom exit nodes -->
-    <circle cx="90" cy="204" r="3" fill="#3dd8d8"/>
+    <circle cx="90" cy="204" r="3.5" fill="#3dd8d8"/>
     <circle cx="80" cy="210" r="4" fill="#3dd8d8"/>
     <!-- Branch endpoint nodes -->
-    <circle cx="195" cy="58" r="3" fill="#3dd8d8"/>
-    <circle cx="185" cy="100" r="3" fill="#3dd8d8"/>
-    <circle cx="72" cy="126" r="3" fill="#3dd8d8"/>
-    <circle cx="82" cy="170" r="3" fill="#3dd8d8"/>
-    <circle cx="185" cy="196" r="3" fill="#3dd8d8"/>
-    <circle cx="115" cy="38" r="3" fill="#3dd8d8"/>
-    <circle cx="88" cy="222" r="3" fill="#3dd8d8"/>
+    <circle cx="195" cy="58" r="3.5" fill="#3dd8d8"/>
+    <circle cx="185" cy="100" r="3.5" fill="#3dd8d8"/>
+    <circle cx="72" cy="126" r="3.5" fill="#3dd8d8"/>
+    <circle cx="82" cy="170" r="3.5" fill="#3dd8d8"/>
+    <circle cx="185" cy="196" r="3.5" fill="#3dd8d8"/>
+    <circle cx="115" cy="38" r="3.5" fill="#3dd8d8"/>
+    <circle cx="88" cy="222" r="3.5" fill="#3dd8d8"/>
   </g>
 
   <!-- Bright centers on key nodes -->
