@@ -51,6 +51,30 @@ ext install jenninexus.synagraphic-themes
 | **Holographic Glass** | dark, light | Prismatic rainbow shimmer, animated borders |
 | **Midnight Chrome** | dark, light | Blue-charcoal glass, cool steel edges |
 
+## Cross-Project Theme Protocol
+
+syn-themes is the **authoring source** for the Syna design system's accent palettes and skin families. While it ships as a VS Code extension, its palette data also drives the theme customizer in three web apps:
+
+| Layer | Repo | Role |
+|-------|------|------|
+| **Authoring** | `jenninexus/syn-themes` (this repo) | Edit palettes in `palettes/all-palettes.json`, VS Code themes in `themes/` |
+| **Distribution** | `jenninexus/optional-features` | `registry/syn-themes.json` — extracted palette data consumed by host apps |
+| **Host apps** | Synabrain, Synagen, Syqo | Git submodule at `Integrations/optional-features/` — 6 inline + 15 bonus palettes |
+
+### Update Protocol
+
+When you change a palette or add a skin family:
+
+1. **Edit** in `palettes/all-palettes.json` (this repo)
+2. **Copy** updated `all-palettes.json` to `optional-features/registry/syn-themes.json`
+3. **Push** both repos to GitHub
+4. **Update submodule** in each host app: `git submodule update --remote Integrations/optional-features && git add Integrations/optional-features && git commit -m "chore: update optional-features submodule"`
+5. **Verify** with `pnpm build` in each app — palette data loads via `import.meta.glob`
+
+### SSOT Config
+
+Full config pointers: `.config/mcp_syn-themes.yaml`
+
 ## License
 
 Proprietary. See [LICENSE](LICENSE).
