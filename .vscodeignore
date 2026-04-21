@@ -1,5 +1,8 @@
 assets/
 tools/
+syna/
+palettes/
+PALETTE-SYNC.md
 *.html
 *.code-workspace
 *.vsix
@@ -8,6 +11,8 @@ CLAUDE.md
 .vscode/
 .git/
 .gitignore
+.gitattributes
 .config/
 scroll-capture.mjs
 node_modules/
+package-lock.json

@@ -1,5 +1,16 @@
 # Changelog
 
+## 2.2.9 — 2026-04-21
+
+- **Repo cleanup** — removed superseded `palettes/synagraphic-palettes.json` and `palettes/core/` (consolidated into `palettes/all-palettes.json` since v2.0)
+- **Added `PALETTE-SYNC.md`** — documents the authoring → distribution sync workflow to `optional-features/registry/syn-themes.json`
+- **Updated `.vscodeignore`** — `palettes/`, `syna/`, `PALETTE-SYNC.md`, `package-lock.json` now excluded from packaged `.vsix`
+- No color or theme changes in this release
+
+## 2.2.8 — 2026-04-21
+
+- Martian Games skin aligned to canonical MG brand: `#FF6B00` orange, `#8B5CF6` purple, `#42f4c8` teal across all host app theme JSONs (Synabrain, Synagen, Syqo)
+
 ## 2.2.0 — 2026-03-22
 
 - **WCAG contrast refinement** — 23 color changes across 13 palettes, 0 contrast failures
