@@ -7,8 +7,7 @@ dev.md
 CLAUDE.md
 .claude/
 .mcp.json
-syn-themes.code-workspace
-tools/
+storage/
 assets/screenshot-sample.tsx
 assets/sample/
 assets/media/

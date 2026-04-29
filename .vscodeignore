@@ -1,6 +1,7 @@
 assets/
 tools/
 syna/
+storage/
 palettes/
 PALETTE-SYNC.md
 *.html
@@ -13,6 +14,8 @@ CLAUDE.md
 .gitignore
 .gitattributes
 .config/
+.claude/
+.mcp.json
 scroll-capture.mjs
 node_modules/
 package-lock.json
