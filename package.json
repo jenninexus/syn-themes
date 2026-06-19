@@ -1,7 +1,7 @@
 {
   "name": "synagraphic-themes",
   "displayName": "Syn Themes — Syn-Agentic Cyberpunk Glass Design Presets",
-  "description": "6 cyberpunk dark themes with glass-morphism design, neon accents, 21 accent palettes, and full semantic highlighting. Drawn from the Syna creative ecosystem.",
+  "description": "Cyberpunk glass VS Code themes with neon accents, semantic highlighting, terminal colors, and 21 Syna accent palettes.",
   "version": "2.2.8",
   "publisher": "jenninexus",
   "author": {
@@ -19,12 +19,19 @@
     "cyberpunk",
     "dark",
     "neon",
+    "vscode theme",
+    "visual studio code theme",
+    "theme extension",
     "muted",
     "theme pack",
     "semantic highlighting",
+    "terminal colors",
     "synagraphic",
     "glass",
-    "holographic"
+    "glassmorphism",
+    "holographic",
+    "syna",
+    "monofinity"
   ],
   "galleryBanner": {
     "color": "#050508",
