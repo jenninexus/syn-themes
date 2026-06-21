@@ -146,28 +146,28 @@
     },
     "plasma-drift": {
       "name": "Plasma Drift",
-      "colors": { "cyan": "#68b8d8", "purple": "#e050a0", "pink": "#f070a8", "indigo": "#7088d0", "blue": "#58c8f0", "teal": "#60b890" },
-      "glow": "#e050a0",
+      "colors": { "cyan": "#68b8d8", "purple": "#9b5cf6", "pink": "#c8a0f0", "indigo": "#7088d0", "blue": "#58c8f0", "teal": "#60b890" },
+      "glow": "#b060ff",
       "recommendedFamilies": ["synabrain-glass", "tinted-glass"],
-      "aesthetic": "Synthwave heat — hot pink plasma trails",
+      "aesthetic": "Cosmic drift — bright violet plasma on deep purple void",
       "synagraphic": true,
       "vscodeTheme": "themes/plasma-drift.json"
     },
     "acid-rain": {
       "name": "Acid Rain",
-      "colors": { "cyan": "#68c030", "purple": "#c0c0c0", "pink": "#a8b820", "indigo": "#e0e0e0", "blue": "#90e848", "teal": "#48a8a0" },
-      "glow": "#90e848",
+      "colors": { "cyan": "#00e8a0", "purple": "#9878d8", "pink": "#d86840", "indigo": "#5ab8d8", "blue": "#22d3a8", "teal": "#48a8a0" },
+      "glow": "#00e8a0",
       "recommendedFamilies": ["synabrain-glass", "tinted-glass"],
-      "aesthetic": "Matrix terminal — toxic green on monochrome void",
+      "aesthetic": "Neon turquoise storm — cool acid rain, blue-green blend",
       "synagraphic": true,
       "vscodeTheme": "themes/acid-rain.json"
     },
     "sg-martian": {
       "name": "SG Martian",
-      "colors": { "cyan": "#50ffdb", "purple": "#9b6dff", "pink": "#FF6B00", "indigo": "#70c4f0", "blue": "#FF8533", "teal": "#42e09a" },
+      "colors": { "cyan": "#42f4c8", "purple": "#8B5CF6", "pink": "#FF6B00", "indigo": "#63B3ED", "blue": "#FFAA00", "teal": "#FF3D00" },
       "glow": "#FF6B00",
       "recommendedFamilies": ["martian-games"],
-      "aesthetic": "MartianGames cyberpunk — neon teal circuits, purple energy, molten orange glow",
+      "aesthetic": "MartianGames portal — warm orange fire, purple energy, teal circuits, amber glow",
       "synagraphic": true,
       "vscodeTheme": "themes/martian.json"
     }

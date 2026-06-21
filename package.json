@@ -2,7 +2,7 @@
   "name": "synagraphic-themes",
   "displayName": "Syn Themes — Syn-Agentic Cyberpunk Glass Design Presets",
   "description": "Cyberpunk glass VS Code themes with neon accents, semantic highlighting, terminal colors, and 21 Syna accent palettes.",
-  "version": "2.2.8",
+  "version": "3.0.0",
   "publisher": "jenninexus",
   "author": {
     "name": "Jenni Nexus at Monofinity Studio",
@@ -53,15 +53,15 @@
     },
     {
       "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_plasma-drift.png",
-      "description": "Plasma Drift — hot pink synthwave heat"
+      "description": "Plasma Drift — bright violet cosmic plasma on deep purple void"
     },
     {
       "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_acid-rain.png",
-      "description": "Acid Rain — toxic green matrix terminal"
+      "description": "Acid Rain — neon turquoise storm, blue-green-purple blend"
     },
     {
       "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_martian.png",
-      "description": "Martian — orange and purple MartianGames cyberpunk"
+      "description": "Martian — MartianGames portal warm blacks, orange fire, teal circuits"
     }
   ],
   "repository": {
