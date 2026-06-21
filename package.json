@@ -40,28 +40,28 @@
   "icon": "icon.png",
   "screenshots": [
     {
-      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_void-circuit.png",
-      "description": "Void Circuit — muted violet hacker void with cyan accents"
+      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_theme-cards-top.png",
+      "description": "v3 — all 6 themes: Void Circuit, Ghost Protocol, Neon Decay with WCAG contrast fixes shown"
     },
     {
-      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_neon-decay.png",
-      "description": "Neon Decay — industrial cyan and magenta cyberpunk"
+      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_theme-cards-mid.png",
+      "description": "v3 redesigns — Plasma Drift (bright violet), Acid Rain (neon turquoise), Martian (MG warm black)"
     },
     {
-      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_ghost-protocol.png",
-      "description": "Ghost Protocol — cold blue operative stealth"
+      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_vscode-themes-v3.png",
+      "description": "v3 theme pitch — before/after contrast chips for all 6 themes"
     },
     {
-      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_plasma-drift.png",
-      "description": "Plasma Drift — bright violet cosmic plasma on deep purple void"
+      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_palettes.png",
+      "description": "21 accent palette presets — 6 Synagraphic + 15 core, all with swatch strips and gradient bars"
     },
     {
-      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_acid-rain.png",
-      "description": "Acid Rain — neon turquoise storm, blue-green-purple blend"
+      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_skin-families.png",
+      "description": "6 skin families × 2 modes — base glass surfaces powering Synabrain, Synagen, Syqo, Sylva"
     },
     {
-      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_martian.png",
-      "description": "Martian — MartianGames portal warm blacks, orange fire, teal circuits"
+      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_hero.png",
+      "description": "Syna Theme Kit — design system dashboard with stats and update workflow"
     }
   ],
   "repository": {
