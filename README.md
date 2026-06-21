@@ -13,7 +13,7 @@
 
 `syn-themes` is a VS Code theme extension with neon glass surfaces, full semantic highlighting, terminal colors, and palette data from the Syna creative ecosystem.
 
-<img src="https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/showcase-scroll.gif" alt="Syn Themes showcase scroll" width="100%">
+<img src="https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_hero.png" alt="Syn Themes v3 — design system dashboard" width="100%">
 
 </div>
 
@@ -45,9 +45,9 @@ Marketplace listing:
 | ![Void Circuit](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_void-circuit.png) | ![Neon Decay](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_neon-decay.png) |
 | **Void Circuit** — muted violet hacker void | **Neon Decay** — industrial cyan + magenta |
 | ![Ghost Protocol](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_ghost-protocol.png) | ![Plasma Drift](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_plasma-drift.png) |
-| **Ghost Protocol** — cold blue operative stealth | **Plasma Drift** — hot pink synthwave heat |
+| **Ghost Protocol** — cold blue operative stealth | **Plasma Drift** — bright violet plasma on deep purple void |
 | ![Acid Rain](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_acid-rain.png) | ![Martian](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_martian.png) |
-| **Acid Rain** — toxic green matrix terminal | **Martian** — orange + purple cyberpunk |
+| **Acid Rain** — neon turquoise storm, blue-green acid blend | **Martian** — warm black, orange fire, purple energy, teal circuits |
 
 ---
 
@@ -71,7 +71,7 @@ Marketplace listing:
 - **Full semantic highlighting** for modern language stacks.
 - **Terminal ANSI colors** tuned per theme.
 - **6 glass-morphism skin families** with translucent surfaces, tinted borders, and depth stacking.
-- **WCAG-refined palettes** in v2.2 with zero contrast failures.
+- **WCAG AA contrast** across all 6 themes — muted-UI tiers verified at ≥4.5:1.
 - **Optional glow effects** via `glow.css` for users of [Custom CSS and JS Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css).
 
 ---
