@@ -1,0 +1,45 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"workbench.colorTheme": "Dark 2026",
+		"workbench.colorCustomizations": {
+			"activityBar.background": "#10313C",
+			"titleBar.activeBackground": "#174555",
+			"titleBar.activeForeground": "#F6FBFD"
+		}
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "Package Extension",
+				"type": "shell",
+				"command": "vsce package",
+				"group": "build",
+				"problemMatcher": []
+			},
+			{
+				"label": "Generate Swatches",
+				"type": "shell",
+				"command": "node tools/generate-swatches.mjs",
+				"group": "build",
+				"problemMatcher": []
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Extension Development Host",
+				"type": "extensionHost",
+				"request": "launch",
+				"args": ["--extensionDevelopmentPath=${workspaceFolder}"]
+			}
+		]
+	}
+}

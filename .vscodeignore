@@ -1,6 +1,4 @@
 # Development / tooling — not needed in the extension package
-assets/media/
-assets/swatches/
 .vscode/
 .git/
 .gitignore
@@ -18,7 +16,7 @@ CLAUDE.md
 dev.md
 *.vsix
 *.code-workspace
-scroll-capture.mjs
+syn-themes.code-workspace
 
 # extras/*.example are reference docs for users — include glow.css, exclude .example files
 extras/*.example
