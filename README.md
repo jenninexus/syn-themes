@@ -2,11 +2,11 @@
 
 # Syn Themes
 
-![License](https://img.shields.io/badge/license-proprietary%20source--available-00e879?style=flat-square)
-![Marketplace](https://img.shields.io/badge/marketplace-VS%20Code%20Extension-42f4c8?style=flat-square)
-![Themes](https://img.shields.io/badge/themes-6%20cyberpunk%20dark-39ff8c?style=flat-square)
-![Palettes](https://img.shields.io/badge/palettes-21%20accent%20sets-00e5ff?style=flat-square)
-![Highlighting](https://img.shields.io/badge/highlighting-semantic-8bffcc?style=flat-square)
+![License](https://img.shields.io/badge/license-source--available-9b5cf6?style=flat-square&labelColor=1a1a2e)
+![VS Code](https://img.shields.io/badge/VS%20Code-extension-63b3ed?style=flat-square&labelColor=1a1a2e)
+![Themes](https://img.shields.io/badge/themes-6%20cyberpunk%20dark-42f4c8?style=flat-square&labelColor=0d1117)
+![Palettes](https://img.shields.io/badge/palettes-21%20accent%20sets-ff6b00?style=flat-square&labelColor=0d1117)
+![Highlighting](https://img.shields.io/badge/semantic-highlighting-ffaa00?style=flat-square&labelColor=0d1117)
 
 ## Cyberpunk glass for VS Code.
 ## Six moods. Twenty-one palettes.
@@ -20,7 +20,7 @@
 - Install six dark cyberpunk themes for VS Code.
 - Use 21 accent palettes across editor and Syna app theme systems.
 - Get semantic highlighting for TypeScript, React, Python, Go, Rust, and more.
-- Keep the visual identity source-available without allowing unapproved redistribution.
+- WCAG AA contrast verified across all 6 themes — muted-UI tiers at ≥4.5:1.
 
 ---
 
@@ -32,9 +32,7 @@ Search **Syn Themes** in the VS Code Extensions Marketplace, or run:
 ext install jenninexus.synagraphic-themes
 ```
 
-Marketplace listing:
-
-[Syn Themes — Syn-Agentic Cyberpunk Glass Design Presets](https://marketplace.visualstudio.com/items?itemName=jenninexus.synagraphic-themes)
+[View on Marketplace](https://marketplace.visualstudio.com/items?itemName=jenninexus.synagraphic-themes)
 
 ---
 
@@ -43,7 +41,7 @@ Marketplace listing:
 | | |
 |:---:|:---:|
 | ![Void Circuit](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_void-circuit.png) | ![Neon Decay](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_neon-decay.png) |
-| **Void Circuit** — muted violet hacker void | **Neon Decay** — industrial cyan + magenta |
+| **Void Circuit** — muted violet circuits on black void | **Neon Decay** — industrial cyan + magenta |
 | ![Ghost Protocol](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_ghost-protocol.png) | ![Plasma Drift](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_plasma-drift.png) |
 | **Ghost Protocol** — cold blue operative stealth | **Plasma Drift** — bright violet plasma on deep purple void |
 | ![Acid Rain](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_acid-rain.png) | ![Martian](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_martian.png) |
@@ -55,13 +53,13 @@ Marketplace listing:
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/swatches/all-swatches.png" alt="All Syn Themes accent palettes" width="100%">
+<img src="https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/swatches/all-swatches.png" alt="All 21 Syn Themes accent palettes" width="100%">
 
 </div>
 
-**15 core:** synabrain, martian, ocean, sunset, forest, neon, minimal, studio-pro-light, cyberpunk, aurora-borealis, synthwave, midnight-depths, cherry-blossom, arctic-frost, velvet-noir
+**6 Synagraphic** (full VS Code theme + palette): void-circuit, neon-decay, ghost-protocol, plasma-drift, acid-rain, sg-martian
 
-**6 Synagraphic:** void-circuit, neon-decay, ghost-protocol, plasma-drift, acid-rain, sg-martian
+**15 core** (palette presets): synabrain, martian, ocean, sunset, forest, neon, minimal, studio-pro-light, cyberpunk, aurora-borealis, synthwave, midnight-depths, cherry-blossom, arctic-frost, velvet-noir
 
 ---
 
@@ -70,9 +68,8 @@ Marketplace listing:
 - **6 cyberpunk dark themes** with 100+ color tokens each.
 - **Full semantic highlighting** for modern language stacks.
 - **Terminal ANSI colors** tuned per theme.
-- **6 glass-morphism skin families** with translucent surfaces, tinted borders, and depth stacking.
-- **WCAG AA contrast** across all 6 themes — muted-UI tiers verified at ≥4.5:1.
-- **Optional glow effects** via `glow.css` for users of [Custom CSS and JS Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css).
+- **6 glass-morphism skin families** — dark + light modes, translucent surfaces, tinted borders, depth stacking.
+- **Optional glow effects** via `glow.css` for [Custom CSS and JS Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css) users.
 
 ---
 
@@ -80,7 +77,7 @@ Marketplace listing:
 
 | Family | Modes | Character |
 |--------|-------|-----------|
-| **Synagentic Glass** | dark, light | Cyan-tinted translucent glass |
+| **Synagentic Glass** | dark, light | Cyan-tinted translucent glass — universal default |
 | **Synabrain Glass** | dark, light | Warm purple-pink translucent glass |
 | **Martian Games** | dark, light | Neutral darks, molten orange borders |
 | **Tinted Glass** | dark, light | Neutral glass where accent palettes dominate |
@@ -91,31 +88,19 @@ Marketplace listing:
 
 ## Cross-Project Theme Protocol
 
-`syn-themes` is the authoring source for the Syna design system's accent palettes and skin families. It ships as a VS Code extension, and its palette data also informs Syna app theme customizers.
+`syn-themes` is the authoring source for the Syna design system's accent palettes and skin families. Its palette data also informs Syna app theme customizers.
 
 | Layer | Repo | Role |
 |-------|------|------|
 | **Authoring** | `jenninexus/syn-themes` | Edit palettes in `palettes/all-palettes.json`, VS Code themes in `themes/` |
 | **Distribution** | `jenninexus/features` | `registry/syn-themes.json` extracted palette data for host apps |
-| **Host apps** | Synabrain, Synagen, Syqo | App-specific theme customizers consume copied or submodule palette data |
-
-### Update Protocol
-
-When changing a palette or skin family:
-
-1. Edit `palettes/all-palettes.json` in this repo.
-2. Copy updated palette data to `features/registry/syn-themes.json`.
-3. Push both repos.
-4. Update host app theme data or submodule pointers as needed.
-5. Verify the extension and host app theme customizers.
-
-Full config pointers: `.config/mcp_syn-themes.yaml`
+| **Host apps** | Synabrain, Synagen, Syqo | App-specific theme customizers consume palette data |
 
 ---
 
 ## License
 
-Proprietary source-available. You may view, fork, and use this repo for personal, non-commercial purposes. Redistribution, publishing modified extensions, or commercial use requires prior written permission.
+Proprietary source-available. View, fork, and use for personal non-commercial purposes. Redistribution, publishing modified extensions, or commercial use requires prior written permission.
 
 See [LICENSE](LICENSE).
 

@@ -2,7 +2,6 @@ node_modules/
 *.vsix
 dev.md
 .vscode/
-.config/
 .env
 CLAUDE.md
 .claude/
@@ -12,7 +11,6 @@ assets/screenshot-sample.tsx
 assets/sample/
 assets/media/
 scroll-capture.mjs
-synagraphic-themes.html
 
 # syna/ was a local-only skin snapshot — moved to syna-theme-kit/skins/ (2026-04-29)
 # Kept in gitignore in case it's regenerated locally; canonical is syna-theme-kit
