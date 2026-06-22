@@ -9,7 +9,7 @@ CLAUDE.md
 storage/
 assets/screenshot-sample.tsx
 assets/sample/
-assets/media/
+assets/media/storefront/
 scroll-capture.mjs
 
 # syna/ was a local-only skin snapshot — moved to syna-theme-kit/skins/ (2026-04-29)
