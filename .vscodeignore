@@ -1,22 +1,22 @@
-assets/
-tools/
-_archive/
-syna/
-storage/
-palettes/
-PALETTE-SYNC.md
-*.html
-*.code-workspace
-*.vsix
-dev.md
-CLAUDE.md
+# Development / tooling — not needed in the extension package
 .vscode/
 .git/
 .gitignore
 .gitattributes
-.config/
 .claude/
 .mcp.json
-scroll-capture.mjs
+.env
 node_modules/
 package-lock.json
+storage/
+assets/
+palettes/
+_archive/
+CLAUDE.md
+dev.md
+*.vsix
+*.code-workspace
+scroll-capture.mjs
+
+# extras/*.example are reference docs for users — include glow.css, exclude .example files
+extras/*.example

@@ -1,7 +1,7 @@
 node_modules/
 *.vsix
 dev.md
-.vscode/
+.vscode/*.local.*
 .env
 CLAUDE.md
 .claude/

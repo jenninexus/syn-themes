@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Package Extension",
+      "type": "shell",
+      "command": "npx @vscode/vsce package",
+      "group": "build",
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "shared" }
+    },
+    {
+      "label": "Publish Extension",
+      "type": "shell",
+      "command": "npx @vscode/vsce publish --pat $env:VSCE_PAT",
+      "group": "build",
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "dependsOn": "Package Extension"
+    },
+    {
+      "label": "Capture Screenshots",
+      "type": "shell",
+      "command": "node storage/tools/capture-v3-screenshots.mjs",
+      "group": "test",
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "shared" }
+    },
+    {
+      "label": "Generate Swatches",
+      "type": "shell",
+      "command": "node storage/tools/generate-swatches.mjs",
+      "group": "build",
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "shared" }
+    }
+  ]
+}

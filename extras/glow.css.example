@@ -1,0 +1,31 @@
+/*
+ * Synagraphic — Neon Glow Enhancement (EXAMPLE / REFERENCE)
+ *
+ * Copy `glow.css` from this folder to a location on your machine,
+ * then follow the steps below to enable it in VS Code.
+ *
+ * REQUIREMENTS:
+ *   Install "Custom CSS and JS Loader" by be5invis:
+ *   https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css
+ *
+ * SETUP:
+ *   1. Copy glow.css somewhere stable on your machine, e.g.:
+ *        C:\Users\YourName\vscode-custom\synagraphic-glow.css   (Windows)
+ *        ~/vscode-custom/synagraphic-glow.css                   (macOS/Linux)
+ *
+ *   2. Add to VS Code settings.json:
+ *        "vscode_custom_css.imports": [
+ *          "file:///C:/Users/YourName/vscode-custom/synagraphic-glow.css"
+ *        ]
+ *
+ *   3. Open Command Palette (Ctrl+Shift+P / Cmd+Shift+P):
+ *        > Enable Custom CSS and JS
+ *
+ *   4. Restart VS Code when prompted.
+ *
+ * NOTES:
+ *   - VS Code may show a "corrupted installation" warning — this is expected.
+ *     Run "Disable Custom CSS and JS" to restore a clean state at any time.
+ *   - Works with all 6 Synagraphic themes. Glow intensity adapts per theme.
+ *   - Admin/sudo may be required on some systems for the CSS loader to write files.
+ */

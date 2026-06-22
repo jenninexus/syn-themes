@@ -1,0 +1,13 @@
+{
+  "servers": {
+    "sys-admin": {
+      "command": "node",
+      "args": ["${env:MCP_ROOT}/sys-admin/index.js"],
+      "env": {
+        "NODE_ENV": "production",
+        "MCP_ROOT": "${env:MCP_ROOT}",
+        "SYSADMIN_ROOT": "${env:MCP_ROOT}/sys-admin"
+      }
+    }
+  }
+}
