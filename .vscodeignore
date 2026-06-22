@@ -1,4 +1,6 @@
 # Development / tooling — not needed in the extension package
+assets/media/
+assets/swatches/
 .vscode/
 .git/
 .gitignore

@@ -40,28 +40,20 @@
   "icon": "icon.png",
   "screenshots": [
     {
+      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_hero.png",
+      "description": "Syna Theme Kit — design system dashboard: 6 skin families, 21 palettes, 63 design tokens, 6 VS Code themes"
+    },
+    {
       "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_theme-cards-top.png",
-      "description": "v3 — all 6 themes: Void Circuit, Ghost Protocol, Neon Decay with WCAG contrast fixes shown"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_theme-cards-mid.png",
-      "description": "v3 redesigns — Plasma Drift (bright violet), Acid Rain (neon turquoise), Martian (MG warm black)"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_vscode-themes-v3.png",
-      "description": "v3 theme pitch — before/after contrast chips for all 6 themes"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_palettes.png",
-      "description": "21 accent palette presets — 6 Synagraphic + 15 core, all with swatch strips and gradient bars"
+      "description": "All 6 Synagraphic themes — v3 redesigns with WCAG AA contrast, before/after chips for each"
     },
     {
       "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_skin-families.png",
-      "description": "6 skin families × 2 modes — base glass surfaces powering Synabrain, Synagen, Syqo, Sylva"
+      "description": "6 glass skin families — Synagentic, Synabrain, Martian Games, Tinted, Holographic, Midnight Chrome"
     },
     {
-      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_hero.png",
-      "description": "Syna Theme Kit — design system dashboard with stats and update workflow"
+      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_palettes.png",
+      "description": "21 accent palette presets — 6 Synagraphic + 15 core, all with swatch strips and glow colors"
     }
   ],
   "repository": {

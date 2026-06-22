@@ -40,11 +40,11 @@ ext install jenninexus.synagraphic-themes
 
 | | |
 |:---:|:---:|
-| ![Void Circuit](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_void-circuit.png) | ![Neon Decay](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_neon-decay.png) |
+| ![Void Circuit](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/themes/syn_void-circuit.png) | ![Neon Decay](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/themes/syn_neon-decay.png) |
 | **Void Circuit** — muted violet circuits on black void | **Neon Decay** — industrial cyan + magenta |
-| ![Ghost Protocol](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_ghost-protocol.png) | ![Plasma Drift](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_plasma-drift.png) |
+| ![Ghost Protocol](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/themes/syn_ghost-protocol.png) | ![Plasma Drift](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/themes/syn_plasma-drift.png) |
 | **Ghost Protocol** — cold blue operative stealth | **Plasma Drift** — bright violet plasma on deep purple void |
-| ![Acid Rain](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_acid-rain.png) | ![Martian](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_martian.png) |
+| ![Acid Rain](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/themes/syn_acid-rain.png) | ![Martian](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/themes/syn_martian.png) |
 | **Acid Rain** — neon turquoise storm, blue-green acid blend | **Martian** — warm black, orange fire, purple energy, teal circuits |
 
 ---
@@ -53,7 +53,7 @@ ext install jenninexus.synagraphic-themes
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/swatches/all-swatches.png" alt="All 21 Syn Themes accent palettes" width="100%">
+<img src="https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_palettes.png" alt="All 21 Syn Themes accent palettes" width="100%">
 
 </div>
 
