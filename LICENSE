@@ -1,11 +1,23 @@
 Copyright (c) 2026 JenniNexus
 
-All rights reserved.
+Syn Themes (synagraphic-themes) — source-available license
 
-This software and associated files (the "Software") are the property of
-JenniNexus. You may view, fork, and use this Software for personal,
-non-commercial purposes. Redistribution, modification for redistribution,
-or commercial use requires prior written permission from the copyright holder.
+You may view, fork, use, and modify this Software for personal and commercial
+purposes, including using the themes in your own editor setup and projects.
+
+Attribution is appreciated but not required for personal use.
+
+You may NOT, without prior written permission from the copyright holder:
+
+  1. Republish this extension (or a substantially similar pack) to the
+     VS Code Marketplace or other extension stores as your own product.
+  2. Sell unmodified or lightly-modified copies of these themes as a
+     standalone commercial product.
+
+If your business makes substantial revenue from a product that redistributes
+or rebrands these themes (or a derivative theme pack derived from them),
+please contact JenniNexus for a commercial license — tip / cut-me-a-check
+territory, not a ban on everyday professional use.
 
 The theme color definitions, icon designs, and visual identity of Synagraphic
 are original creative works of JenniNexus.

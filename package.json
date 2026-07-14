@@ -1,8 +1,8 @@
 {
   "name": "synagraphic-themes",
   "displayName": "Syn Themes — Syn-Agentic Cyberpunk Glass Design Presets",
-  "description": "Cyberpunk glass VS Code themes with neon accents, semantic highlighting, terminal colors, and 21 Syna accent palettes.",
-  "version": "3.0.0",
+  "description": "Six cyberpunk glass VS Code themes with neon accents, WCAG AA contrast, semantic highlighting, and tuned terminal colors.",
+  "version": "3.1.0",
   "publisher": "jenninexus",
   "author": {
     "name": "Jenni Nexus at Monofinity Studio",
@@ -29,7 +29,6 @@
     "synagraphic",
     "glass",
     "glassmorphism",
-    "holographic",
     "syna",
     "monofinity"
   ],
@@ -40,20 +39,20 @@
   "icon": "icon.png",
   "screenshots": [
     {
-      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_hero.png",
-      "description": "Syna Theme Kit — design system dashboard: 6 skin families, 21 palettes, 63 design tokens, 6 VS Code themes"
+      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_themes-collage.png",
+      "description": "All 6 Synagraphic themes — Void Circuit, Neon Decay, Ghost Protocol, Plasma Drift, Acid Rain, Martian"
     },
     {
       "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_theme-cards-top.png",
-      "description": "All 6 Synagraphic themes — v3 redesigns with WCAG AA contrast, before/after chips for each"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_skin-families.png",
-      "description": "6 glass skin families — Synagentic, Synabrain, Martian Games, Tinted, Holographic, Midnight Chrome"
+      "description": "Theme collage — six cyberpunk dark moods with WCAG AA contrast"
     },
     {
       "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_palettes.png",
-      "description": "21 accent palette presets — 6 Synagraphic + 15 core, all with swatch strips and glow colors"
+      "description": "Compact accent palette reference aligned with the Syna design kit"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_hero.png",
+      "description": "Syn Themes — cyberpunk glass design system overview"
     }
   ],
   "repository": {

@@ -1,209 +1,552 @@
 {
   "_meta": {
-    "description": "Syna ecosystem accent palettes + skin families — unified collection",
-    "source": "Synabrain accentPalettes.ts + Synagen themeCustomizerStore.ts + syn-themes VS Code extension",
+    "description": "Marketplace palette reference — mirrored from syna-theme-kit (palette SSOT)",
+    "source": "syna-theme-kit/palettes/syna-palettes.json",
     "skinContract": "Syna Skin Contract (internal)",
-    "version": "2.3.0",
-    "updated": "2026-03-26",
-    "totalPalettes": 21,
+    "version": "2.5.0",
+    "updated": "2026-07-14",
+    "totalPalettes": 23,
     "totalSkinFamilies": 6,
     "totalSkinThemes": 12,
     "format": "6-color accent set (cyan, purple, pink, indigo, blue, teal) + glow + recommended skin families",
-    "notes": "All 6 families have dark + light modes (12 skins total). Palettes with 'synagraphic: true' have matching VS Code themes in themes/*.json with full token definitions. All palettes work as web accent presets regardless. v2.2: WCAG contrast fixes. v2.3: renamed Synagen Dark → Synagentic Glass (new default), all families now dark+light, Midnight Chrome more midnight-blue."
+    "notes": "Mirrored from syna-theme-kit. Palettes with synagraphic:true pair with themes/*.json in this repo. App skins/tokens stay in the kit.",
+    "note": "Edit palettes in syna-theme-kit. This file mirrors for README/swatches + Synagraphic↔theme pairing."
   },
   "palettes": {
     "synabrain": {
       "name": "Synabrain Default",
-      "colors": { "cyan": "#2dd4bf", "purple": "#a855f7", "pink": "#ec4899", "indigo": "#8b5cf6", "blue": "#6366f1", "teal": "#0d9488" },
+      "colors": {
+        "cyan": "#2dd4bf",
+        "purple": "#a855f7",
+        "pink": "#ec4899",
+        "indigo": "#8b5cf6",
+        "blue": "#6366f1",
+        "teal": "#0d9488"
+      },
       "glow": "#2dd4bf",
-      "recommendedFamilies": ["synabrain-glass"],
+      "recommendedFamilies": [
+        "synabrain-glass"
+      ],
       "aesthetic": "Teal + violet glass — the signature Synabrain look"
     },
     "martian": {
       "name": "Martian Games",
-      "colors": { "cyan": "#42f4c8", "purple": "#8B5CF6", "pink": "#FF6B00", "indigo": "#63B3ED", "blue": "#FF7F32", "teal": "#38C172" },
+      "colors": {
+        "cyan": "#42f4c8",
+        "purple": "#8B5CF6",
+        "pink": "#FF6B00",
+        "indigo": "#63B3ED",
+        "blue": "#FF7F32",
+        "teal": "#38C172"
+      },
       "glow": "#FF6B00",
-      "recommendedFamilies": ["martian-games"],
+      "recommendedFamilies": [
+        "martian-games",
+        "tinted-glass",
+        "holographic-glass"
+      ],
       "aesthetic": "MartianGames brand — orange fire, purple energy, teal circuits"
     },
     "ocean": {
       "name": "Ocean Breeze",
-      "colors": { "cyan": "#06b6d4", "purple": "#6366f1", "pink": "#8b5cf6", "indigo": "#4f46e5", "blue": "#0ea5e9", "teal": "#14b8a6" },
+      "colors": {
+        "cyan": "#06b6d4",
+        "purple": "#6366f1",
+        "pink": "#8b5cf6",
+        "indigo": "#4f46e5",
+        "blue": "#0ea5e9",
+        "teal": "#14b8a6"
+      },
       "glow": "#06b6d4",
-      "recommendedFamilies": ["synabrain-glass", "tinted-glass"],
+      "recommendedFamilies": [
+        "synabrain-glass",
+        "tinted-glass"
+      ],
       "aesthetic": "Deep ocean blues and teals — calm and focused"
     },
     "sunset": {
       "name": "Sunset Glow",
-      "colors": { "cyan": "#f97316", "purple": "#ec4899", "pink": "#f43f5e", "indigo": "#e11d48", "blue": "#fb7185", "teal": "#fbbf24" },
+      "colors": {
+        "cyan": "#f97316",
+        "purple": "#ec4899",
+        "pink": "#f43f5e",
+        "indigo": "#e11d48",
+        "blue": "#fb7185",
+        "teal": "#fbbf24"
+      },
       "glow": "#f97316",
-      "recommendedFamilies": ["martian-games", "tinted-glass"],
+      "recommendedFamilies": [
+        "martian-games",
+        "tinted-glass"
+      ],
       "aesthetic": "Warm orange-to-pink gradient — golden hour"
     },
     "forest": {
       "name": "Forest Depths",
-      "colors": { "cyan": "#10b981", "purple": "#059669", "pink": "#84cc16", "indigo": "#22c55e", "blue": "#14b8a6", "teal": "#047857" },
+      "colors": {
+        "cyan": "#10b981",
+        "purple": "#059669",
+        "pink": "#84cc16",
+        "indigo": "#22c55e",
+        "blue": "#14b8a6",
+        "teal": "#047857"
+      },
       "glow": "#10b981",
-      "recommendedFamilies": ["synabrain-glass"],
+      "recommendedFamilies": [
+        "synabrain-glass"
+      ],
       "aesthetic": "Deep emerald greens — natural and grounded"
     },
     "neon": {
       "name": "Neon Nights",
-      "colors": { "cyan": "#00ffff", "purple": "#ff00ff", "pink": "#ff1493", "indigo": "#b44dff", "blue": "#00bfff", "teal": "#00fa9a" },
+      "colors": {
+        "cyan": "#00ffff",
+        "purple": "#ff00ff",
+        "pink": "#ff1493",
+        "indigo": "#b44dff",
+        "blue": "#00bfff",
+        "teal": "#00fa9a"
+      },
       "glow": "#00ffff",
-      "recommendedFamilies": ["tinted-glass", "holographic-glass"],
+      "recommendedFamilies": [
+        "tinted-glass",
+        "holographic-glass"
+      ],
       "aesthetic": "Pure neon — maximum saturation, electric glow"
     },
     "minimal": {
       "name": "Minimal Mono",
-      "colors": { "cyan": "#64748b", "purple": "#78849a", "pink": "#94a3b8", "indigo": "#6b7a8e", "blue": "#cbd5e1", "teal": "#5a6b80" },
+      "colors": {
+        "cyan": "#64748b",
+        "purple": "#78849a",
+        "pink": "#94a3b8",
+        "indigo": "#6b7a8e",
+        "blue": "#cbd5e1",
+        "teal": "#5a6b80"
+      },
       "glow": "#94a3b8",
-      "recommendedFamilies": ["midnight-chrome"],
+      "recommendedFamilies": [
+        "midnight-chrome"
+      ],
       "aesthetic": "Slate grays — distraction-free, IDE-like"
     },
     "studio-pro-light": {
       "name": "Studio Pro Light",
-      "colors": { "cyan": "#3b82f6", "purple": "#6b7280", "pink": "#93c5fd", "indigo": "#7088a0", "blue": "#60a5fa", "teal": "#2596be" },
+      "colors": {
+        "cyan": "#3b82f6",
+        "purple": "#6b7280",
+        "pink": "#93c5fd",
+        "indigo": "#7088a0",
+        "blue": "#60a5fa",
+        "teal": "#2596be"
+      },
       "glow": "#60a5fa",
-      "recommendedFamilies": ["midnight-chrome"],
+      "recommendedFamilies": [
+        "midnight-chrome"
+      ],
       "aesthetic": "Professional blue — clean, corporate-friendly"
     },
     "cyberpunk": {
       "name": "Cyberpunk",
-      "colors": { "cyan": "#f0abfc", "purple": "#06b6d4", "pink": "#e879f9", "indigo": "#0891b2", "blue": "#67e8f9", "teal": "#80ffd4" },
+      "colors": {
+        "cyan": "#f0abfc",
+        "purple": "#06b6d4",
+        "pink": "#e879f9",
+        "indigo": "#0891b2",
+        "blue": "#67e8f9",
+        "teal": "#80ffd4"
+      },
       "glow": "#e879f9",
-      "recommendedFamilies": ["tinted-glass", "martian-games"],
+      "recommendedFamilies": [
+        "tinted-glass",
+        "martian-games"
+      ],
       "aesthetic": "Pink-purple + cyan — neon city skyline"
     },
     "aurora-borealis": {
       "name": "Aurora Borealis",
-      "colors": { "cyan": "#00d4aa", "purple": "#a855f7", "pink": "#f472b6", "indigo": "#7c3aed", "blue": "#38bdf8", "teal": "#2dd4bf" },
+      "colors": {
+        "cyan": "#00d4aa",
+        "purple": "#a855f7",
+        "pink": "#f472b6",
+        "indigo": "#7c3aed",
+        "blue": "#38bdf8",
+        "teal": "#2dd4bf"
+      },
       "glow": "#a855f7",
-      "recommendedFamilies": ["synabrain-glass", "tinted-glass", "holographic-glass"],
-      "aesthetic": "Iridescent aurora — turquoise, purple, pink shimmer"
+      "auroraGradient": "linear-gradient(135deg,#ff6bd6,#c46bff,#6ba5ff,#6bffd6,#fff06b,#ff6bd6)",
+      "recommendedFamilies": [
+        "synabrain-glass",
+        "tinted-glass",
+        "holographic-glass"
+      ],
+      "aesthetic": "Iridescent aurora — turquoise, purple, pink shimmer. Canonical 6-stop auroraGradient mirrors www-theme-kit dashboard-palettes.json (shared SSOT)."
     },
     "synthwave": {
       "name": "Synthwave",
-      "colors": { "cyan": "#00e5ff", "purple": "#b24bf3", "pink": "#ff2d95", "indigo": "#7b2ff7", "blue": "#00b4d8", "teal": "#01cdfe" },
+      "colors": {
+        "cyan": "#00e5ff",
+        "purple": "#b24bf3",
+        "pink": "#ff2d95",
+        "indigo": "#7b2ff7",
+        "blue": "#00b4d8",
+        "teal": "#01cdfe"
+      },
       "glow": "#ff2d95",
-      "recommendedFamilies": ["tinted-glass", "holographic-glass"],
+      "recommendedFamilies": [
+        "tinted-glass",
+        "holographic-glass"
+      ],
       "aesthetic": "Retro-futurism — hot pink, electric cyan, deep purple"
     },
     "midnight-depths": {
       "name": "Midnight Depths",
-      "colors": { "cyan": "#6366f1", "purple": "#4466cc", "pink": "#818cf8", "indigo": "#3d5cb8", "blue": "#5b8def", "teal": "#3b82f6" },
+      "colors": {
+        "cyan": "#6366f1",
+        "purple": "#4466cc",
+        "pink": "#818cf8",
+        "indigo": "#3d5cb8",
+        "blue": "#5b8def",
+        "teal": "#3b82f6"
+      },
       "glow": "#818cf8",
-      "recommendedFamilies": ["synabrain-glass", "midnight-chrome"],
+      "recommendedFamilies": [
+        "synabrain-glass",
+        "midnight-chrome"
+      ],
       "aesthetic": "Deep indigo — midnight sky, subtle and moody"
     },
     "cherry-blossom": {
       "name": "Cherry Blossom",
-      "colors": { "cyan": "#f472b6", "purple": "#e11d48", "pink": "#fb7185", "indigo": "#be123c", "blue": "#fda4af", "teal": "#e08090" },
+      "colors": {
+        "cyan": "#f472b6",
+        "purple": "#e11d48",
+        "pink": "#fb7185",
+        "indigo": "#be123c",
+        "blue": "#fda4af",
+        "teal": "#e08090"
+      },
       "glow": "#fb7185",
-      "recommendedFamilies": ["synabrain-glass", "tinted-glass", "holographic-glass"],
+      "recommendedFamilies": [
+        "synabrain-glass",
+        "tinted-glass",
+        "holographic-glass"
+      ],
       "aesthetic": "Soft pink bloom — delicate and warm"
     },
     "arctic-frost": {
       "name": "Arctic Frost",
-      "colors": { "cyan": "#67e8f9", "purple": "#0ea5e9", "pink": "#a5f3fc", "indigo": "#0284c7", "blue": "#7dd3fc", "teal": "#48c4b0" },
+      "colors": {
+        "cyan": "#67e8f9",
+        "purple": "#0ea5e9",
+        "pink": "#a5f3fc",
+        "indigo": "#0284c7",
+        "blue": "#7dd3fc",
+        "teal": "#48c4b0"
+      },
       "glow": "#a5f3fc",
-      "recommendedFamilies": ["synabrain-glass", "midnight-chrome"],
+      "recommendedFamilies": [
+        "synabrain-glass",
+        "midnight-chrome"
+      ],
       "aesthetic": "Ice-cold blues — crisp and clean"
     },
     "velvet-noir": {
       "name": "Velvet Noir",
-      "colors": { "cyan": "#c084fc", "purple": "#a24cb8", "pink": "#e879a0", "indigo": "#8850b8", "blue": "#a855f7", "teal": "#9333ea" },
+      "colors": {
+        "cyan": "#c084fc",
+        "purple": "#a24cb8",
+        "pink": "#e879a0",
+        "indigo": "#8850b8",
+        "blue": "#a855f7",
+        "teal": "#9333ea"
+      },
       "glow": "#c084fc",
-      "recommendedFamilies": ["tinted-glass", "holographic-glass"],
+      "recommendedFamilies": [
+        "tinted-glass",
+        "holographic-glass"
+      ],
       "aesthetic": "Deep plum velvet — dark luxury, wine and amethyst"
     },
     "void-circuit": {
       "name": "Void Circuit",
-      "colors": { "cyan": "#3dd8d8", "purple": "#8b6aff", "pink": "#f06080", "indigo": "#5a8af0", "blue": "#48b8e0", "teal": "#3dd8a8" },
+      "colors": {
+        "cyan": "#3dd8d8",
+        "purple": "#8b6aff",
+        "pink": "#f06080",
+        "indigo": "#5a8af0",
+        "blue": "#48b8e0",
+        "teal": "#3dd8a8"
+      },
       "glow": "#8b6aff",
-      "recommendedFamilies": ["synabrain-glass", "midnight-chrome"],
+      "recommendedFamilies": [
+        "synabrain-glass",
+        "midnight-chrome"
+      ],
       "aesthetic": "Muted hacker void — violet circuits on black",
       "synagraphic": true,
       "vscodeTheme": "themes/void-circuit.json"
     },
     "neon-decay": {
       "name": "Neon Decay",
-      "colors": { "cyan": "#42f4c8", "purple": "#b48eff", "pink": "#ff2d6f", "indigo": "#5c8aff", "blue": "#40b0ff", "teal": "#38d8a0" },
+      "colors": {
+        "cyan": "#42f4c8",
+        "purple": "#b48eff",
+        "pink": "#ff2d6f",
+        "indigo": "#5c8aff",
+        "blue": "#40b0ff",
+        "teal": "#38d8a0"
+      },
       "glow": "#42f4c8",
-      "recommendedFamilies": ["synabrain-glass", "tinted-glass"],
+      "recommendedFamilies": [
+        "synabrain-glass",
+        "tinted-glass"
+      ],
       "aesthetic": "Industrial cyberpunk — rust and neon",
       "synagraphic": true,
       "vscodeTheme": "themes/neon-decay.json"
     },
     "ghost-protocol": {
       "name": "Ghost Protocol",
-      "colors": { "cyan": "#5a9ce8", "purple": "#8878b8", "pink": "#d85858", "indigo": "#6878c0", "blue": "#88c8ff", "teal": "#50a8b8" },
+      "colors": {
+        "cyan": "#5a9ce8",
+        "purple": "#8878b8",
+        "pink": "#d85858",
+        "indigo": "#6878c0",
+        "blue": "#88c8ff",
+        "teal": "#50a8b8"
+      },
       "glow": "#88c8ff",
-      "recommendedFamilies": ["synagentic-glass", "midnight-chrome"],
+      "recommendedFamilies": [
+        "synagentic-glass",
+        "midnight-chrome"
+      ],
       "aesthetic": "Operative stealth — cold blue surveillance",
       "synagraphic": true,
       "vscodeTheme": "themes/ghost-protocol.json"
     },
     "plasma-drift": {
       "name": "Plasma Drift",
-      "colors": { "cyan": "#68b8d8", "purple": "#9b5cf6", "pink": "#c8a0f0", "indigo": "#7088d0", "blue": "#58c8f0", "teal": "#60b890" },
-      "glow": "#b060ff",
-      "recommendedFamilies": ["synabrain-glass", "tinted-glass"],
-      "aesthetic": "Cosmic drift — bright violet plasma on deep purple void",
+      "colors": {
+        "cyan": "#68b8d8",
+        "purple": "#e050a0",
+        "pink": "#f070a8",
+        "indigo": "#7088d0",
+        "blue": "#58c8f0",
+        "teal": "#60b890"
+      },
+      "glow": "#e050a0",
+      "recommendedFamilies": [
+        "synabrain-glass",
+        "tinted-glass"
+      ],
+      "aesthetic": "Synthwave heat — hot pink plasma trails",
       "synagraphic": true,
       "vscodeTheme": "themes/plasma-drift.json"
     },
     "acid-rain": {
       "name": "Acid Rain",
-      "colors": { "cyan": "#00e8a0", "purple": "#9878d8", "pink": "#d86840", "indigo": "#5ab8d8", "blue": "#22d3a8", "teal": "#48a8a0" },
-      "glow": "#00e8a0",
-      "recommendedFamilies": ["synabrain-glass", "tinted-glass"],
-      "aesthetic": "Neon turquoise storm — cool acid rain, blue-green blend",
+      "colors": {
+        "cyan": "#68c030",
+        "purple": "#c0c0c0",
+        "pink": "#a8b820",
+        "indigo": "#e0e0e0",
+        "blue": "#90e848",
+        "teal": "#48a8a0"
+      },
+      "glow": "#90e848",
+      "recommendedFamilies": [
+        "synabrain-glass",
+        "tinted-glass"
+      ],
+      "aesthetic": "Matrix terminal — toxic green on monochrome void",
       "synagraphic": true,
       "vscodeTheme": "themes/acid-rain.json"
     },
     "sg-martian": {
       "name": "SG Martian",
-      "colors": { "cyan": "#42f4c8", "purple": "#8B5CF6", "pink": "#FF6B00", "indigo": "#63B3ED", "blue": "#FFAA00", "teal": "#FF3D00" },
+      "colors": {
+        "cyan": "#50ffdb",
+        "purple": "#9b6dff",
+        "pink": "#FF6B00",
+        "indigo": "#70c4f0",
+        "blue": "#FF8533",
+        "teal": "#42e09a"
+      },
       "glow": "#FF6B00",
-      "recommendedFamilies": ["martian-games"],
-      "aesthetic": "MartianGames portal — warm orange fire, purple energy, teal circuits, amber glow",
+      "recommendedFamilies": [
+        "martian-games",
+        "tinted-glass",
+        "holographic-glass"
+      ],
+      "aesthetic": "MartianGames ember-nebula — dark grey/purple void, molten orange primary, violet secondary, teal circuits",
       "synagraphic": true,
       "vscodeTheme": "themes/martian.json"
+    },
+    "cinematic-studio": {
+      "name": "Cinematic Studio",
+      "colors": {
+        "cyan": "#0a91b4",
+        "purple": "#7c3aed",
+        "pink": "#d6156e",
+        "indigo": "#7c3aed",
+        "blue": "#0a91b4",
+        "teal": "#158a4a"
+      },
+      "glow": "#35d3f0",
+      "recommendedFamilies": [
+        "synagentic-glass",
+        "synabrain-glass"
+      ],
+      "aesthetic": "Premium cinematic — muted cool tones with teal accents, elegant glass surfaces",
+      "synagraphic": false,
+      "vscodeTheme": ""
+    },
+    "mg-website": {
+      "name": "MG Website",
+      "colors": {
+        "cyan": "#42f4c8",
+        "purple": "#8B5CF6",
+        "pink": "#FF4500",
+        "indigo": "#A855F7",
+        "blue": "#FF7F32",
+        "teal": "#38C172"
+      },
+      "glow": "#FF6B00",
+      "recommendedFamilies": [
+        "martian-games"
+      ],
+      "aesthetic": "martiangames.com production palette — molten orange + ember accent, purple energy, game-highlight cyan",
+      "source": "mg/src/assets/scss/base/colors.scss $mg-colors (primary #FF6B00, hover #FF7F32, secondary #8B5CF6/#A855F7, accent #FF4500, game-highlight #42f4c8, success #38C172). Added 2026-07-06 so Portal/Copilot theming can draw directly from the website's proven colors; keep in sync with colors.scss when the site brand shifts."
     }
   },
   "skinFamilies": {
     "_note": "Skin families define base backgrounds, text colors, and glass effects with semi-transparent blur. Accent palettes overlay on top. All 6 families have dark + light modes. Synagentic Glass is the universal default.",
     "synagentic-glass": {
       "name": "Synagentic Glass",
-      "modes": ["dark", "light"],
+      "modes": [
+        "dark",
+        "light"
+      ],
       "default": true,
-      "dark": { "bg": "#0a0e14", "bgSecondary": "rgba(14,20,32,0.88)", "bgTertiary": "rgba(20,28,40,0.78)", "text": "#e6edf3", "glass": "rgba(10,14,20,0.55)", "blur": "14px", "border": "rgba(136,200,255,0.08)" },
-      "light": { "bg": "#f0f4f8", "bgSecondary": "rgba(220,228,240,0.85)", "bgTertiary": "rgba(200,212,228,0.75)", "text": "#0e1726", "glass": "rgba(240,244,248,0.55)", "blur": "14px", "border": "rgba(58,124,192,0.12)" }
+      "dark": {
+        "bg": "#0a0e14",
+        "bgSecondary": "rgba(14,20,32,0.88)",
+        "bgTertiary": "rgba(20,28,40,0.78)",
+        "text": "#e6edf3",
+        "glass": "rgba(10,14,20,0.55)",
+        "blur": "14px",
+        "border": "rgba(136,200,255,0.08)"
+      },
+      "light": {
+        "bg": "#f0f4f8",
+        "bgSecondary": "rgba(220,228,240,0.85)",
+        "bgTertiary": "rgba(200,212,228,0.75)",
+        "text": "#0e1726",
+        "glass": "rgba(240,244,248,0.55)",
+        "blur": "14px",
+        "border": "rgba(58,124,192,0.12)"
+      }
     },
     "synabrain-glass": {
       "name": "Synabrain Glass",
-      "modes": ["dark", "light"],
-      "dark": { "bg": "#0e0c16", "bgSecondary": "rgba(21,25,32,0.85)", "bgTertiary": "rgba(26,31,46,0.75)", "text": "#d7faff", "glass": "rgba(30,35,45,0.5)", "blur": "16px", "border": "rgba(77,232,255,0.18)" },
-      "light": { "bg": "#f8fafc", "bgSecondary": "rgba(226,232,240,0.8)", "bgTertiary": "rgba(203,213,225,0.7)", "text": "#1e293b", "glass": "rgba(255,255,255,0.55)", "blur": "16px", "border": "rgba(45,212,191,0.12)" }
+      "modes": [
+        "dark",
+        "light"
+      ],
+      "dark": {
+        "bg": "#0e0c16",
+        "bgSecondary": "rgba(21,25,32,0.85)",
+        "bgTertiary": "rgba(26,31,46,0.75)",
+        "text": "#d7faff",
+        "glass": "rgba(30,35,45,0.5)",
+        "blur": "16px",
+        "border": "rgba(77,232,255,0.18)"
+      },
+      "light": {
+        "bg": "#f8fafc",
+        "bgSecondary": "rgba(226,232,240,0.8)",
+        "bgTertiary": "rgba(203,213,225,0.7)",
+        "text": "#1e293b",
+        "glass": "rgba(255,255,255,0.55)",
+        "blur": "16px",
+        "border": "rgba(45,212,191,0.12)"
+      }
     },
     "martian-games": {
       "name": "Martian Games",
-      "modes": ["dark", "light"],
-      "dark": { "bg": "#0A0A0A", "bgSecondary": "rgba(24,24,24,0.85)", "bgTertiary": "rgba(35,35,35,0.75)", "text": "#FFFFFF", "glass": "rgba(10,10,10,0.5)", "blur": "14px", "border": "rgba(255,107,0,0.22)" },
-      "light": { "bg": "#FFF8F0", "bgSecondary": "rgba(247,243,238,0.8)", "bgTertiary": "rgba(236,230,222,0.7)", "text": "#1A1A1A", "glass": "rgba(255,248,240,0.55)", "blur": "14px", "border": "rgba(255,107,0,0.15)" }
+      "modes": [
+        "dark",
+        "light"
+      ],
+      "dark": {
+        "bg": "#0A0A0A",
+        "bgSecondary": "rgba(24,24,24,0.85)",
+        "bgTertiary": "rgba(35,35,35,0.75)",
+        "text": "#FFFFFF",
+        "glass": "rgba(10,10,10,0.5)",
+        "blur": "14px",
+        "border": "rgba(255,107,0,0.22)"
+      },
+      "light": {
+        "bg": "#FFF8F0",
+        "bgSecondary": "rgba(247,243,238,0.8)",
+        "bgTertiary": "rgba(236,230,222,0.7)",
+        "text": "#1A1A1A",
+        "glass": "rgba(255,248,240,0.55)",
+        "blur": "14px",
+        "border": "rgba(255,107,0,0.15)"
+      }
     },
     "tinted-glass": {
       "name": "Tinted Glass",
-      "modes": ["dark", "light"],
-      "dark": { "bg": "#0c0c14", "bgSecondary": "rgba(20,20,30,0.85)", "bgTertiary": "rgba(28,28,40,0.75)", "text": "#e0e0f0", "glass": "rgba(16,16,24,0.48)", "blur": "18px", "border": "rgba(255,255,255,0.06)" },
-      "light": { "bg": "#f4f4fa", "bgSecondary": "rgba(232,232,240,0.8)", "bgTertiary": "rgba(216,216,228,0.7)", "text": "#1a1a2e", "glass": "rgba(244,244,250,0.55)", "blur": "16px", "border": "rgba(0,0,0,0.06)" }
+      "modes": [
+        "dark",
+        "light"
+      ],
+      "dark": {
+        "bg": "#0c0c14",
+        "bgSecondary": "rgba(20,20,30,0.85)",
+        "bgTertiary": "rgba(28,28,40,0.75)",
+        "text": "#e0e0f0",
+        "glass": "rgba(16,16,24,0.48)",
+        "blur": "18px",
+        "border": "rgba(255,255,255,0.06)"
+      },
+      "light": {
+        "bg": "#f4f4fa",
+        "bgSecondary": "rgba(232,232,240,0.8)",
+        "bgTertiary": "rgba(216,216,228,0.7)",
+        "text": "#1a1a2e",
+        "glass": "rgba(244,244,250,0.55)",
+        "blur": "16px",
+        "border": "rgba(0,0,0,0.06)"
+      }
     },
     "holographic-glass": {
       "name": "Holographic Glass",
-      "modes": ["dark", "light"],
-      "dark": { "bg": "#08060e", "bgSecondary": "rgba(18,14,26,0.8)", "bgTertiary": "rgba(26,20,36,0.7)", "text": "#f0e8ff", "glass": "rgba(14,10,22,0.42)", "blur": "20px", "border": "rgba(200,160,255,0.18)" },
-      "light": { "bg": "#faf8ff", "bgSecondary": "rgba(240,236,248,0.75)", "bgTertiary": "rgba(228,221,240,0.65)", "text": "#1a1028", "glass": "rgba(248,244,255,0.5)", "blur": "20px", "border": "rgba(160,100,255,0.12)" },
+      "modes": [
+        "dark",
+        "light"
+      ],
+      "dark": {
+        "bg": "#08060e",
+        "bgSecondary": "rgba(18,14,26,0.8)",
+        "bgTertiary": "rgba(26,20,36,0.7)",
+        "text": "#f0e8ff",
+        "glass": "rgba(14,10,22,0.42)",
+        "blur": "20px",
+        "border": "rgba(200,160,255,0.18)"
+      },
+      "light": {
+        "bg": "#faf8ff",
+        "bgSecondary": "rgba(240,236,248,0.75)",
+        "bgTertiary": "rgba(228,221,240,0.65)",
+        "text": "#1a1028",
+        "glass": "rgba(248,244,255,0.5)",
+        "blur": "20px",
+        "border": "rgba(160,100,255,0.12)"
+      },
       "effects": {
         "shimmer": true,
         "shimmerSpeed": "12s",
@@ -211,14 +554,40 @@
         "rainbowSpeed": "10s",
         "prismaticGlow": true,
         "gradientAngle": "135deg",
-        "gradientColors": ["#ff6bd6", "#c46bff", "#6ba5ff", "#6bffd6", "#fff06b", "#ff6bd6"]
+        "gradientColors": [
+          "#ff6bd6",
+          "#c46bff",
+          "#6ba5ff",
+          "#6bffd6",
+          "#fff06b",
+          "#ff6bd6"
+        ]
       }
     },
     "midnight-chrome": {
       "name": "Midnight Chrome",
-      "modes": ["dark", "light"],
-      "dark": { "bg": "#080c1a", "bgSecondary": "rgba(12,18,38,0.88)", "bgTertiary": "rgba(18,26,52,0.78)", "text": "#c8d4e8", "glass": "rgba(8,12,28,0.52)", "blur": "16px", "border": "rgba(80,120,220,0.16)" },
-      "light": { "bg": "#eef2fa", "bgSecondary": "rgba(218,226,244,0.85)", "bgTertiary": "rgba(200,210,234,0.75)", "text": "#0c1028", "glass": "rgba(236,240,250,0.55)", "blur": "16px", "border": "rgba(80,110,200,0.12)" }
+      "modes": [
+        "dark",
+        "light"
+      ],
+      "dark": {
+        "bg": "#080c1a",
+        "bgSecondary": "rgba(12,18,38,0.88)",
+        "bgTertiary": "rgba(18,26,52,0.78)",
+        "text": "#c8d4e8",
+        "glass": "rgba(8,12,28,0.52)",
+        "blur": "16px",
+        "border": "rgba(80,120,220,0.16)"
+      },
+      "light": {
+        "bg": "#eef2fa",
+        "bgSecondary": "rgba(218,226,244,0.85)",
+        "bgTertiary": "rgba(200,210,234,0.75)",
+        "text": "#0c1028",
+        "glass": "rgba(236,240,250,0.55)",
+        "blur": "16px",
+        "border": "rgba(80,110,200,0.12)"
+      }
     }
   }
 }

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="420" height="764" viewBox="0 0 420 764" style="background:#0a0e14;padding:8px">
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="836" viewBox="0 0 420 836" style="background:#0a0e14;padding:8px">
   <text x="0" y="23" font-family="system-ui, sans-serif" font-size="12" fill="#c8ccd4">Synabrain Default</text>
   <rect x="160" y="4" width="40" height="28" rx="6" fill="#2dd4bf" />
   <rect x="204" y="4" width="40" height="28" rx="6" fill="#a855f7" />
@@ -146,4 +146,18 @@
   <rect x="292" y="724" width="40" height="28" rx="6" fill="#70c4f0" />
   <rect x="336" y="724" width="40" height="28" rx="6" fill="#FF8533" />
   <rect x="380" y="724" width="40" height="28" rx="6" fill="#42e09a" />
+  <text x="0" y="779" font-family="system-ui, sans-serif" font-size="12" fill="#c8ccd4">Cinematic Studio</text>
+  <rect x="160" y="760" width="40" height="28" rx="6" fill="#0a91b4" />
+  <rect x="204" y="760" width="40" height="28" rx="6" fill="#7c3aed" />
+  <rect x="248" y="760" width="40" height="28" rx="6" fill="#d6156e" />
+  <rect x="292" y="760" width="40" height="28" rx="6" fill="#7c3aed" />
+  <rect x="336" y="760" width="40" height="28" rx="6" fill="#0a91b4" />
+  <rect x="380" y="760" width="40" height="28" rx="6" fill="#158a4a" />
+  <text x="0" y="815" font-family="system-ui, sans-serif" font-size="12" fill="#c8ccd4">MG Website</text>
+  <rect x="160" y="796" width="40" height="28" rx="6" fill="#42f4c8" />
+  <rect x="204" y="796" width="40" height="28" rx="6" fill="#8B5CF6" />
+  <rect x="248" y="796" width="40" height="28" rx="6" fill="#FF4500" />
+  <rect x="292" y="796" width="40" height="28" rx="6" fill="#A855F7" />
+  <rect x="336" y="796" width="40" height="28" rx="6" fill="#FF7F32" />
+  <rect x="380" y="796" width="40" height="28" rx="6" fill="#38C172" />
 </svg>

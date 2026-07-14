@@ -1,5 +1,22 @@
 # Changelog
 
+## 3.1.0 — 2026-07-14
+
+- **WCAG AA contrast pass** — comments, punctuation, line numbers, and muted UI chrome lifted across all 6 themes (no more dark-on-dark comments)
+- **Palette sync from syna-theme-kit** — Acid Rain → matrix toxic green; Plasma Drift → hot pink synthwave
+- **Martian retuned to MG ember-nebula** — dark grey / purple-near-black chrome (`#0c0a12` family), primary `#FF6B00` + secondary `#8B5CF6`; removed warm-brown UI surfaces
+- **Marketplace storefront cleanup** — removed internal Cross-Project Protocol / `features` registry table from README; extension listing focuses on the 6 VS Code themes
+- **Compact palette artwork** — new ~1:1 swatch grid (`syn_palettes.png`) instead of the oversized vertical dump
+- **Theme collage + animated showcase** — `syn_themes-collage.png` + `syn_showcase.gif` / `.webm` for README and gallery
+- **License clarified** — source-available: use & customize freely; republishing / selling the pack needs a commercial chat
+- Version bump `3.0.0` → `3.1.0`
+
+## 3.0.0 — 2026-06-22
+
+- Marketplace redesign assets (hero, theme cards, skin families, palettes)
+- WCAG contrast work on muted-UI tiers
+- Published as Syn Themes v3 on VS Code Marketplace
+
 ## 2.2.9 — 2026-04-21
 
 - **Repo cleanup** — removed superseded `palettes/synagraphic-palettes.json` and `palettes/core/` (consolidated into `palettes/all-palettes.json` since v2.0)

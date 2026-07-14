@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syn Themes — Local Preview</title>
+  <style>
+    body { margin: 0; background: #07080e; color: #e0e4f4; font-family: Segoe UI, system-ui, sans-serif; }
+    header { padding: 28px 24px 8px; }
+    h1 { margin: 0 0 6px; font-size: 1.35rem; }
+    p { margin: 0; color: #8890b8; max-width: 60ch; line-height: 1.45; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(420px, 1fr)); gap: 16px; padding: 20px 24px 48px; }
+    figure { margin: 0; background: #0c0e18; border: 1px solid rgba(255,255,255,.06); border-radius: 12px; overflow: hidden; }
+    img { width: 100%; display: block; }
+    figcaption { padding: 10px 12px; font-size: .9rem; letter-spacing: .03em; }
+    code { color: #42eedd; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Syn Themes — local preview</h1>
+    <p>
+      Mockups generated from <code>themes/*.json</code> via
+      <code>node storage/tools/build-storefront-assets.mjs</code>.
+      These are the storefront card shots — not a live VS Code window.
+      For the real editor: F5 Extension Development Host → Color Theme → Synagraphic:*.
+    </p>
+  </header>
+  <div class="grid">
+    <figure><img src="media/themes/syn_void-circuit.png" alt="Void Circuit"><figcaption>Void Circuit</figcaption></figure>
+    <figure><img src="media/themes/syn_neon-decay.png" alt="Neon Decay"><figcaption>Neon Decay</figcaption></figure>
+    <figure><img src="media/themes/syn_ghost-protocol.png" alt="Ghost Protocol"><figcaption>Ghost Protocol</figcaption></figure>
+    <figure><img src="media/themes/syn_plasma-drift.png" alt="Plasma Drift"><figcaption>Plasma Drift</figcaption></figure>
+    <figure><img src="media/themes/syn_acid-rain.png" alt="Acid Rain"><figcaption>Acid Rain</figcaption></figure>
+    <figure><img src="media/themes/syn_martian.png" alt="Martian"><figcaption>Martian (ember-nebula)</figcaption></figure>
+  </div>
+</body>
+</html>
