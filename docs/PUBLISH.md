@@ -12,15 +12,17 @@ Ship the **same VSIX** to both registries so VS Code and Cursor stay in sync.
 
 ## One-time Open VSX setup
 
-1. Sign in at [open-vsx.org](https://open-vsx.org) with GitHub (`jenninexus`).
-2. Link [Eclipse.org](https://accounts.eclipse.org), then **sign the Publisher Agreement** on your Open VSX profile.
-3. Create a token: [User Settings → Access Tokens](https://open-vsx.org/user-settings/tokens).
-4. Store it as a Windows **User** env var `OVSX_PAT` (SEGOPC), or pass `-p` once.
-5. Create the namespace (first time only):
+Publisher identity (same Azure / Eclipse email as VSCE): **`jenninexus2.0@gmail.com`**  
+GitHub login for Open VSX: **`jenninexus`** (must match the GitHub linked on the Eclipse account).  
+Token env: `OVSX_PAT` (SEGOPC User env + sys-admin `userdata.db` / `.env`). Tokens: https://open-vsx.org/user-settings/tokens
 
-```powershell
-npx ovsx create-namespace jenninexus -p $env:OVSX_PAT
-```
+1. Sign in at [open-vsx.org](https://open-vsx.org) with GitHub (`jenninexus`).
+2. [Profile](https://open-vsx.org/user-settings/profile) → **Log in with Eclipse** (link `jenninexus2.0@gmail.com`).
+3. Still on Profile → **Show Publisher Agreement** → Agree.  
+   - This is **not** the Eclipse Contributor Agreement (ECA). ECA alone does not unlock publishing.
+4. [Namespaces](https://open-vsx.org/user-settings/namespaces) → create **`jenninexus`**  
+   (or CLI: `npx ovsx create-namespace jenninexus -p $env:OVSX_PAT`).
+5. Optional CLI token: [Access Tokens](https://open-vsx.org/user-settings/tokens) → store as User env `OVSX_PAT`.
 
 Optional: claim verified namespace ownership via the [Eclipse Open VSX namespace process](https://github.com/eclipse-openvsx/openvsx/wiki/Namespace-Access).
 
