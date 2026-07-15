@@ -1,7 +1,8 @@
 # Publishing Syn Themes
 
 Extension ID: `jenninexus.synagraphic-themes`  
-Publisher namespace: `jenninexus`
+Publisher namespace: `jenninexus`  
+Current version: see `package.json` (3.1.4 as of 2026-07-14)
 
 Ship the **same VSIX** to both registries so VS Code and Cursor stay in sync.
 
@@ -10,21 +11,30 @@ Ship the **same VSIX** to both registries so VS Code and Cursor stay in sync.
 | [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=jenninexus.synagraphic-themes) | VS Code | `@vscode/vsce` | `VSCE_PAT` |
 | [Open VSX](https://open-vsx.org/extension/jenninexus/synagraphic-themes) | Cursor (+ other Open VSX clients) | `ovsx` | `OVSX_PAT` |
 
+## Credentials (SEGOPC)
+
+| Env / key | Where stored | Source |
+|-----------|--------------|--------|
+| `VSCE_PAT` | Windows User env | Azure DevOps → Marketplace → Manage |
+| `OVSX_PAT` | Windows User env + sys-admin `userdata.db` / `.env` | [Open VSX Access Tokens](https://open-vsx.org/user-settings/tokens) |
+
+Publisher identity (Azure + Eclipse): **`jenninexus2.0@gmail.com`** (not `jenninexus@gmail.com`).  
+GitHub login for Open VSX: **`jenninexus`** — Eclipse profile **GitHub Username** must match.  
+Rotate / look up via `/sys-admin` → `db_get_credential` / `db_add_credential` (keys `OVSX_PAT`, `OVSX_ACCOUNT_EMAIL`).
+
 ## One-time Open VSX setup
 
-Publisher identity (same Azure / Eclipse email as VSCE): **`jenninexus2.0@gmail.com`**  
-GitHub login for Open VSX: **`jenninexus`** (must match the GitHub linked on the Eclipse account).  
-Token env: `OVSX_PAT` (SEGOPC User env + sys-admin `userdata.db` / `.env`). Tokens: https://open-vsx.org/user-settings/tokens
+Done for this publisher (namespace `jenninexus` exists). If resetting:
 
 1. Sign in at [open-vsx.org](https://open-vsx.org) with GitHub (`jenninexus`).
-2. [Profile](https://open-vsx.org/user-settings/profile) → **Log in with Eclipse** (link `jenninexus2.0@gmail.com`).
-3. Still on Profile → **Show Publisher Agreement** → Agree.  
-   - This is **not** the Eclipse Contributor Agreement (ECA). ECA alone does not unlock publishing.
-4. [Namespaces](https://open-vsx.org/user-settings/namespaces) → create **`jenninexus`**  
-   (or CLI: `npx ovsx create-namespace jenninexus -p $env:OVSX_PAT`).
-5. Optional CLI token: [Access Tokens](https://open-vsx.org/user-settings/tokens) → store as User env `OVSX_PAT`.
+2. [Profile](https://open-vsx.org/user-settings/profile) → **Log in with Eclipse** → **Show Publisher Agreement** → Agree.  
+   - **ECA ≠ Publisher Agreement.** ECA alone does not unlock publishing.
+3. [Namespaces](https://open-vsx.org/user-settings/namespaces) → create **`jenninexus`** if missing.
+4. Store token as User env `OVSX_PAT` + sys-admin DB.
 
-Optional: claim verified namespace ownership via the [Eclipse Open VSX namespace process](https://github.com/eclipse-openvsx/openvsx/wiki/Namespace-Access).
+**Forbidden** on web upload usually means: missing Publisher Agreement, or namespace not created / not a member.
+
+**Under review** in the Extensions UI is normal after first upload — Open VSX scans the package. Public API may already return the version while the UI still says under review.
 
 ## Dual publish (every release)
 
@@ -40,20 +50,18 @@ npx @vscode/vsce package --no-dependencies
 npx @vscode/vsce publish --pat $env:VSCE_PAT
 
 # 5. Open VSX (Cursor)
-npx ovsx publish .\synagraphic-themes-<version>.vsix -p $env:OVSX_PAT
+.\scripts\publish-openvsx.ps1
+# or: npx ovsx publish .\synagraphic-themes-<version>.vsix -p $env:OVSX_PAT
 ```
 
-Or use VS Code / Cursor tasks:
+Tasks (`.vscode/tasks.json` / workspace):
 
 - **Package Extension**
 - **Publish Extension** (Microsoft)
 - **Publish Open VSX** (Cursor)
+- **Publish Both (VS Code + Open VSX)**
 
-Helper script:
-
-```powershell
-.\scripts\publish-openvsx.ps1
-```
+CI: `.github/workflows/publish-openvsx.yml` (needs repo secret `OVSX_PAT`).
 
 ## Before-publish checklist
 
@@ -68,8 +76,9 @@ Helper script:
 
 - VS Code: https://marketplace.visualstudio.com/items?itemName=jenninexus.synagraphic-themes
 - Open VSX: https://open-vsx.org/extension/jenninexus/synagraphic-themes
-- Cursor: Extensions → search **Syn Themes** / `jenninexus.synagraphic-themes` (may lag Open VSX by a few minutes)
+- API: `https://open-vsx.org/api/jenninexus/synagraphic-themes`
+- Cursor: Extensions → search **Syn Themes** / `jenninexus.synagraphic-themes` (may lag Open VSX)
 
 ## Cursor verified badge (optional, separate)
 
-Cursor verification is **not** automatic from Open VSX. Requires a custom-domain site linking the Open VSX listing, matching homepage on the listing, then a Cursor forum Extension Verification post. See [Cursor extension docs](https://cursor.com/help/customization/extensions).
+Cursor verification is **not** automatic from Open VSX. Requires a custom-domain site linking the Open VSX listing (`homepage` is already `https://jenninexus.com`), then a Cursor forum Extension Verification post. See [Cursor extension docs](https://cursor.com/help/customization/extensions).

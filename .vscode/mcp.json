@@ -6,7 +6,9 @@
       "env": {
         "NODE_ENV": "production",
         "MCP_ROOT": "${env:MCP_ROOT}",
-        "SYSADMIN_ROOT": "${env:MCP_ROOT}/sys-admin"
+        "SYSADMIN_ROOT": "${env:MCP_ROOT}/sys-admin",
+        "VSCE_PAT": "${env:VSCE_PAT}",
+        "OVSX_PAT": "${env:OVSX_PAT}"
       }
     }
   }
