@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.1.3 - 2026-07-14
+
+- Listing shows only the **6 theme-paired accents** — removed the full companion accent glance from README/Marketplace
+
 ## 3.1.2 - 2026-07-14
 
 - **Fixed broken showcase gif** — replaced ~27MB blank-on-GitHub gif with a lean 960px cycle (~324KB)

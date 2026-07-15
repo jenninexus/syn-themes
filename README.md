@@ -63,18 +63,6 @@ void-circuit · neon-decay · ghost-protocol · plasma-drift · acid-rain · sg-
 
 ---
 
-## Companion accent glance
-
-Extra companion color strips for browsing. **Not additional Color Theme entries** — only the six themes above install in VS Code / Cursor.
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_palettes.png" alt="Companion accent glance" width="720">
-
-</div>
-
----
-
 ## Features
 
 - **6 cyberpunk dark themes** with 100+ color tokens each
