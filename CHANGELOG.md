@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.1.4 - 2026-07-14
+
+- **Open VSX / Cursor** — dual-publish the same VSIX to Open VSX so Cursor Extensions can install `jenninexus.synagraphic-themes`
+- README install section covers VS Code Marketplace + Open VSX; publish guide in `docs/PUBLISH.md`
+- Set `homepage` to https://jenninexus.com for listing metadata
+
 ## 3.1.3 - 2026-07-14
 
 - Listing shows only the **6 theme-paired accents** — removed the full companion accent glance from README/Marketplace

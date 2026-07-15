@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../vid-scroll"
 		}
 	],
 	"settings": {
@@ -18,14 +21,28 @@
 			{
 				"label": "Package Extension",
 				"type": "shell",
-				"command": "vsce package",
+				"command": "npx @vscode/vsce package --no-dependencies",
+				"group": "build",
+				"problemMatcher": []
+			},
+			{
+				"label": "Publish Extension (VS Code)",
+				"type": "shell",
+				"command": "npx @vscode/vsce publish --pat $env:VSCE_PAT",
+				"group": "build",
+				"problemMatcher": []
+			},
+			{
+				"label": "Publish Open VSX (Cursor)",
+				"type": "shell",
+				"command": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/publish-openvsx.ps1",
 				"group": "build",
 				"problemMatcher": []
 			},
 			{
 				"label": "Generate Swatches",
 				"type": "shell",
-				"command": "node tools/generate-swatches.mjs",
+				"command": "node storage/tools/generate-swatches.mjs",
 				"group": "build",
 				"problemMatcher": []
 			}

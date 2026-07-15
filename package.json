@@ -2,12 +2,13 @@
   "name": "synagraphic-themes",
   "displayName": "Syn Themes — Syn-Agentic Cyberpunk Glass Design Presets",
   "description": "Six cyberpunk glass color themes for VS Code / Cursor — WCAG AA contrast, semantic highlighting, and tuned terminal colors.",
-  "version": "3.1.3",
+  "version": "3.1.4",
   "publisher": "jenninexus",
   "author": {
     "name": "Jenni Nexus at Monofinity Studio",
     "url": "https://github.com/jenninexus"
   },
+  "homepage": "https://jenninexus.com",
   "license": "SEE LICENSE IN LICENSE",
   "engines": {
     "vscode": "^1.60.0"

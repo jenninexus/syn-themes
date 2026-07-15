@@ -1,5 +1,6 @@
 # Development / tooling — not needed in the extension package
 .vscode/
+.github/
 .git/
 .gitignore
 .gitattributes
@@ -9,6 +10,8 @@
 node_modules/
 package-lock.json
 storage/
+docs/
+scripts/
 assets/
 palettes/
 _archive/

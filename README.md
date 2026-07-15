@@ -3,7 +3,8 @@
 # Syn Themes
 
 ![License](https://img.shields.io/badge/license-source--available-9b5cf6?style=flat-square&labelColor=1a1a2e)
-![VS Code](https://img.shields.io/badge/VS%20Code-extension-63b3ed?style=flat-square&labelColor=0d1117)
+![VS Code](https://img.shields.io/badge/VS%20Code-Marketplace-63b3ed?style=flat-square&labelColor=0d1117)
+![Open VSX](https://img.shields.io/badge/Open%20VSX-Cursor-42f4c8?style=flat-square&labelColor=0d1117)
 ![Themes](https://img.shields.io/badge/themes-6%20shipped-42f4c8?style=flat-square&labelColor=0d1117)
 ![Contrast](https://img.shields.io/badge/contrast-WCAG%20AA-ffaa00?style=flat-square&labelColor=0d1117)
 
@@ -26,13 +27,20 @@ This extension ships **6** dark cyberpunk color themes for VS Code / Cursor — 
 
 ## Install
 
-Search **Syn Themes** in the VS Code Extensions Marketplace, or run:
+**VS Code** — search **Syn Themes** in Extensions, or:
 
 ```text
 ext install jenninexus.synagraphic-themes
 ```
 
-[View on Marketplace](https://marketplace.visualstudio.com/items?itemName=jenninexus.synagraphic-themes)
+**Cursor** — search **Syn Themes** in Extensions (Open VSX), or install the same ID:
+
+```text
+jenninexus.synagraphic-themes
+```
+
+- [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=jenninexus.synagraphic-themes)
+- [Open VSX (Cursor)](https://open-vsx.org/extension/jenninexus/synagraphic-themes)
 
 ---
 

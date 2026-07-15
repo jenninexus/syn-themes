@@ -4,7 +4,7 @@
     {
       "label": "Package Extension",
       "type": "shell",
-      "command": "npx @vscode/vsce package",
+      "command": "npx @vscode/vsce package --no-dependencies",
       "group": "build",
       "problemMatcher": [],
       "presentation": { "reveal": "always", "panel": "shared" }
@@ -17,6 +17,21 @@
       "problemMatcher": [],
       "presentation": { "reveal": "always", "panel": "shared" },
       "dependsOn": "Package Extension"
+    },
+    {
+      "label": "Publish Open VSX",
+      "type": "shell",
+      "command": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/publish-openvsx.ps1",
+      "group": "build",
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "dependsOn": "Package Extension"
+    },
+    {
+      "label": "Publish Both (VS Code + Open VSX)",
+      "dependsOrder": "sequence",
+      "dependsOn": ["Publish Extension", "Publish Open VSX"],
+      "problemMatcher": []
     },
     {
       "label": "Capture Screenshots",

@@ -1,0 +1,26 @@
+name: Publish Open VSX
+
+on:
+  workflow_dispatch:
+  release:
+    types: [published]
+
+jobs:
+  openvsx:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Package VSIX
+        run: npx --yes @vscode/vsce package --no-dependencies
+
+      - name: Publish to Open VSX
+        env:
+          OVSX_PAT: ${{ secrets.OVSX_PAT }}
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          npx --yes ovsx publish "synagraphic-themes-${VERSION}.vsix" -p "$OVSX_PAT"
