@@ -4,26 +4,26 @@
 
 ![License](https://img.shields.io/badge/license-source--available-9b5cf6?style=flat-square&labelColor=1a1a2e)
 ![VS Code](https://img.shields.io/badge/VS%20Code-extension-63b3ed?style=flat-square&labelColor=1a1a2e)
-![Themes](https://img.shields.io/badge/themes-6%20cyberpunk%20dark-42f4c8?style=flat-square&labelColor=0d1117)
+![Themes](https://img.shields.io/badge/themes-6%20shipped-42f4c8?style=flat-square&labelColor=0d1117)
 ![Contrast](https://img.shields.io/badge/contrast-WCAG%20AA-ffaa00?style=flat-square&labelColor=0d1117)
 
 ## Cyberpunk glass for VS Code.
-## Six moods. Readable neon. Semantic highlighting.
+## Six color themes. Readable neon. Semantic highlighting.
 
-`syn-themes` is a VS Code theme pack — neon glass chrome, tuned terminal ANSI colors, and full semantic highlighting for modern language stacks.
+This extension ships **6** dark cyberpunk color themes for VS Code / Cursor — neon glass chrome, tuned terminal ANSI colors, and full semantic highlighting.
 
-<img src="https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_themes-collage.png" alt="All six Synagraphic themes" width="100%">
+<img src="https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_themes-collage.png" alt="All six Synagraphic VS Code themes" width="100%">
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_showcase.gif" alt="Syn Themes animated showcase scroll" width="100%">
+<img src="https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_showcase.gif" alt="Cycle through the six Syn Themes" width="100%">
 
 </div>
 
-- Install six dark cyberpunk themes for VS Code.
-- Get semantic highlighting for TypeScript, React, Python, Go, Rust, and more.
-- WCAG AA contrast on editor text, comments, and line numbers — no dark-on-dark chrome.
-- Optional neon glow via `glow.css` for [Custom CSS and JS Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css) users.
+- **6 editor themes** you can pick under Color Theme → Synagraphic:*
+- Semantic highlighting for TypeScript, React, Python, Go, Rust, and more
+- WCAG AA contrast on editor text, comments, and line numbers
+- Optional neon glow via `glow.css` for [Custom CSS and JS Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css) users
 
 ---
 
@@ -39,7 +39,7 @@ ext install jenninexus.synagraphic-themes
 
 ---
 
-## Themes
+## The 6 themes (what this extension installs)
 
 | | |
 |:---:|:---:|
@@ -52,21 +52,29 @@ ext install jenninexus.synagraphic-themes
 
 ---
 
-## Accent palette reference
+## Theme-paired accents (the 6 that match)
 
-Compact companion color sets that share the same cyberpunk glass mood as the editor themes:
+Each VS Code theme has a matching 6-color accent strip — these are the accents that belong with the shipped themes:
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_palettes.png" alt="Accent palette reference" width="720">
+<img src="https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_palettes-themes.png" alt="Six theme-paired accent sets" width="900">
 
 </div>
 
-**6 Synagraphic** (each pairs with a full VS Code theme above): void-circuit · neon-decay · ghost-protocol · plasma-drift · acid-rain · sg-martian
+void-circuit · neon-decay · ghost-protocol · plasma-drift · acid-rain · sg-martian
 
-**More presets:** ocean · sunset · forest · neon · minimal · cyberpunk · aurora-borealis · synthwave · midnight-depths · cherry-blossom · arctic-frost · velvet-noir · cinematic-studio · and friends
+---
 
-Moods are complementary cyberpunk darks — muted void, industrial neon, cold stealth, hot plasma, toxic matrix, and Martian ember — with holographic / rainbow persuasion in accents, not busy UI chrome.
+## Companion accent glance (not extra VS Code themes)
+
+Extra companion color strips for at-a-glance browsing. **They are not additional Color Theme entries** — only the six themes above install in VS Code / Cursor.
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_palettes.png" alt="Companion accent glance" width="900">
+
+</div>
 
 ---
 

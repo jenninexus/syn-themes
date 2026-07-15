@@ -1,8 +1,8 @@
 {
   "name": "synagraphic-themes",
   "displayName": "Syn Themes — Syn-Agentic Cyberpunk Glass Design Presets",
-  "description": "Six cyberpunk glass VS Code themes with neon accents, WCAG AA contrast, semantic highlighting, and tuned terminal colors.",
-  "version": "3.1.0",
+  "description": "Six cyberpunk glass color themes for VS Code / Cursor — WCAG AA contrast, semantic highlighting, and tuned terminal colors.",
+  "version": "3.1.1",
   "publisher": "jenninexus",
   "author": {
     "name": "Jenni Nexus at Monofinity Studio",
@@ -40,19 +40,19 @@
   "screenshots": [
     {
       "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_themes-collage.png",
-      "description": "All 6 Synagraphic themes — Void Circuit, Neon Decay, Ghost Protocol, Plasma Drift, Acid Rain, Martian"
+      "description": "The 6 VS Code themes this extension installs"
     },
     {
-      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_theme-cards-top.png",
-      "description": "Theme collage — six cyberpunk dark moods with WCAG AA contrast"
+      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_palettes-themes.png",
+      "description": "Theme-paired accent strips"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/themes/syn_martian.png",
+      "description": "Martian theme mockup"
     },
     {
       "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_palettes.png",
-      "description": "Compact accent palette reference aligned with the Syna design kit"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_hero.png",
-      "description": "Syn Themes — cyberpunk glass design system overview"
+      "description": "Companion accent glance (not additional VS Code themes)"
     }
   ],
   "repository": {
