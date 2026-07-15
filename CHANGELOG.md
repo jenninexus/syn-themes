@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.1.2 - 2026-07-14
+
+- **Fixed broken showcase gif** — replaced ~27MB blank-on-GitHub gif with a lean 960px cycle (~324KB)
+- Hero is the cycling gif (closest thing to swipe on GitHub README); kept the sharp Themes grid
+- Softened commercial license wording on the listing
+
 ## 3.1.1 - 2026-07-14
 
 - **Accurate marketplace claims** — README and listing copy clarify six shipped VS Code themes vs companion accent glances

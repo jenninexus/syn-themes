@@ -2,7 +2,7 @@
   "name": "synagraphic-themes",
   "displayName": "Syn Themes — Syn-Agentic Cyberpunk Glass Design Presets",
   "description": "Six cyberpunk glass color themes for VS Code / Cursor — WCAG AA contrast, semantic highlighting, and tuned terminal colors.",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "publisher": "jenninexus",
   "author": {
     "name": "Jenni Nexus at Monofinity Studio",
@@ -39,20 +39,20 @@
   "icon": "icon.png",
   "screenshots": [
     {
-      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_themes-collage.png",
-      "description": "The 6 VS Code themes this extension installs"
+      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/themes/syn_void-circuit.png",
+      "description": "Void Circuit — muted violet circuits on black void"
     },
     {
-      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_palettes-themes.png",
-      "description": "Theme-paired accent strips"
+      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/themes/syn_neon-decay.png",
+      "description": "Neon Decay — industrial cyan + magenta"
     },
     {
       "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/themes/syn_martian.png",
-      "description": "Martian theme mockup"
+      "description": "Martian — ember-nebula dark grey with molten orange + violet"
     },
     {
-      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_palettes.png",
-      "description": "Companion accent glance (not additional VS Code themes)"
+      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_palettes-themes.png",
+      "description": "Theme-paired accent strips — one set for each of the 6 shipped themes"
     }
   ],
   "repository": {
