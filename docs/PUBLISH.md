@@ -81,4 +81,6 @@ CI: `.github/workflows/publish-openvsx.yml` (needs repo secret `OVSX_PAT`).
 
 ## Cursor verified badge (optional, separate)
 
-Cursor verification is **not** automatic from Open VSX. Requires a custom-domain site linking the Open VSX listing (`homepage` is already `https://jenninexus.com`), then a Cursor forum Extension Verification post. See [Cursor extension docs](https://cursor.com/help/customization/extensions).
+See **[CURSOR-VERIFICATION.md](./CURSOR-VERIFICATION.md)** for checklist + forum draft.
+
+Summary: `homepage` is already `https://jenninexus.com`. Add Open VSX link on the site (`jenninexus.com` → `/links`), deploy, then post in [Extension Verification](https://forum.cursor.com/c/showcase/extension-verification/23).

@@ -5,6 +5,7 @@ Tracked docs for the VS Code / Cursor theme extension (`jenninexus.synagraphic-t
 | Doc | Purpose |
 |-----|---------|
 | [PUBLISH.md](./PUBLISH.md) | Dual-publish to VS Code Marketplace + Open VSX (Cursor) |
+| [CURSOR-VERIFICATION.md](./CURSOR-VERIFICATION.md) | Cursor verified badge checklist + forum draft (do after site link is live) |
 
 Local-only (gitignored under `storage/`):
 
