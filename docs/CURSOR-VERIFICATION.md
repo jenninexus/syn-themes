@@ -11,8 +11,8 @@ Forum category: [Extension Verification](https://forum.cursor.com/c/showcase/ext
 |------|--------|--------|
 | Same extension ID on MS + Open VSX | ✅ | `jenninexus.synagraphic-themes` |
 | Open VSX `homepage` → custom domain | ✅ | `https://jenninexus.com` (in `package.json` / listing) |
-| Site links back to Open VSX listing | ⏳ | Add on [jenninexus.com/links](https://jenninexus.com/links) → deploy `jenninexus.com` repo (`public_html/links.php`) |
-| Forum verification request | ⏳ later | Post after the site link is **live** on the domain |
+| Site links back to Open VSX listing | ✅ | [jenninexus.com/links](https://jenninexus.com/links) — Syn Themes (Open VSX) card (deployed 2026-07-14) |
+| Forum verification request | ⏳ later | Post when ready — draft below; category [Extension Verification](https://forum.cursor.com/c/showcase/extension-verification/23) |
 | Open VSX namespace ownership claim | ⏳ optional | Removes “unrelated publisher” warning — separate from Cursor badge |
 
 ## After `/links` is deployed
