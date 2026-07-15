@@ -48,39 +48,25 @@ ext install jenninexus.synagraphic-themes
 | ![Ghost Protocol](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/themes/syn_ghost-protocol.png) | ![Plasma Drift](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/themes/syn_plasma-drift.png) |
 | **Ghost Protocol** — cold blue operative stealth | **Plasma Drift** — hot pink synthwave plasma |
 | ![Acid Rain](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/themes/syn_acid-rain.png) | ![Martian](https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/themes/syn_martian.png) |
-| **Acid Rain** — matrix toxic green on monochrome void | **Martian** — ember-nebula dark grey, MG orange + purple |
+| **Acid Rain** — matrix toxic green on monochrome void | **Martian** — ember-nebula dark grey, molten orange + violet |
 
 ---
 
 ## Accent palette reference
 
-Accent presets used across the Syna app ecosystem (Theme Customizer). Compact overview:
+Compact companion color sets that share the same cyberpunk glass mood as the editor themes:
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_palettes.png" alt="Syna accent palettes" width="720">
+<img src="https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_palettes.png" alt="Accent palette reference" width="720">
 
 </div>
 
-**6 Synagraphic** (paired with a full VS Code theme above): void-circuit · neon-decay · ghost-protocol · plasma-drift · acid-rain · sg-martian
+**6 Synagraphic** (each pairs with a full VS Code theme above): void-circuit · neon-decay · ghost-protocol · plasma-drift · acid-rain · sg-martian
 
-**Core + extras** (app accent presets): synabrain, martian, ocean, sunset, forest, neon, minimal, studio-pro-light, cyberpunk, aurora-borealis, synthwave, midnight-depths, cherry-blossom, arctic-frost, velvet-noir, cinematic-studio, mg-website
+**More presets:** ocean · sunset · forest · neon · minimal · cyberpunk · aurora-borealis · synthwave · midnight-depths · cherry-blossom · arctic-frost · velvet-noir · cinematic-studio · and friends
 
-Moods are complementary cyberpunk darks — muted void, industrial neon, cold stealth, hot plasma, toxic matrix, and Martian ember — with holographic / rainbow persuasion in accents, not busy UI chrome. Inspired by the Syna glass design language used across Syna apps; this extension ships editor themes only.
-
----
-
-## Preview locally
-
-After clone (or after regenerating assets):
-
-1. Open `assets/media/syn_themes-collage.png` for all six at once  
-2. Open `assets/media/themes/syn_*.png` for each theme mockup  
-3. Or in VS Code: **Extensions → … → Install from VSIX** / F5 Extension Development Host, then `Preferences: Color Theme` → Synagraphic:*
-
-```powershell
-node storage/tools/build-storefront-assets.mjs   # regenerate collage + per-theme PNGs
-```
+Moods are complementary cyberpunk darks — muted void, industrial neon, cold stealth, hot plasma, toxic matrix, and Martian ember — with holographic / rainbow persuasion in accents, not busy UI chrome.
 
 ---
 

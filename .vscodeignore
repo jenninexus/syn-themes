@@ -17,6 +17,7 @@ dev.md
 *.vsix
 *.code-workspace
 syn-themes.code-workspace
+assets/preview.html
 
 # extras/*.example are reference docs for users — include glow.css, exclude .example files
 extras/*.example

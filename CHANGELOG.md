@@ -2,31 +2,29 @@
 
 ## 3.1.0 — 2026-07-14
 
-- **WCAG AA contrast pass** — comments, punctuation, line numbers, and muted UI chrome lifted across all 6 themes (no more dark-on-dark comments)
-- **Palette sync from syna-theme-kit** — Acid Rain → matrix toxic green; Plasma Drift → hot pink synthwave
-- **Martian retuned to MG ember-nebula** — dark grey / purple-near-black chrome (`#0c0a12` family), primary `#FF6B00` + secondary `#8B5CF6`; removed warm-brown UI surfaces
-- **Marketplace storefront cleanup** — removed internal Cross-Project Protocol / `features` registry table from README; extension listing focuses on the 6 VS Code themes
-- **Compact palette artwork** — new ~1:1 swatch grid (`syn_palettes.png`) instead of the oversized vertical dump
-- **Theme collage + animated showcase** — `syn_themes-collage.png` + `syn_showcase.gif` / `.webm` for README and gallery
+- **WCAG AA contrast pass** — comments, punctuation, line numbers, and muted UI chrome lifted across all 6 themes
+- **Theme accent refresh** — Acid Rain → matrix toxic green; Plasma Drift → hot pink synthwave
+- **Martian retuned** — dark grey / purple-near-black chrome, molten orange + violet (no warm-brown UI)
+- **Marketplace listing cleanup** — public README only (themes, palettes, features, license); removed internal protocol / distribution tables
+- **Compact palette artwork** + theme collage + animated showcase for the storefront
 - **License clarified** — source-available: use & customize freely; republishing / selling the pack needs a commercial chat
 - Version bump `3.0.0` → `3.1.0`
 
 ## 3.0.0 — 2026-06-22
 
-- Marketplace redesign assets (hero, theme cards, skin families, palettes)
+- Marketplace redesign assets (hero, theme cards, palettes)
 - WCAG contrast work on muted-UI tiers
 - Published as Syn Themes v3 on VS Code Marketplace
 
 ## 2.2.9 — 2026-04-21
 
-- **Repo cleanup** — removed superseded `palettes/synagraphic-palettes.json` and `palettes/core/` (consolidated into `palettes/all-palettes.json` since v2.0)
-- **Added `PALETTE-SYNC.md`** — documents the authoring → distribution sync workflow to `optional-features/registry/syn-themes.json`
-- **Updated `.vscodeignore`** — `palettes/`, `syna/`, `PALETTE-SYNC.md`, `package-lock.json` now excluded from packaged `.vsix`
+- Repo cleanup — consolidated palette files into `palettes/all-palettes.json`
+- Updated `.vscodeignore` packaging exclusions
 - No color or theme changes in this release
 
 ## 2.2.8 — 2026-04-21
 
-- Martian Games skin aligned to canonical MG brand: `#FF6B00` orange, `#8B5CF6` purple, `#42f4c8` teal across all host app theme JSONs (Synabrain, Synagen, Syqo)
+- Martian brand accents aligned: `#FF6B00` orange, `#8B5CF6` purple, `#42f4c8` teal
 
 ## 2.2.0 — 2026-03-22
 
@@ -35,31 +33,25 @@
 
 ## 2.1.0 — 2026-03-20
 
-- All skin families now use semi-transparent glass surfaces with blur instead of opaque panels
-- Replaced **Studio Pro** with **Midnight Chrome** — deep blue-charcoal with cool steel glass edges
-- Replaced **Amber Forge** with **Velvet Noir** — deep plum velvet, wine and amethyst
+- Glass surface polish across companion accent sets
+- Replaced **Studio Pro** with **Midnight Chrome**
+- Replaced **Amber Forge** with **Velvet Noir**
 - Improved **SG Martian** colors — brighter teal, richer purple, hotter orange
-- Slowed Holographic Glass animations for subtlety
 
 ## 2.0.0 — 2026-03-20
 
-- Unified palette collection: 21 palettes (15 core + 6 Synagraphic) in one set
-- Added **Holographic Glass** skin family — prismatic rainbow shimmer, animated borders
-- Updated **Martian Games** skin to match brand CSS
-- Updated **Aurora Borealis** — iridescent turquoise/purple/pink rainbow
-- Updated **Synthwave** — hot pink, electric cyan, deep purple tricolor
-- Updated **Acid Rain** — toxic green with monochrome contrast
+- Unified palette collection: core + Synagraphic sets
+- Updated **Aurora Borealis**, **Synthwave**, and **Acid Rain** aesthetics
 
 ## 1.1.0 — 2026-03-20
 
-- Expanded to 21 accent palettes and 6 skin families
-- Added comprehensive glass-morphism showcase page
+- Expanded accent palette collection
 
 ## 1.0.0 — 2026-03-17
 
-- Initial release with 5 cyberpunk dark themes
+- Initial release with cyberpunk dark themes
 - **Void Circuit** — Muted violet hacker void
-- **Neon Decay** — Industrial amber rust
+- **Neon Decay** — Industrial neon
 - **Ghost Protocol** — Cold blue operative
 - **Plasma Drift** — Hot pink synthwave
 - **Acid Rain** — Toxic green matrix
