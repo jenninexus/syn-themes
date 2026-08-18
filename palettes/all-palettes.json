@@ -35,9 +35,9 @@
         "cyan": "#42f4c8",
         "purple": "#8B5CF6",
         "pink": "#FF6B00",
-        "indigo": "#63B3ED",
-        "blue": "#FF7F32",
-        "teal": "#38C172"
+        "indigo": "#A855F7",
+        "blue": "#FF4500",
+        "teal": "#42f4c8"
       },
       "glow": "#FF6B00",
       "recommendedFamilies": [
@@ -45,7 +45,7 @@
         "tinted-glass",
         "holographic-glass"
       ],
-      "aesthetic": "MartianGames brand — orange fire, purple energy, teal circuits"
+      "aesthetic": "martiangames.com — primary #FF6B00, secondary #8B5CF6, ember #FF4500, cyan #42F4C8 on #0c0a12. NO brown / mustard / warm-tan; amber highlight-only."
     },
     "ocean": {
       "name": "Ocean Breeze",
@@ -72,7 +72,7 @@
         "pink": "#f43f5e",
         "indigo": "#e11d48",
         "blue": "#fb7185",
-        "teal": "#fbbf24"
+        "teal": "#fb923c"
       },
       "glow": "#f97316",
       "recommendedFamilies": [
@@ -86,7 +86,7 @@
       "colors": {
         "cyan": "#10b981",
         "purple": "#059669",
-        "pink": "#84cc16",
+        "pink": "#34d399",
         "indigo": "#22c55e",
         "blue": "#14b8a6",
         "teal": "#047857"
@@ -366,12 +366,12 @@
     "sg-martian": {
       "name": "SG Martian",
       "colors": {
-        "cyan": "#50ffdb",
-        "purple": "#9b6dff",
+        "cyan": "#42f4c8",
+        "purple": "#8B5CF6",
         "pink": "#FF6B00",
-        "indigo": "#70c4f0",
-        "blue": "#FF8533",
-        "teal": "#42e09a"
+        "indigo": "#A855F7",
+        "blue": "#FF4500",
+        "teal": "#42f4c8"
       },
       "glow": "#FF6B00",
       "recommendedFamilies": [
@@ -379,7 +379,7 @@
         "tinted-glass",
         "holographic-glass"
       ],
-      "aesthetic": "MartianGames ember-nebula — dark grey/purple void, molten orange primary, violet secondary, teal circuits",
+      "aesthetic": "Martian Games ember-nebula (website-aligned) — base #0c0a12, primary #FF6B00, secondary #8B5CF6, ember #FF4500, cyan #42F4C8. NO brown / mustard / warm-tan chrome; amber #FFAA00 highlight-only.",
       "synagraphic": true,
       "vscodeTheme": "themes/martian.json"
     },
@@ -407,17 +407,17 @@
       "colors": {
         "cyan": "#42f4c8",
         "purple": "#8B5CF6",
-        "pink": "#FF4500",
+        "pink": "#FF6B00",
         "indigo": "#A855F7",
-        "blue": "#FF7F32",
-        "teal": "#38C172"
+        "blue": "#FF4500",
+        "teal": "#42f4c8"
       },
       "glow": "#FF6B00",
       "recommendedFamilies": [
         "martian-games"
       ],
-      "aesthetic": "martiangames.com production palette — molten orange + ember accent, purple energy, game-highlight cyan",
-      "source": "mg/src/assets/scss/base/colors.scss $mg-colors (primary #FF6B00, hover #FF7F32, secondary #8B5CF6/#A855F7, accent #FF4500, game-highlight #42f4c8, success #38C172). Added 2026-07-06 so Portal/Copilot theming can draw directly from the website's proven colors; keep in sync with colors.scss when the site brand shifts."
+      "aesthetic": "Direct extract of martiangames.com — primary #FF6B00 (pink slot), secondary #8B5CF6, ember #FF4500 (blue slot), cyan #42F4C8. Bases #0c0a12. NO BROWN / mustard / amber-as-secondary.",
+      "source": "mg/src/assets/scss/base/colors.scss $mg-colors + www-theme-kit/palettes/www-palettes.json#martiangames. Keep in sync with colors.scss + martiangames.json#no_brown_rule."
     }
   },
   "skinFamilies": {
@@ -479,23 +479,24 @@
         "dark",
         "light"
       ],
+      "_meta": "Mirrored from syna-theme-kit 2026-07-16 — ember-nebula dark, cool lavender light. NO BROWN.",
       "dark": {
-        "bg": "#0A0A0A",
-        "bgSecondary": "rgba(24,24,24,0.85)",
-        "bgTertiary": "rgba(35,35,35,0.75)",
-        "text": "#FFFFFF",
-        "glass": "rgba(10,10,10,0.5)",
-        "blur": "14px",
-        "border": "rgba(255,107,0,0.22)"
+        "bg": "#0c0a12",
+        "bgSecondary": "rgba(18,15,26,0.72)",
+        "bgTertiary": "rgba(24,20,34,0.78)",
+        "text": "rgba(236,232,244,0.92)",
+        "glass": "rgba(0,0,0,0.6)",
+        "blur": "16px",
+        "border": "rgba(255,107,0,0.25)"
       },
       "light": {
-        "bg": "#FFF8F0",
-        "bgSecondary": "rgba(247,243,238,0.8)",
-        "bgTertiary": "rgba(236,230,222,0.7)",
-        "text": "#1A1A1A",
-        "glass": "rgba(255,248,240,0.55)",
-        "blur": "14px",
-        "border": "rgba(255,107,0,0.15)"
+        "bg": "#f7f4fb",
+        "bgSecondary": "rgba(243,238,249,0.75)",
+        "bgTertiary": "rgba(232,224,245,0.78)",
+        "text": "rgba(26,18,36,0.92)",
+        "glass": "rgba(247,244,251,0.88)",
+        "blur": "16px",
+        "border": "rgba(255,107,0,0.25)"
       }
     },
     "tinted-glass": {

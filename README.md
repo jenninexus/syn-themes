@@ -22,6 +22,7 @@ This extension ships **6** dark cyberpunk color themes for VS Code / Cursor — 
 - Semantic highlighting for TypeScript, React, Python, Go, Rust, and more
 - WCAG AA contrast on editor text, comments, and line numbers
 - Optional neon glow via `glow.css` for [Custom CSS and JS Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css) users
+- Palette hexes are **mirrored from** the house kit — do not author colors here first. Public teaching starter: [theme-designer](https://github.com/jenninexus/theme-designer)
 
 ---
 
