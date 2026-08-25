@@ -3,8 +3,8 @@
     "description": "Marketplace palette reference — mirrored from syna-theme-kit (palette SSOT)",
     "source": "syna-theme-kit/palettes/syna-palettes.json",
     "skinContract": "Syna Skin Contract (internal)",
-    "version": "2.5.0",
-    "updated": "2026-07-14",
+    "version": "2.6.0",
+    "updated": "2026-08-25",
     "totalPalettes": 23,
     "totalSkinFamilies": 6,
     "totalSkinThemes": 12,
@@ -32,12 +32,12 @@
     "martian": {
       "name": "Martian Games",
       "colors": {
-        "cyan": "#42f4c8",
+        "cyan": "#42F4C8",
         "purple": "#8B5CF6",
         "pink": "#FF6B00",
-        "indigo": "#A855F7",
+        "indigo": "#A78BFA",
         "blue": "#FF4500",
-        "teal": "#42f4c8"
+        "teal": "#2DD4BF"
       },
       "glow": "#FF6B00",
       "recommendedFamilies": [
@@ -45,7 +45,8 @@
         "tinted-glass",
         "holographic-glass"
       ],
-      "aesthetic": "martiangames.com — primary #FF6B00, secondary #8B5CF6, ember #FF4500, cyan #42F4C8 on #0c0a12. NO brown / mustard / warm-tan; amber highlight-only."
+      "aesthetic": "martiangames.com — primary #FF6B00, secondary #8B5CF6, ember #FF4500, cyan #42F4C8 on #0c0a12; indigo/teal split for editor roles (mirrors sg-martian v3.2). NO brown / mustard / warm-tan; amber highlight-only.",
+      "source": "www-theme-kit/palettes/www-palettes.json#martiangames + mg colors.scss"
     },
     "ocean": {
       "name": "Ocean Breeze",
@@ -79,7 +80,7 @@
         "martian-games",
         "tinted-glass"
       ],
-      "aesthetic": "Warm orange-to-pink gradient — golden hour"
+      "aesthetic": "Warm orange-to-pink gradient — sunset (orange teal-slot, no mustard gold)"
     },
     "forest": {
       "name": "Forest Depths",
@@ -95,7 +96,7 @@
       "recommendedFamilies": [
         "synabrain-glass"
       ],
-      "aesthetic": "Deep emerald greens — natural and grounded"
+      "aesthetic": "Deep emerald greens — natural and grounded (no chartreuse/lime)"
     },
     "neon": {
       "name": "Neon Nights",
@@ -271,107 +272,107 @@
     "void-circuit": {
       "name": "Void Circuit",
       "colors": {
-        "cyan": "#3dd8d8",
-        "purple": "#8b6aff",
-        "pink": "#f06080",
-        "indigo": "#5a8af0",
-        "blue": "#48b8e0",
-        "teal": "#3dd8a8"
+        "cyan": "#4ae8e8",
+        "purple": "#9b7cff",
+        "pink": "#ff6b8a",
+        "indigo": "#6b9aff",
+        "blue": "#5ac8f0",
+        "teal": "#3ee8b8"
       },
-      "glow": "#8b6aff",
+      "glow": "#9b7cff",
       "recommendedFamilies": [
         "synabrain-glass",
         "midnight-chrome"
       ],
-      "aesthetic": "Muted hacker void — violet circuits on black",
+      "aesthetic": "Muted hacker void — brighter violet circuits, AA-friendly cyan/teal on black (v3.2 editor pass)",
       "synagraphic": true,
       "vscodeTheme": "themes/void-circuit.json"
     },
     "neon-decay": {
       "name": "Neon Decay",
       "colors": {
-        "cyan": "#42f4c8",
-        "purple": "#b48eff",
-        "pink": "#ff2d6f",
-        "indigo": "#5c8aff",
-        "blue": "#40b0ff",
-        "teal": "#38d8a0"
+        "cyan": "#3dffc9",
+        "purple": "#c49fff",
+        "pink": "#ff3d7a",
+        "indigo": "#6b96ff",
+        "blue": "#4ab8ff",
+        "teal": "#2ee0a8"
       },
-      "glow": "#42f4c8",
+      "glow": "#3dffc9",
       "recommendedFamilies": [
         "synabrain-glass",
         "tinted-glass"
       ],
-      "aesthetic": "Industrial cyberpunk — rust and neon",
+      "aesthetic": "Industrial cyberpunk — punchier cyan/magenta separation for code roles (v3.2)",
       "synagraphic": true,
       "vscodeTheme": "themes/neon-decay.json"
     },
     "ghost-protocol": {
       "name": "Ghost Protocol",
       "colors": {
-        "cyan": "#5a9ce8",
-        "purple": "#8878b8",
-        "pink": "#d85858",
-        "indigo": "#6878c0",
-        "blue": "#88c8ff",
-        "teal": "#50a8b8"
+        "cyan": "#6aadf0",
+        "purple": "#9a8cc8",
+        "pink": "#e87070",
+        "indigo": "#7a8ad0",
+        "blue": "#9ad4ff",
+        "teal": "#5cb8c8"
       },
-      "glow": "#88c8ff",
+      "glow": "#9ad4ff",
       "recommendedFamilies": [
         "synagentic-glass",
         "midnight-chrome"
       ],
-      "aesthetic": "Operative stealth — cold blue surveillance",
+      "aesthetic": "Operative stealth — colder ice blues with lifted midtones for comments/UI (v3.2)",
       "synagraphic": true,
       "vscodeTheme": "themes/ghost-protocol.json"
     },
     "plasma-drift": {
       "name": "Plasma Drift",
       "colors": {
-        "cyan": "#68b8d8",
-        "purple": "#e050a0",
-        "pink": "#f070a8",
-        "indigo": "#7088d0",
-        "blue": "#58c8f0",
-        "teal": "#60b890"
+        "cyan": "#70c8e8",
+        "purple": "#f058b0",
+        "pink": "#ff7abb",
+        "indigo": "#8090e0",
+        "blue": "#60d0f8",
+        "teal": "#68c8a0"
       },
-      "glow": "#e050a0",
+      "glow": "#f058b0",
       "recommendedFamilies": [
         "synabrain-glass",
         "tinted-glass"
       ],
-      "aesthetic": "Synthwave heat — hot pink plasma trails",
+      "aesthetic": "Synthwave heat — hotter pink primary, clearer blue/teal secondaries (v3.2)",
       "synagraphic": true,
       "vscodeTheme": "themes/plasma-drift.json"
     },
     "acid-rain": {
       "name": "Acid Rain",
       "colors": {
-        "cyan": "#68c030",
-        "purple": "#c0c0c0",
-        "pink": "#a8b820",
-        "indigo": "#e0e0e0",
-        "blue": "#90e848",
-        "teal": "#48a8a0"
+        "cyan": "#78d038",
+        "purple": "#d0d0d0",
+        "pink": "#c0d030",
+        "indigo": "#ececec",
+        "blue": "#98f050",
+        "teal": "#50b8b0"
       },
-      "glow": "#90e848",
+      "glow": "#98f050",
       "recommendedFamilies": [
         "synabrain-glass",
         "tinted-glass"
       ],
-      "aesthetic": "Matrix terminal — toxic green on monochrome void",
+      "aesthetic": "Matrix terminal — toxic greens + silver punctuation with stronger value steps (v3.2)",
       "synagraphic": true,
       "vscodeTheme": "themes/acid-rain.json"
     },
     "sg-martian": {
       "name": "SG Martian",
       "colors": {
-        "cyan": "#42f4c8",
+        "cyan": "#42F4C8",
         "purple": "#8B5CF6",
         "pink": "#FF6B00",
-        "indigo": "#A855F7",
+        "indigo": "#A78BFA",
         "blue": "#FF4500",
-        "teal": "#42f4c8"
+        "teal": "#2DD4BF"
       },
       "glow": "#FF6B00",
       "recommendedFamilies": [
@@ -379,7 +380,8 @@
         "tinted-glass",
         "holographic-glass"
       ],
-      "aesthetic": "Martian Games ember-nebula (website-aligned) — base #0c0a12, primary #FF6B00, secondary #8B5CF6, ember #FF4500, cyan #42F4C8. NO brown / mustard / warm-tan chrome; amber #FFAA00 highlight-only.",
+      "aesthetic": "Martian Games ember-nebula — brand anchors #FF6B00 / #8B5CF6 / #FF4500 / #42F4C8 kept; indigo #A78BFA + teal #2DD4BF split for clearer editor roles (v3.2). NO brown / mustard / warm-tan; amber #FFAA00 highlight-only.",
+      "source": "profiles/martian-apps.json + www-theme-kit/profiles/martiangames.json#no_brown_rule",
       "synagraphic": true,
       "vscodeTheme": "themes/martian.json"
     },
@@ -405,18 +407,18 @@
     "mg-website": {
       "name": "MG Website",
       "colors": {
-        "cyan": "#42f4c8",
+        "cyan": "#42F4C8",
         "purple": "#8B5CF6",
         "pink": "#FF6B00",
-        "indigo": "#A855F7",
+        "indigo": "#A78BFA",
         "blue": "#FF4500",
-        "teal": "#42f4c8"
+        "teal": "#2DD4BF"
       },
       "glow": "#FF6B00",
       "recommendedFamilies": [
         "martian-games"
       ],
-      "aesthetic": "Direct extract of martiangames.com — primary #FF6B00 (pink slot), secondary #8B5CF6, ember #FF4500 (blue slot), cyan #42F4C8. Bases #0c0a12. NO BROWN / mustard / amber-as-secondary.",
+      "aesthetic": "Direct extract of martiangames.com — primary #FF6B00 (pink slot), secondary #8B5CF6, ember #FF4500 (blue slot), cyan #42F4C8; indigo/teal split mirrors sg-martian v3.2. Bases #0c0a12. NO BROWN / mustard / amber-as-secondary.",
       "source": "mg/src/assets/scss/base/colors.scss $mg-colors + www-theme-kit/palettes/www-palettes.json#martiangames. Keep in sync with colors.scss + martiangames.json#no_brown_rule."
     }
   },

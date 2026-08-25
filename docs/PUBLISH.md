@@ -2,7 +2,7 @@
 
 Extension ID: `jenninexus.synagraphic-themes`  
 Publisher namespace: `jenninexus`  
-Current version: see `package.json` (3.1.4 as of 2026-07-14)
+Current version: see `package.json` (3.2.0 as of 2026-08-25). Release gate: [RELEASE.md](./RELEASE.md).
 
 Ship the **same VSIX** to both registries so VS Code and Cursor stay in sync.
 

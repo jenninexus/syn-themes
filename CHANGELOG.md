@@ -1,5 +1,15 @@
 # Changelog
 
+## 3.2.0 - 2026-08-25
+
+- **Synagraphic accent quality pass** — Void Circuit, Neon Decay, Ghost Protocol, Plasma Drift, Acid Rain hexes retuned for clearer code-role separation on dark editors
+- **Martian** — brand anchors kept (`#FF6B00` / `#8B5CF6` / `#FF4500` / `#42F4C8`); indigo `#A78BFA` + teal `#2DD4BF` split so strings vs cyan accents read distinctly
+- Kit mirror: `syna-theme-kit` palettes **v2.6.0** → `palettes/all-palettes.json`
+- **AA contrast lift** on comments, punctuation, and muted UI chrome (all 6 themes)
+- **Storefront media regenerated** (hi-DPI theme mockups, collage, showcase gif/webm); prior art archived under `_archive/2026-08-24-marketplace-media/`
+- Tracking doc: `docs/RELEASE.md` (when to bump + dual-publish recipe). Public README stays listing-only
+- Dual-publish target: VS Code Marketplace + Open VSX (Cursor) — same VSIX
+
 ## 3.1.4 - 2026-07-14
 
 - **Open VSX / Cursor** — dual-publish the same VSIX to Open VSX so Cursor Extensions can install `jenninexus.synagraphic-themes`

@@ -12,6 +12,9 @@ assets/sample/
 assets/media/storefront/
 scroll-capture.mjs
 
+# Local preview dashboard (untracked — like a design scratch pad)
+syn-themes.html
+
 # syna/ was a local-only skin snapshot — moved to syna-theme-kit/skins/ (2026-04-29)
 # Kept in gitignore in case it's regenerated locally; canonical is syna-theme-kit
 syna/

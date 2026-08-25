@@ -2,7 +2,7 @@
   "name": "synagraphic-themes",
   "displayName": "Syn Themes — Syn-Agentic Cyberpunk Glass Design Presets",
   "description": "Six cyberpunk glass color themes for VS Code / Cursor — WCAG AA contrast, semantic highlighting, and tuned terminal colors.",
-  "version": "3.1.4",
+  "version": "3.2.0",
   "publisher": "jenninexus",
   "author": {
     "name": "Jenni Nexus at Monofinity Studio",
@@ -41,15 +41,27 @@
   "screenshots": [
     {
       "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/themes/syn_void-circuit.png",
-      "description": "Void Circuit — muted violet circuits on black void"
+      "description": "Void Circuit — violet circuits, AA-tuned code colors"
     },
     {
       "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/themes/syn_neon-decay.png",
       "description": "Neon Decay — industrial cyan + magenta"
     },
     {
+      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/themes/syn_ghost-protocol.png",
+      "description": "Ghost Protocol — cold operative blues"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/themes/syn_plasma-drift.png",
+      "description": "Plasma Drift — hot pink synthwave"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/themes/syn_acid-rain.png",
+      "description": "Acid Rain — matrix toxic greens"
+    },
+    {
       "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/themes/syn_martian.png",
-      "description": "Martian — ember-nebula dark grey with molten orange + violet"
+      "description": "Martian — ember orange + violet on purple-black"
     },
     {
       "url": "https://raw.githubusercontent.com/jenninexus/syn-themes/main/assets/media/syn_palettes-themes.png",
